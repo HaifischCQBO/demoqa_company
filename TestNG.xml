@@ -5,7 +5,7 @@
     <test name="Full Regresion Blazedemo" allow-return-values="true">
         <parameter name="browser" value="chrome"/>
         <parameter name="headless" value="false"/>
-        <parameter name="url" value="https://demoqa.com/"/>
+        <parameter name="url" value="https://demoqa.com/webtables"/>
     </test>
     <packages>
         <package name="Tests.*"/>
