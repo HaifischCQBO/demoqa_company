@@ -18,11 +18,16 @@ Pasos a reproducir
 seleccionar la opcion "Widgets"
 dar click en la opción de "Date Picker"
 En la opción Select Date  cambiar la fecha
-En la opción Date and Time cambiar la fecha y hora 
+En la opción Date and Time cambiar la fecha y hora
+
+Resultados previstos
+
+El usuario podrá evidenciar los cambios realizados inmediatamente según los datos ingresados en Selec Date
+y en Date.
 
 Escenario
 
-El usuario debe poder seleccionar una fecha y tambien una fecha y hora
+El usuario debe poder presionar el boton y mover el circulo en diferentes longitudes
 
 Test Slider
 
@@ -41,3 +46,7 @@ Pasos a reproducir
 seleccionar la opcion "Widgets"
 dar click en la opción de "Slider"
 Presionar con el cursor y deslizar a diferentes longitudes teniendo en cuenta el rango de menor a mayor (0-100)
+
+Resultados previstos
+
+El usuario podrá realizar la selección del boton y desplazarlo en el espacio que se identifica
