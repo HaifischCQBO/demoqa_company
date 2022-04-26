@@ -1,11 +1,43 @@
-Test Case
+Escenario
 
-Scenario
-xxxx
-Steps to reproduce
-1.xxxx
-2.xxxx
-3.xxxx
+El usuario debe poder seleccionar una fecha y tambien una fecha y hora
 
-Expected Results
-xxxxx
+Test Date Picker
+
+Nombre Marlon
+Apellido Soto
+
+Precondiciones:
+
+Debe haber abierto el navegador y estar conectado a internet
+Debe haber ingresado a la pagina https://demoqa.com/
+
+
+Pasos a reproducir
+
+seleccionar la opcion "Widgets"
+dar click en la opción de "Date Picker"
+En la opción Select Date  cambiar la fecha
+En la opción Date and Time cambiar la fecha y hora 
+
+Escenario
+
+El usuario debe poder seleccionar una fecha y tambien una fecha y hora
+
+Test Slider
+
+Nombre Marlon
+Apellido Soto
+
+Precondiciones:
+
+Debe haber abierto el navegador y estar conectado a internet
+Debe haber ingresado a la pagina https://demoqa.com/
+
+
+
+Pasos a reproducir
+
+seleccionar la opcion "Widgets"
+dar click en la opción de "Slider"
+Presionar con el cursor y deslizar a diferentes longitudes teniendo en cuenta el rango de menor a mayor (0-100)
