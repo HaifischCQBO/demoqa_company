@@ -13,19 +13,24 @@ public class SingletonDriver {
     private SingletonDriver(){}
 
     public static WebDriver getWebDriver(){
-        Helpers helpers = new Helpers();
         if(driver == null){
-
+            System.out.println("me cree");
             WebDriverManager.chromedriver().setup();
             ChromeOptions options = new ChromeOptions();
             options.addArguments("--disable-gpu");
+            /*
             if(helpers.getXMLParameter("headless").equals("true")) {
                 options.addArguments("--headless");
-            }
+            }*/
+            //options.addArguments("--headless");
             driver = new ChromeDriver(options);
         }
 
         return driver;
+    }
+
+    public static void setDriverNull(){
+        driver = null;
     }
 
     public static void setCloseWhenFinished(boolean close){

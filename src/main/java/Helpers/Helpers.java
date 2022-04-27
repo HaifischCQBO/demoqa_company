@@ -1,5 +1,4 @@
 package Helpers;
-
 import com.github.javafaker.Faker;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -16,6 +15,7 @@ public class Helpers {
     private static WebDriver driver;
 
     public Helpers(){
+        this.driver = SingletonDriver.getWebDriver();
     }
     public Helpers(WebDriver driver){
         this.driver = driver;
