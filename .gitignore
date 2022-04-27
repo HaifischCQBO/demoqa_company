@@ -1,2 +1,4 @@
 # Ignora archivos del ide.
+.idea/*
+.idea/
 .idea
