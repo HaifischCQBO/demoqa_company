@@ -102,6 +102,9 @@ Eliminar un registro (fila) de la tabla, click en "Delete"
 Conexión a internet
 Tener el navegador google chrome instalado
 
+//Tests Data
+No aplica
+
 //Steps to reproduce
 1. Ir a la dirección : "https://demoqa.com/"
 2. Dar click en el campo "Elements"
