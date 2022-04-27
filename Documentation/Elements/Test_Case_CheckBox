@@ -20,7 +20,7 @@ Contar con un navegador.
 
 
 EXPECTED RESULTS
-   El sistema mostrara el siguiente mensaje "You have selected : "home desktop notes commands documents workspace react 
+   El sistema mostrara el siguiente mensaje "You have selected : "home desktop notes commands documents workspace react
    angular veu office public private classified general downloads wordFile excelFile".
 
 -----------------------------------------------------------------------------------------
@@ -67,13 +67,13 @@ Contar con un navegador.
 2. Ubicarse en la sección "Elements"
 3. El sistema mostrara una carpeta de nombre home donde hara click en el icono mayor que.
 4. El sistema desplegara una lista de carpetas de nombre Desktop, Documents, Downloads.
-5. el usuario hara clcik en el check de la carpeta Desktop. 
-6. el usuario hara clcik en el check de la carpeta Documents. 
-7. el usuario hara clcik en el check de la carpeta Downloads. 
+5. el usuario hara click en el check de la carpeta Desktop.
+6. el usuario hara click en el check de la carpeta Documents.
+7. el usuario hara click en el check de la carpeta Downloads.
 
 EXPECTED RESULTS
 Result step 5. El sistema mostrara el siguiente mensaje: "You have selected : desktop notes commands."
-Result step 6. donde el sistema mostrara el siguiente mensaje: "You have selected : documents workspace react angular 
+Result step 6. donde el sistema mostrara el siguiente mensaje: "You have selected : documents workspace react angular
    	       veu office public private classified general."
 Result step 7. El sistema mostrara el siguiente mensaje: "You have selected : downloads wordFile excelFile"
 
@@ -81,7 +81,7 @@ Result step 7. El sistema mostrara el siguiente mensaje: "You have selected : do
 -----------------------------------------------------------------------------------------
 
 // SCENARIO 4
-El usuario desplegara subcarpetas haciendo click de la seccion elements  
+El usuario desplegara subcarpetas haciendo click de la seccion elements
 
 
 
@@ -100,15 +100,15 @@ Contar con un navegador.
 3. Dar click en el boton "Check Box"
 4. El sistema mostrara una carpeta de nombre home donde hara click en el icono mayor que.
 5. El sistema desplegara una lista de carpetas de nombre Desktop, Documents, Downloads.
-6. El sistema mostrara una subcarpeta de nombre Desktop donde hara click en el icono mayor que. 
+6. El sistema mostrara una subcarpeta de nombre Desktop donde hara click en el icono mayor que.
 7. El sistema mostrara una subcarpeta de nombre Documents donde hara click en el icono mayor que. ****
 7.1 El usuario hara click en la carpeta WorkSpace
 7.2 El usuario hara click en la carpeta Office
-8. El sistema mostrara una subcarpeta de nombre Downloads donde hara click en el icono mayor que. 
+8. El sistema mostrara una subcarpeta de nombre Downloads donde hara click en el icono mayor que.
 
 EXPECTED RESULTS
 Result step 6. El sistema entregara dos archivos llamados "Notes, Commands"
-Result step 7. El sistema entregara dos carpetas llamadas "WorkSpace, Office" 
+Result step 7. El sistema entregara dos carpetas llamadas "WorkSpace, Office"
 Result step 7.1El sistema entregara tres archivos llamados React, Angular y Veu
 Result step 7.2El sistema entregara cuatro archivos llamados public, Private, Classified yGeneral
 Result step 8. El sistema entregara dos archivos llamados "Word File.doc, Excel File.doc"
@@ -116,7 +116,7 @@ Result step 8. El sistema entregara dos archivos llamados "Word File.doc, Excel 
 -----------------------------------------------------------------------------------------
 
 // SCENARIO 5
-El usuario hara clcik en el check de un archivo de la seccion elements 
+El usuario hara clcik en el check de un archivo de la seccion elements
 
 
 
@@ -137,21 +137,21 @@ Contar con un navegador.
 5. El sistema desplegara una lista de carpetas de nombre Desktop, Documents, Downloads.
 
 6. El sistema mostrara una subcarpeta de nombre Desktop donde hara click en el icono mayor que, El sistema entregara dos archivos llamados "Notes, Commands"
-7. El usuario hara click en el checkBox del archivo Notes. 
-8. El usuario hara click en el checkBox del archivo Commands. 
+7. El usuario hara click en el checkBox del archivo Notes.
+8. El usuario hara click en el checkBox del archivo Commands.
 9. El usuario hara click en los checkBox de los archivos Notes y  Commands.
- 
+
 10. El sistema mostrara una subcarpeta de nombre Documents donde hara click en el icono mayor que, El sistema entregara dos archivos llamados "WorkSpace, Office"
-11. El usuario hara click en el checkBox del archivo WorkSpace. 
-12. El usuario hara click en el checkBox del archivo Office. 
-13. El usuario hara click en los checkBox de los archivos WorkSpace y Office. 
+11. El usuario hara click en el checkBox del archivo WorkSpace.
+12. El usuario hara click en el checkBox del archivo Office.
+13. El usuario hara click en los checkBox de los archivos WorkSpace y Office.
 
 14. El sistema mostrara una subcarpeta de nombre Downloads donde hara click en el icono mayor que, El sistema entregara dos archivos llamados "Word File.doc, Excel File.doc"
 15. El usuario hara click en el checkBox del archivo Word File.doc.
-16. El usuario hara click en el checkBox del archivo Excel File.doc. 
+16. El usuario hara click en el checkBox del archivo Excel File.doc.
 17. El usuario hara click en los checkBox de los archivos Word File.doc y Excel File.doc.
 
-EXPECTED RESULTS 
+EXPECTED RESULTS
 Result step 7. Se visualizara el siguiente mensaje: "You have selected : notes"
 Result step 8. Se visualizara el siguiente mensaje: "You have selected : commands"
 Result step 9. Se visualizara el siguiente mensaje: "You have selected : desktop notes commands"
@@ -186,8 +186,8 @@ Contar con un navegador.
 2. Ubicarse en la sección "Elements"
 3. Dar click en el boton "Check Box"
 4. El sistema entregara en la parte superior derecha dos botones (+), (-)
-5. El usuario hara click en el boton (+). 
-6. El usuario hara click en el boton (-). 
+5. El usuario hara click en el boton (+).
+6. El usuario hara click en el boton (-).
 
 EXPECTED RESULTS
 Result step 5. El sistema desplegara todo el contenido de la carpeta home.
