@@ -1,3 +1,5 @@
+@author: Daniel Vega
+@date: 26/04/2022
 Test Case W-A01
 
     Escenario
@@ -10,6 +12,8 @@ Test Case W-A01
     1.	El usuario visualiza el Accordian con 3 cards.
     2.	El usuario visualiza el contenido de la primera card del Accordian.
 
+@author: Daniel Vega
+@date: 26/04/2022
 Test Case W-A02
 
     Escenario
@@ -26,6 +30,8 @@ Test Case W-A02
     2.	El usuario visualiza no visualiza el contenido de la card #3
     3.	El usuario visualiza el contenido del card #2 del Accordian.
 
+@author: Daniel Vega
+@date: 26/04/2022
 Test Case W-A03
 
     Escenario
@@ -42,6 +48,8 @@ Test Case W-A03
     2.	El usuario visualiza no vusializa el contenido de la card #2
     3.	El usuario visualiza el contenido del card #3 del Accordian
 
+@author: Daniel Vega
+@date: 26/04/2022
 Test Case W-A04
 
     Escenario
@@ -58,6 +66,8 @@ Test Case W-A04
     2.	El usuario visualiza no vusializa el contenido de la card #3
     3.	El usuario visualiza el contenido del card #1 del Accordian
 
+@author: Daniel Vega
+@date: 26/04/2022
 Test Case W-A05
 
     Escenario
@@ -71,6 +81,8 @@ Test Case W-A05
     Postcondiciones:
     1.	El usuario es redireccionado a https://demoqa.com/accordian
 
+@author: Daniel Vega
+@date: 27/04/2022
 Test Case W-A06
 
     Escenario

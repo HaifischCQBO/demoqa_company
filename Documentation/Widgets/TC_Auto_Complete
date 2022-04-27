@@ -1,3 +1,5 @@
+@author: Daniel Vega
+@date: 26/04/2022
 Test Case - W-AC01
 
     Escenario
@@ -10,6 +12,8 @@ Test Case - W-AC01
     1.	Visualiza dos inputs.
     2.	Los inputs están vacíos.
 
+@author: Daniel Vega
+@date: 26/04/2022
 Test Case W-AC02
 
     Escenario
@@ -22,6 +26,8 @@ Test Case W-AC02
     Postcondiciones:
     1.	El usuario visualiza colores que contengan esa letra (yellow y white).
 
+@author: Daniel Vega
+@date: 26/04/2022
 Test Case W-AC03
 
     Escenario
@@ -43,6 +49,8 @@ Test Case W-AC03
     2.	El color debe tener un botón que le permita ser borrado (una “x”)
     3.	El input debe tener un botón para borrar todos los colores previamente agregados.
 
+@author: Daniel Vega
+@date: 26/04/2022
 Test Case W-AC04
 
     Escenario
@@ -58,6 +66,8 @@ Test Case W-AC04
     Postcondiciones:
     1.	El input queda vacío
 
+@author: Daniel Vega
+@date: 26/04/2022
 Test Case W-AC05
 
     Escenario
@@ -75,6 +85,8 @@ Test Case W-AC05
     Postcondiciones:
     1.	El input contiene el elemento “white”
 
+@author: Daniel Vega
+@date: 26/04/2022
 Test Case W-AC06
 
     Escenario
@@ -87,6 +99,8 @@ Test Case W-AC06
     Postcondiciones:
     1.	El usuario visualiza colores que contengan esa letra (yellow y white).
 
+@author: Daniel Vega
+@date: 26/04/2022
 Test Case W-AC07
 
     Escenario
