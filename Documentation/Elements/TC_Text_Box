@@ -1,0 +1,33 @@
+Test Case
+Diligenciar text box
+
+/SCENARIO
+el usuario debe entregar sus datos mediante un text box
+
+//TEST DATA
+nombre brayan
+apellido mahecha
+email x@hotmail.com
+direccion actual cra 72 # 40-83
+direccion permanente calle 37a # 20d-150
+
+//PRECONDITIONS
+Abrir un navegador
+Conexion a internet
+
+//STEP TO TEST
+1. ir a https://demoqa.com/text-box
+2. Ubicar la seccion "Elements" y dar click
+3. Ubicar la seccion "text box" y dar click
+4. Posicionarse en el campo "full name"
+5. ingresar nombre y apellido
+6. Posicionarse en el campo "email"
+7. ingresar datos de email
+6. Posicionarse en el campo "Current Address"
+7. ingresar datos de direccion actual
+6. Posicionarse en el campo "Permanent Address"
+7. ingresar datos de direccion permanente
+8. dar click en submit
+
+//RESULT
+ El sistema nos entregara un formulario diligenciado con los datos suministrados
