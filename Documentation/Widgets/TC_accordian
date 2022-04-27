@@ -1,0 +1,73 @@
+Test Case W-A01
+
+    Escenario
+    Verificar el contenido de Accordian
+
+    Pasos a reproducir:
+    1.   	El usuario se dirige a la pagina https://demoqa.com/accordian
+
+    Postcondiciones:
+    1.	El usuario visualiza el Accordian con 3 cards.
+    2.	El usuario visualiza el contenido de la primera card del Accordian.
+
+Test Case W-A02
+
+    Escenario
+    Verificar funcionamiento del accordian - card #2
+
+    Pasos a reproducir:
+    1.	El usuario se dirige a la pagina https://demoqa.com/accordian
+    2.	Visualiza el Accordian con 3 cards dentro del Accordian
+    3.	El usuario visualiza el contenido de la primera card del Accordian.
+    4.	Hace click en la card #2
+
+    Postcondiciones:
+    1.	El usuario visualiza no visualiza el contenido de la card #1
+    2.	El usuario visualiza no visualiza el contenido de la card #3
+    3.	El usuario visualiza el contenido del card #2 del Accordian.
+
+Test Case W-A03
+
+    Escenario
+    Verificar funcionamiento del accordian - card #3
+
+    Pasos a reproducir:
+    1.	El usuario se dirige a la pagina https://demoqa.com/accordian
+    2.	Visualiza el Accordian con 3 cards dentro del Accordian
+    3.	El usuario visualiza el contenido de la primera card del Accordian.
+    4.	Hace click en la card #3
+
+    Postcondiciones:
+    1.	El usuario visualiza no vusializa el contenido de la card #1
+    2.	El usuario visualiza no vusializa el contenido de la card #2
+    3.	El usuario visualiza el contenido del card #3 del Accordian
+
+Test Case W-A04
+
+    Escenario
+    Verificar funcionamiento del accordian - card #1 cuando anteriormente ha sido colapsado previamente
+
+    Pasos a reproducir:
+    1.	El usuario se dirige a la pagina https://demoqa.com/accordian
+    2.	Visualiza el Accordian con 3 cards dentro del Accordian
+    3.	El usuario da click en la card #3
+    4.	El usuario Hace click en la card #1
+
+    Postcondiciones:
+    1.	El usuario visualiza no vusializa el contenido de la card #2
+    2.	El usuario visualiza no vusializa el contenido de la card #3
+    3.	El usuario visualiza el contenido del card #1 del Accordian
+
+Test Case W-A05
+
+    Escenario
+    Verificar el redireccionamiento del boton “accordian” ubicado en la barra de navegacion izquierda
+
+    Pasos a reproducir:
+    1.	El usuario se dirige a la pagina https://demoqa.com/
+    2.	El usuario da click en “Widgets” ubicado en el menú izquierdo
+    3.	El usuario da click en el elemento “Accordian”
+
+    Postcondiciones:
+    1.	El usuario es redireccionado a https://demoqa.com/accordian
+

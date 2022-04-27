@@ -1,0 +1,104 @@
+Test Case - W-AC01
+
+    Escenario
+    Verificar el contenido de la pagina de auto complete
+
+    Pasos a reproducir:
+    1.	El usuario se dirige a la pagina https://demoqa.com/auto-complete
+
+    Postcondiciones:
+    1.	Visualiza dos inputs.
+    2.	Los inputs están vacíos.
+
+Test Case W-AC02
+
+    Escenario
+    Verificar sugerencias en el input que admite multiples colores
+
+    Pasos a reproducir:
+    1.	El usuario se dirige a la pagina https://demoqa.com/auto-complete
+    2.	El usuario escribe “w” dentro del input que admite múltiples colores
+
+    Postcondiciones:
+    1.	El usuario visualiza colores que contengan esa letra (yellow y white).
+
+Test Case W-AC03
+
+    Escenario
+    Verificar agregado exitoso en el input que admite múltiples colores
+
+    Pasos a reproducir:
+    1.	El usuario se dirige a la pagina https://demoqa.com/auto-complete
+    2.	El usuario escribe w dentro del input
+    3.	El usuario hace click en el elemento sugerido “yellow”
+    4.	El usuario escribe w dentro del input
+    5.	El usuario hace click en el elemento sugerido “white”
+    6.	El usuario escribe b dentro del input
+    7.	El usuario hace click en el elemento sugerido “blue”
+    8.	El usuario escribe b dentro del input
+    9.	El usuario hace click en el elemento sugerido “black”
+
+    Postcondiciones:
+    1.	El los colores seleccionados deben haber sido agregados al input. (yellow, white, blue, black)
+    2.	El color debe tener un botón que le permita ser borrado (una “x”)
+    3.	El input debe tener un botón para borrar todos los colores previamente agregados.
+
+Test Case W-AC04
+
+    Escenario
+    Verificar eliminado exitoso de múltiples colores en el input que admite múltiples colores
+
+    Precondiciones:
+    el input debe contener los elementos yellow, white, blue, black
+
+    Pasos a reproducir:
+    1.	El usuario se dirige a la pagina https://demoqa.com/auto-complete
+    2.	El usuario da click en la “x” del input
+
+    Postcondiciones:
+    1.	El input queda vacío
+
+Test Case W-AC05
+
+    Escenario
+    Verificar eliminado individual de múltiples colores en el input que admite múltiples colores
+
+    Precondiciones:
+    el input debe contener los colores yellow, white, blue, black (en ese orden)
+
+    Pasos a reproducir:
+    1.	El usuario se dirige a la pagina https://demoqa.com/auto-complete
+    2.	El usuario da click en la “x” del elemento “blue”.
+    3.	El usuario da click en la “x” del elemento “black”.
+    4.	El usuario da click en la “x” del elemento “yellow”.
+
+    Postcondiciones:
+    1.	El input contiene el elemento “white”
+
+Test Case W-AC06
+
+    Escenario
+    Verificar sugerencias en el input que admite un solo color
+
+    Pasos a reproducir:
+    1.	El usuario se dirige a la pagina https://demoqa.com/auto-complete
+    2.	El usuario escribe “w” dentro del input.
+
+    Postcondiciones:
+    1.	El usuario visualiza colores que contengan esa letra (yellow y white).
+
+Test Case W-AC07
+
+    Escenario
+    Verificar agregado exitoso en el input que admite un color
+
+    Pasos a reproducir:
+    1.	El usuario se dirige a la pagina https://demoqa.com/auto-complete
+    2.	El usuario escribe w dentro del input
+    3.	El usuario hace click en el elemento sugerido “yellow”
+    4.	El usuario escribe w dentro del input
+    5.	El usuario hace click en el elemento sugerido “white”
+
+    Postcondiciones:
+    1.	En el input debe quedar el elemento “white”
+
