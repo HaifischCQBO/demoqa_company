@@ -1,0 +1,41 @@
+Autor : Jhon Sebastián Ramos Muñoz
+
+===========================================================================================================
+Test Case 5 - Forms:
+
+--Scenario--
+El usuario llena todos los campos del formulario "Practice Form", pero no selecciona ninguna opción del campo Gender.
+
+--PRECONDITIONS--
+1. Conexión a internet.
+2. Contar con un navegador.
+
+--TEST DATA--
+First Name: Jhon
+LastName: Ramos
+Email: 2320601@tcs.com
+Mobile : 3005551234
+Date of Birth: 25 Nov 2015
+Subjects: Maths, Economics
+Hobbies: Sports, Reading, Music
+Current Address: Calle 5 # 34B sur
+
+--Steps to reproduce--
+1.Ingresar a la siguiente url: https://demoqa.com/
+2.Dar click en el icono Forms.
+3.Dar click en el botón Practice Form.
+4.Ingresar los Test Data en los campos First Name, Last Name e 
+Email. 
+5.Ingresar los Test Data en el campo Mobile. 
+6.Dar click en el campo Date of Birth y seleccionar 
+el mes y el año propuestos en el Test data en cada lista correspondiente.
+7.Dar click en el dáa que corresponda al Test Data.
+8.Dar click en todos los Check buttons del campo Hobbies.
+9.Dar click en el botón Seleccionar archivo y elegir un archivo.
+10.Ingresar los Test Data en el campo Current Address.
+11.Seleccionar una opción aleatoria en cada lista desplegable del campo State and City.
+12.Dar click en el botón Submit.
+13.Dar click en el botón Close de la ventana de confirmación.
+
+--Expected Results--
+Al dar click en el botón Submit NO se registrara exitosamente el formulario.
