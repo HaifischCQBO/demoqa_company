@@ -19,7 +19,7 @@ public class Page_Buttons {
      *  WebElements // WebElements // WebElements // WebElements // WebElements // WebElements // WebElements //
      * ---------------------------------------------------------------------------------------------------------
      */
-    public By elements_buttons = By.id("item-4");
+    public By elements_buttons = By.xpath("//*[@id=\"item-4\"]");
     public By buttons_clickMe = By.id("OEeOV");
     public By buttons_doubleClick = By.id("doubleClickBtn");
     public By buttons_RightClick = By.id("rightClickBtn");
