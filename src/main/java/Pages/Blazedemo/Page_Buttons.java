@@ -1,15 +1,15 @@
 package Pages.Blazedemo;
 
 import Helpers.Helpers;
-import com.github.javafaker.Faker;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.interactions.Actions;
 
-public class Page_Elements_Buttons {
+public class Page_Buttons {
     public WebDriver driver;
     public static Helpers helpers;
 
-    public Page_Elements_Buttons(WebDriver driver){
+    public Page_Buttons(WebDriver driver){
         this.driver = driver;
         helpers = new Helpers(driver);
     }
@@ -19,11 +19,10 @@ public class Page_Elements_Buttons {
      *  WebElements // WebElements // WebElements // WebElements // WebElements // WebElements // WebElements //
      * ---------------------------------------------------------------------------------------------------------
      */
-    // public By buttons_li = By.id("item-4");
+    public By elements_buttons = By.id("item-4");
     public By buttons_clickMe = By.id("OEeOV");
-    // public By buttons_doubleClick = By.id("doubleClickBtn");
-    // public By buttons_rightClick = By.id("rightClickBtn");
-
+    public By buttons_doubleClick = By.id("doubleClickBtn");
+    public By buttons_RightClick = By.id("rightClickBtn");
 
     /**
      * -----------------------------------------------------------------------------------------------------------
@@ -31,16 +30,23 @@ public class Page_Elements_Buttons {
      * -----------------------------------------------------------------------------------------------------------
      */
 
-    //public void click_web_buttons_li(){
-      //  helpers.clickBy(buttons_li);
-        //driver.findElement(find_flights_button).click();
-    //}
 
-    public void click_web_buttons_clickMe(){
-        helpers.clickBy(buttons_clickMe);
-        //driver.findElement(find_flights_button).click();
+    public void clickButtons(){
+        helpers.clickBy(elements_buttons);
     }
-   /*     public void dobleClick_buttons_doubleClick(){
-            helpers.clickBy(buttons_doubleClick);
-        } */
+
+    public void clickMe_buttons(){
+        helpers.clickBy(buttons_clickMe);
+    }
+
+    public void doubleClick(){
+        Actions dobleClick = new Actions(driver);
+        dobleClick.doubleClick();
+    }
+
+    public void rightClick() {
+        Actions clickDerecho = new Actions(driver);
+        clickDerecho.contextClick();
+    }
+
 }
