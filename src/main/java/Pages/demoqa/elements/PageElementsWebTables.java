@@ -14,7 +14,7 @@ public class PageElementsWebTables {
         this.driver = driver;
         helpers = new Helpers(driver);
         JavascriptExecutor js = (JavascriptExecutor) this.driver; // scroll down
-        js.executeScript("window.scrollBy(0,10)"); // scroll down
+        js.executeScript("window.scrollBy(0,8)"); // scroll down
 
         //hacer zoom
         //JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -36,13 +36,17 @@ public class PageElementsWebTables {
     //public By web_tables_li = By.cssSelector("#item-3");
     public By web_tables_li = By.xpath("//li[@class=\"btn btn-light \"][4]");
     public By web_tables_add_button = By.cssSelector("#addNewRecordButton");
-    public By web_tables_first_name_input = By.cssSelector("#firstName");
+
+    public By web_tables_first_name_input = By.xpath("//input[@id='firstName']");
     public By web_tables_last_name_input = By.cssSelector("#lastName");
     public By web_tables_email_input = By.cssSelector("#userEmail");
     public By web_tables_age_input = By.cssSelector("#age");
     public By web_tables_salary_input = By.cssSelector("#salary");
     public By web_tables_department_input = By.cssSelector("#department");
     public By web_tables_submit_button = By.cssSelector("#submit");
+
+
+    public By div_text_elements_elian = By.xpath("//div[contains(text(),'Elián')]");
 
     //-------------------------------------------------------------------------------------------------------
 
@@ -58,6 +62,7 @@ public class PageElementsWebTables {
     //public By web_tables_edit_span = By.xpath("//span[@id=\"edit-record-1\"]");
     //public By web_tables_edit_span = By.xpath("//span[@title=\"Edit\"][1]");
     public By web_tables_edit_span = By.xpath("//span[@id='edit-record-1']");
+    public By div_text_elements_andres = By.xpath("//div[contains(text(),'Andrés')]");
     //-------------------------------------------------------------------------------------------------------
     // web elements test case 4
 
@@ -109,11 +114,18 @@ public class PageElementsWebTables {
         //driver.findElement(find_flights_button).click();
     }
 
+    public String confirm_div_text_elements() {
+        return helpers.getText(div_text_elements_elian);
+    }
+
     //-------------------------------------------------------------------------------------------------------
 
     //  test case 2
     public void fill_web_tables_search_box(String dataSearch){
         helpers.SendText(web_tables_search_box, dataSearch);
+    }
+    public String confirm_div_text_elements_search() {
+        return helpers.getText(div_text_elements_elian);
     }
 
     //-------------------------------------------------------------------------------------------------------
@@ -127,7 +139,7 @@ public class PageElementsWebTables {
 
     public void fill_registration_form_edit() {
 
-        helpers.SendText(web_tables_first_name_input, "Elián");
+        helpers.SendText(web_tables_first_name_input, "Andrés");
         helpers.SendText(web_tables_last_name_input, "Díaz");
         helpers.SendText(web_tables_email_input, "eadv@dominio.com" );
         helpers.SendText(web_tables_age_input, "21");
@@ -142,6 +154,10 @@ public class PageElementsWebTables {
         //driver.findElement(find_flights_button).click();
     }
 
+    public String confirm_div_text_elements_modify() {
+        return helpers.getText(div_text_elements_andres);
+    }
+
     //-------------------------------------------------------------------------------------------------------
 
     //  test case 4
@@ -154,5 +170,7 @@ public class PageElementsWebTables {
     public void delete_search() {
         helpers.deleteInput(web_tables_search_box);
     }
+
+
 }
 

@@ -42,6 +42,7 @@ public class Helpers {
     }
     public void SendText(By by, String text){
         WebElement elemento = driver.findElement(by);
+        //new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeSelected(elemento));
         elemento.clear();
         elemento.sendKeys(text);
         Print("Se envia texto:"+ text + " al elemento: "+ by);
@@ -102,6 +103,7 @@ public class Helpers {
     public void deleteInput(By by) {
         WebElement elemento = driver.findElement(by);
         elemento.clear();
+
     }
 
 
