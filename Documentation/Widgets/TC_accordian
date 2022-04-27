@@ -71,3 +71,17 @@ Test Case W-A05
     Postcondiciones:
     1.	El usuario es redireccionado a https://demoqa.com/accordian
 
+Test Case W-A06
+
+    Escenario
+    Verificar el funcinoamiento del card widgets en la pagina principal
+
+    Pasos a reproducir:
+    1.	El usuario se dirige a la pagina https://demoqa.com/
+    2.  El usuario da click en la tarjeta "widgets"
+
+    Postcondiciones:
+    1.	El usuario es redireccionado a https://demoqa.com/widgets
+
+
+
