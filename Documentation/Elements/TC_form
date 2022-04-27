@@ -1,11 +1,21 @@
 Test Case
+click en el link valido
 
-Scenario
-xxxx
-Steps to reproduce
-1.xxxx
-2.xxxx
-3.xxxx
+//SCENARIO
+Ingresar a un link valido
 
-Expected Results
-xxxxx
+//TEST DATA
+Un enlace se reconoce por tener el color de texto azul y una barra que lo resalta al posicionarse encima
+
+//PRECONDITIONS
+Abrir un navegador
+Conexion a internet
+
+//STEP TO TEST
+1. Ingresar a la siguiente direccion https://demoqa.com
+2. Ubicar la seccion "Elements" y dar click
+3. Ubicar la seccion "Broken Links-Image" y dar click
+4. Posicionarse sobre el link "Click Here for Valid Link" y dar clik
+
+//RESULT
+ El sistema nos envia a la siguiente direccion https://demoqa.com
