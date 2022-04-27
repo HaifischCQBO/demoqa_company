@@ -99,7 +99,10 @@ public class Helpers {
         return new Random().nextInt(bound);
     }
 
-
+    public void deleteInput(By by) {
+        WebElement elemento = driver.findElement(by);
+        elemento.clear();
+    }
 
 
     /**

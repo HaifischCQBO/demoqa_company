@@ -1,6 +1,7 @@
 package Helpers;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -23,6 +24,13 @@ public class SingletonDriver {
                 options.addArguments("--headless");
             }
             driver = new ChromeDriver(options);
+            driver.manage().window().maximize();
+
+            //hacer zoom
+            //JavascriptExecutor js = (JavascriptExecutor) driver;
+            //driver.get("chrome://settings/");
+            //js.executeScript("chrome.settingsPrivate.setDefaultZoom(0.5);");
+
         }
 
         return driver;

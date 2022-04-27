@@ -2,6 +2,7 @@ package Pages.demoqa.elements;
 
 import Helpers.Helpers;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 
 public class PageIndex {
@@ -11,6 +12,9 @@ public class PageIndex {
     public PageIndex(WebDriver driver){
         this.driver = driver;
         helpers = new Helpers(driver);
+        JavascriptExecutor js = (JavascriptExecutor) this.driver; // scroll down
+        js.executeScript("window.scrollBy(0,500)"); // scroll down
+
     }
 
     /**
@@ -18,7 +22,7 @@ public class PageIndex {
      *  WebElements // WebElements // WebElements // WebElements // WebElements // WebElements // WebElements //
      * ---------------------------------------------------------------------------------------------------------
      */
-    public By elements_div = By.xpath("//body/div[@id='app']/div[1]/div[1]/div[2]/div[1]/div[1]");
+    public By elements_div = By.xpath("//div[@class=\"card mt-4 top-card\"][1]");
 
 
 

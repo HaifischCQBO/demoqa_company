@@ -3,6 +3,7 @@ package Pages.demoqa.elements;
 import Helpers.Helpers;
 import com.github.javafaker.Faker;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 
 public class PageElementsWebTables {
@@ -12,6 +13,17 @@ public class PageElementsWebTables {
     public PageElementsWebTables(WebDriver driver){
         this.driver = driver;
         helpers = new Helpers(driver);
+        JavascriptExecutor js = (JavascriptExecutor) this.driver; // scroll down
+        js.executeScript("window.scrollBy(0,10)"); // scroll down
+
+        //hacer zoom
+        //JavascriptExecutor js = (JavascriptExecutor) driver;
+        //driver.get("chrome://settings/");
+        //js.executeScript("chrome.settingsPrivate.setDefaultZoom(0.5);");
+
+
+
+
     }
 
     /**
@@ -22,7 +34,7 @@ public class PageElementsWebTables {
     //-------------------------------------------------------------------------------------------------------
     // web elements test case 1
     //public By web_tables_li = By.cssSelector("#item-3");
-    public By web_tables_li = By.id("item-3");
+    public By web_tables_li = By.xpath("//li[@class=\"btn btn-light \"][4]");
     public By web_tables_add_button = By.cssSelector("#addNewRecordButton");
     public By web_tables_first_name_input = By.cssSelector("#firstName");
     public By web_tables_last_name_input = By.cssSelector("#lastName");
@@ -42,8 +54,10 @@ public class PageElementsWebTables {
 
     // web elements test case 3
 
-    public By web_tables_edit_span = By.id("#edit-record-1");
-
+    //public By web_tables_edit_span = By.id("#edit-record-1");
+    //public By web_tables_edit_span = By.xpath("//span[@id=\"edit-record-1\"]");
+    //public By web_tables_edit_span = By.xpath("//span[@title=\"Edit\"][1]");
+    public By web_tables_edit_span = By.xpath("//span[@id='edit-record-1']");
     //-------------------------------------------------------------------------------------------------------
     // web elements test case 4
 
@@ -123,6 +137,11 @@ public class PageElementsWebTables {
 
     }
 
+    public void click_web_tables_edit_form_button(){
+        helpers.clickBy(web_tables_submit_button);
+        //driver.findElement(find_flights_button).click();
+    }
+
     //-------------------------------------------------------------------------------------------------------
 
     //  test case 4
@@ -130,6 +149,10 @@ public class PageElementsWebTables {
     public void click_web_tables_delete_span(){
         helpers.clickBy(web_tables_delete_span);
         //driver.findElement(find_flights_button).click();
+    }
+
+    public void delete_search() {
+        helpers.deleteInput(web_tables_search_box);
     }
 }
 
