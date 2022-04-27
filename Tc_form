@@ -1,0 +1,38 @@
+test case 8
+escenario
+el usuario debe buscar por nombre del autor el libro
+
+Datos de prueba
+Nombre del autor del libro
+
+precondicion
+el usario debe estar registrado en
+https://demoqa.com/books
+
+Paso a Prueba
+1.Click  al item libreria
+2.en la barra de bisqueda ingresar el nombre del autor
+3.click al nombre del libro del autor buscado
+4.dar click en el boton de agregar a seleccion
+
+Resultado esperado
+mensaje de confirmacion de libro añadido a la coleccion
+
+
+
+test case 9
+
+
+escenario
+usuario desea eliminar la cuenta
+
+datos de prueba
+boton de opcion de borrar cuenta
+
+paso a prueba
+1.click en el item perfil
+2-click en el boton borrar cuenta
+3.click en aceptar
+
+resultado esperado
+mensaje de cuestionamiento se desea eliminar la cuenta
