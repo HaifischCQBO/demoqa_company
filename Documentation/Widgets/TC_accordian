@@ -74,7 +74,7 @@ Test Case W-A05
     Verificar el redireccionamiento del boton “accordian” ubicado en la barra de navegacion izquierda
 
     Pasos a reproducir:
-    1.	El usuario se dirige a la pagina https://demoqa.com/
+    1.	El usuario se dirige a la pagina https://demoqa.com/widgets
     2.	El usuario da click en “Widgets” ubicado en el menú izquierdo
     3.	El usuario da click en el elemento “Accordian”
 
