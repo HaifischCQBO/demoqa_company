@@ -10,6 +10,8 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import org.testng.Reporter;
+
+import java.util.ArrayList;
 import java.util.Random;
 
 public class Helpers {
@@ -36,9 +38,22 @@ public class Helpers {
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(by)).click();
         Print("Se realiza Click a Elemento:"+ by);
     }
-    public void clickWebelement(WebElement Elemento){
+    /*public void clickWebelement(WebElement Elemento){
         Elemento.click();
         Print("Se realiza Click a Elemento:"+ Elemento);
+    }*/
+    public void focoPage(){
+        String rutaAntigua = driver.getCurrentUrl();
+        ArrayList tabs = new ArrayList(driver.getWindowHandles());
+        System.out.println(tabs.size());
+        driver.switchTo().window(tabs.get(1).toString());
+        String rutaNueva = driver.getCurrentUrl();
+        if (rutaAntigua.equals(rutaNueva)){
+            System.out.println("ERROR...");
+        }else{
+            System.out.println("Navegacion OK...");
+        }
+        System.out.println(rutaNueva);
     }
     public void SendText(By by, String text){
         WebElement elemento = driver.findElement(by);
