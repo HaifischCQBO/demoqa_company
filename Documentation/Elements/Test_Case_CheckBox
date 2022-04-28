@@ -1,4 +1,30 @@
+
 // SCENARIO 1
+El usuario hara click en el boton elementes de la pagina index
+
+
+
+// TEST DATA
+(No aplica)
+
+
+
+// PRECONDITIONS
+Conexion a internet.
+Contar con un navegador.
+
+// STEP TO TEST
+1. El usuario debe ingresar a la direccion "https://demoqa.com/radio-button"
+2. Dar click en el boton Elements
+
+
+
+EXPECTED RESULTS
+El sistema mostrara una carpeta de nombre home, con una opcion de check donde el usuario hara click.
+
+-----------------------------------------------------------------------------------------
+
+// SCENARIO 2
 El usuario hara click en check de la carpeta home de la seccion elements
 
 
@@ -25,7 +51,7 @@ EXPECTED RESULTS
 
 -----------------------------------------------------------------------------------------
 
-// SCENARIO 2
+// SCENARIO 3
 El usuario hara click para desplegar la carpeta home de la seccion elements
 
 
@@ -49,39 +75,8 @@ EXPECTED RESULTS
 
 -----------------------------------------------------------------------------------------
 
-// SCENARIO 3
-El usuario hara click en check box de una subcarpeta de la seccion elements
-
-
-// TEST DATA
-(No aplica)
-
-
-
-// PRECONDITIONS
-Conexion a internet.
-Contar con un navegador.
-
-// STEP TO TEST
-1. El usuario debe ingresar a la direccion "https://demoqa.com/radio-button"
-2. Ubicarse en la sección "Elements"
-3. El sistema mostrara una carpeta de nombre home donde hara click en el icono mayor que.
-4. El sistema desplegara una lista de carpetas de nombre Desktop, Documents, Downloads.
-5. el usuario hara click en el check de la carpeta Desktop.
-6. el usuario hara click en el check de la carpeta Documents.
-7. el usuario hara click en el check de la carpeta Downloads.
-
-EXPECTED RESULTS
-Result step 5. El sistema mostrara el siguiente mensaje: "You have selected : desktop notes commands."
-Result step 6. donde el sistema mostrara el siguiente mensaje: "You have selected : documents workspace react angular
-   	       veu office public private classified general."
-Result step 7. El sistema mostrara el siguiente mensaje: "You have selected : downloads wordFile excelFile"
-
-
------------------------------------------------------------------------------------------
-
 // SCENARIO 4
-El usuario desplegara subcarpetas haciendo click de la seccion elements
+El usuario desplegara subcarpeta llamada Desktop
 
 
 
@@ -101,22 +96,14 @@ Contar con un navegador.
 4. El sistema mostrara una carpeta de nombre home donde hara click en el icono mayor que.
 5. El sistema desplegara una lista de carpetas de nombre Desktop, Documents, Downloads.
 6. El sistema mostrara una subcarpeta de nombre Desktop donde hara click en el icono mayor que.
-7. El sistema mostrara una subcarpeta de nombre Documents donde hara click en el icono mayor que. ****
-7.1 El usuario hara click en la carpeta WorkSpace
-7.2 El usuario hara click en la carpeta Office
-8. El sistema mostrara una subcarpeta de nombre Downloads donde hara click en el icono mayor que.
 
 EXPECTED RESULTS
-Result step 6. El sistema entregara dos archivos llamados "Notes, Commands"
-Result step 7. El sistema entregara dos carpetas llamadas "WorkSpace, Office"
-Result step 7.1El sistema entregara tres archivos llamados React, Angular y Veu
-Result step 7.2El sistema entregara cuatro archivos llamados public, Private, Classified yGeneral
-Result step 8. El sistema entregara dos archivos llamados "Word File.doc, Excel File.doc"
+El sistema entregara dos archivos llamados "Notes, Commands"
 
 -----------------------------------------------------------------------------------------
 
 // SCENARIO 5
-El usuario hara clcik en el check de un archivo de la seccion elements
+El usuario hara clcik en el check de la carpeta Desktop
 
 
 
@@ -135,40 +122,16 @@ Contar con un navegador.
 3. Dar click en el boton "Check Box"
 4. El sistema mostrara una carpeta de nombre home donde hara click en el icono mayor que.
 5. El sistema desplegara una lista de carpetas de nombre Desktop, Documents, Downloads.
+6. El usuario hara click en el boton check de la carpeta Desktop
 
-6. El sistema mostrara una subcarpeta de nombre Desktop donde hara click en el icono mayor que, El sistema entregara dos archivos llamados "Notes, Commands"
-7. El usuario hara click en el checkBox del archivo Notes.
-8. El usuario hara click en el checkBox del archivo Commands.
-9. El usuario hara click en los checkBox de los archivos Notes y  Commands.
-
-10. El sistema mostrara una subcarpeta de nombre Documents donde hara click en el icono mayor que, El sistema entregara dos archivos llamados "WorkSpace, Office"
-11. El usuario hara click en el checkBox del archivo WorkSpace.
-12. El usuario hara click en el checkBox del archivo Office.
-13. El usuario hara click en los checkBox de los archivos WorkSpace y Office.
-
-14. El sistema mostrara una subcarpeta de nombre Downloads donde hara click en el icono mayor que, El sistema entregara dos archivos llamados "Word File.doc, Excel File.doc"
-15. El usuario hara click en el checkBox del archivo Word File.doc.
-16. El usuario hara click en el checkBox del archivo Excel File.doc.
-17. El usuario hara click en los checkBox de los archivos Word File.doc y Excel File.doc.
 
 EXPECTED RESULTS
-Result step 7. Se visualizara el siguiente mensaje: "You have selected : notes"
-Result step 8. Se visualizara el siguiente mensaje: "You have selected : commands"
-Result step 9. Se visualizara el siguiente mensaje: "You have selected : desktop notes commands"
-
-Result step 11.Se visualizara el siguiente mensaje: "You have selected : workspace react angular veu"
-Result step 12.Se visualizara el siguiente mensaje: "You have selected :office public private classified general"
-Result step 13.Se visualizara el siguiente mensaje: "You have selected : documents workspace react angular veu officepublic private classified general"
-
-
-Result step 15.Se visualizara el siguiente mensaje: "You have selected : wordFile"
-Result step 16.Se visualizara el siguiente mensaje: "You have selected : excelFile"
-Result step 17.Se visualizara el siguiente mensaje: "You have selected : "You have selected :downloads wordFile excelFile"
-
+Se visualizara el siguiente mensaje: "You have selected : desktop notes commands"
 
 -----------------------------------------------------------------------------------------
+
 // SCENARIO 6
-El usuario hara click en el boton +, - de la seccion elements
+El usuario desplegara subcarpeta llamada Documents
 
 
 
@@ -185,10 +148,184 @@ Contar con un navegador.
 1. El usuario debe ingresar a la direccion "https://demoqa.com/radio-button"
 2. Ubicarse en la sección "Elements"
 3. Dar click en el boton "Check Box"
-4. El sistema entregara en la parte superior derecha dos botones (+), (-)
-5. El usuario hara click en el boton (+).
-6. El usuario hara click en el boton (-).
+4. El sistema mostrara una carpeta de nombre home donde hara click en el icono mayor que.
+5. El sistema desplegara una lista de carpetas de nombre Desktop, Documents, Downloads.
+6. El sistema mostrara una subcarpeta de nombre Documents donde hara click en el icono mayor que.
 
 EXPECTED RESULTS
-Result step 5. El sistema desplegara todo el contenido de la carpeta home.
-Result step 6. El sistema cerrara todo el contenido de la carpeta home.
+ El sistema entregara dos archivos llamados "WorkSpace, Office"
+
+-----------------------------------------------------------------------------------------
+
+// SCENARIO 7
+El usuario hara clcik en el check de la carpeta Documents
+
+
+
+// TEST DATA
+(No aplica)
+
+
+
+// PRECONDITIONS
+Conexion a internet.
+Contar con un navegador.
+
+// STEP TO TEST
+1. El usuario debe ingresar a la direccion "https://demoqa.com/radio-button"
+2. Ubicarse en la sección "Elements"
+3. Dar click en el boton "Check Box"
+4. El sistema mostrara una carpeta de nombre home donde hara click en el icono mayor que.
+5. El sistema desplegara una lista de carpetas de nombre Desktop, Documents, Downloads.
+6. El usuario hara click en el boton check de la carpeta Documnets
+
+
+EXPECTED RESULTS
+Se visualizara el siguiente mensaje: You have selected :desktop notes commands documents workspace react angular veu office public private classified general
+
+-----------------------------------------------------------------------------------------
+
+// SCENARIO 8
+El usuario desplegara subcarpeta llamada WorkSpaces
+
+
+
+// TEST DATA
+(No aplica)
+
+
+
+// PRECONDITIONS
+Conexion a internet.
+Contar con un navegador.
+
+// STEP TO TEST
+1. El usuario debe ingresar a la direccion "https://demoqa.com/radio-button"
+2. Ubicarse en la sección "Elements"
+3. Dar click en el boton "Check Box"
+4. El sistema mostrara una carpeta de nombre home donde hara click en el icono mayor que.
+5. El sistema desplegara una lista de carpetas de nombre Desktop, Documents, Downloads.
+6. El sistema mostrara una subcarpeta de nombre Documents donde hara click en el icono mayor que.
+7. El sistema mostrara una subcarpeta de nombre WorkSpace donde hara click en el icono mayor que.
+
+
+EXPECTED RESULTS
+ El sistema entregara cuatro archivos llamados  React, Angular, Veu, Office.
+
+
+-----------------------------------------------------------------------------------------
+
+// SCENARIO 9
+El usuario hara clcik en el check de la carpeta WorkSpace
+
+
+
+// TEST DATA
+(No aplica)
+
+
+
+// PRECONDITIONS
+Conexion a internet.
+Contar con un navegador.
+
+// STEP TO TEST
+1. El usuario debe ingresar a la direccion "https://demoqa.com/radio-button"
+2. Ubicarse en la sección "Elements"
+3. Dar click en el boton "Check Box"
+4. El sistema mostrara una carpeta de nombre home donde hara click en el icono mayor que.
+5. El sistema desplegara una lista de carpetas de nombre Desktop, Documents, Downloads.
+6. El sistema mostrara una subcarpeta de nombre Documents donde hara click en el icono mayor que.
+7. El sistema mostrara una subcarpeta de nombre WorkSpace donde hara click en el icono mayor que.
+8. El usuario hara click en el check Box de la carpeta WorkSpace
+
+
+EXPECTED RESULTS
+Se visualizara el siguiente mensaje: You have selected : desktop notes commands workspace react angular veu.
+
+-----------------------------------------------------------------------------------------
+
+// SCENARIO 10
+El usuario desplegara subcarpeta llamada Office
+
+
+
+// TEST DATA
+(No aplica)
+
+
+
+// PRECONDITIONS
+Conexion a internet.
+Contar con un navegador.
+
+// STEP TO TEST
+1. El usuario debe ingresar a la direccion "https://demoqa.com/radio-button"
+2. Ubicarse en la sección "Elements"
+3. Dar click en el boton "Check Box"
+4. El sistema mostrara una carpeta de nombre home donde hara click en el icono mayor que.
+5. El sistema desplegara una lista de carpetas de nombre Desktop, Documents, Downloads.
+6. El sistema mostrara una subcarpeta de nombre Documents donde hara click en el icono mayor que.
+7. El sistema mostrara una subcarpeta de nombre Office donde hara click en el icono mayor que.
+
+
+EXPECTED RESULTS
+ El sistema entregara cuatro archivos llamados Public, Private, Classified, General.
+
+-----------------------------------------------------------------------------------------
+
+// SCENARIO 11
+El usuario desplegara subcarpeta llamada Downloads
+
+
+
+// TEST DATA
+(No aplica)
+
+
+
+// PRECONDITIONS
+Conexion a internet.
+Contar con un navegador.
+
+// STEP TO TEST
+1. El usuario debe ingresar a la direccion "https://demoqa.com/radio-button"
+2. Ubicarse en la sección "Elements"
+3. Dar click en el boton "Check Box"
+4. El sistema mostrara una carpeta de nombre home donde hara click en el icono mayor que.
+5. El sistema desplegara una lista de carpetas de nombre Desktop, Documents, Downloads.
+6. El sistema mostrara una subcarpeta de nombre Downloads donde hara click en el icono mayor que.
+
+
+
+EXPECTED RESULTS
+ El sistema entregara cuatro archivos llamados Word File.doc, Excel File.doc.
+
+-----------------------------------------------------------------------------------------
+
+// SCENARIO 12
+El usuario hara clcik en el check de la carpeta Downloads
+
+
+
+// TEST DATA
+(No aplica)
+
+
+
+// PRECONDITIONS
+Conexion a internet.
+Contar con un navegador.
+
+// STEP TO TEST
+1. El usuario debe ingresar a la direccion "https://demoqa.com/radio-button"
+2. Ubicarse en la sección "Elements"
+3. Dar click en el boton "Check Box"
+4. El sistema mostrara una carpeta de nombre home donde hara click en el icono mayor que.
+5. El sistema desplegara una lista de carpetas de nombre Desktop, Documents, Downloads.
+6. El sistema mostrara una subcarpeta de nombre Downloads donde hara click en el icono mayor que.
+7. El usuario hara click en el boton CheckBox de la carpeta Downloads
+
+
+EXPECTED RESULTS
+You have selected : desktop notes commands workspace react angular veu downloads wordFile excelFile.
