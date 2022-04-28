@@ -23,7 +23,7 @@ public class Test_demoqa extends BaseClass {
         pageForms.click_practice_Form_button();
         pageForms.fill_form_practice_Form();
         pageForms.press_submit_button();
-        pageForms.click_close_button();
+
 
 
     }
