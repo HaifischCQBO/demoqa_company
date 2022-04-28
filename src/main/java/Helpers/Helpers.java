@@ -32,14 +32,23 @@ public class Helpers {
     public void Print(String texto){
         System.out.println(texto);
     }
+
+    /*
     public void clickBy(By by){
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(by)).click();
         Print("Se realiza Click a Elemento:"+ by);
+    }
+     */
+
+    public void clickBy (By by){
+        driver.findElement(by).click();
+        Print("Se realiza click al elemento: " + by);
     }
     public void clickWebelement(WebElement Elemento){
         Elemento.click();
         Print("Se realiza Click a Elemento:"+ Elemento);
     }
+
     public void SendText(By by, String text){
         WebElement elemento = driver.findElement(by);
         elemento.clear();
@@ -111,10 +120,6 @@ public class Helpers {
      * Estaticas
      * Pauses -> !!!!!!!! NUNCA SE OCUPA!!!!!!!!!!!
      * **/
-
-
-
-
 
 
 }
