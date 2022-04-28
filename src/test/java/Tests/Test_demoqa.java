@@ -24,6 +24,7 @@ public class Test_demoqa extends BaseClass {
         PageForms pageForms = new PageForms(driver);
         pageForms.click_practice_Form_button();
         pageForms.fill_form_practice_Form();
+        pageForms.click_submit_button();
 
 
     }

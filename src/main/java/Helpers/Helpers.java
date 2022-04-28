@@ -100,6 +100,7 @@ public class Helpers {
         return new Random().nextInt(bound);
     }
 
+
     public void findFile(By by, String path){
 
         driver.findElement(by).sendKeys(path);
@@ -108,6 +109,11 @@ public class Helpers {
     public void scrollDown(){
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollTo(0,500)");
+    }
+
+    public void zoomPage(){
+        JavascriptExecutor executor = (JavascriptExecutor)driver;
+        executor.executeScript("document.body.style.zoom = '0.5'");
     }
 
 

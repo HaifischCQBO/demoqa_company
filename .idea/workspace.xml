@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e1f44b26-782f-41ab-9bda-f67dcd8178ca" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/Helpers/Helpers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Helpers/Helpers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/PageForms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/PageForms.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/Test_demoqa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/Test_demoqa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Helpers/Helpers.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Helpers/Helpers.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Pages/PageForms.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/PageForms.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Tests/Test_demoqa.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Tests/Test_demoqa.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="4d3238ce-4cb9-40e7-8a34-5caa11475060" />
+        <option name="url" value="https://github.com/HaifischCQBO/demoqa_company.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="28LHPklDvbRdvoIBH9yI4pyvxC2" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../selectorbyNombreAtributoEtiqueta" />
+  </component>
+  <component name="RunManager" selected="TestNG.D:/QA/github/demoqa_company/TestNG.xml">
+    <configuration name="D:/QA/github/demoqa_company/TestNG.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="demoqa_company" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/TestNG.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test_demoqa" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="demoqa_company" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.Test_demoqa" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test_demoqa.Test_forms" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="demoqa_company" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.Test_demoqa" />
+      <option name="METHOD_NAME" value="Test_forms" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.D:/QA/github/demoqa_company/TestNG.xml" />
+        <item itemvalue="TestNG.Test_demoqa.Test_forms" />
+        <item itemvalue="TestNG.Test_demoqa" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e1f44b26-782f-41ab-9bda-f67dcd8178ca" name="Changes" comment="" />
+      <created>1650988960166</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1650988960166</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

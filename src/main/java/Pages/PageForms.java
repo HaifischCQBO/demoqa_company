@@ -39,8 +39,8 @@ public class PageForms {
     public By music_checkbox= By.xpath("//*[@id=\"hobbiesWrapper\"]/div[2]/div[3]");
     public By seleccionar_archivo_button= By.id("uploadPicture");
     public By current_address_input= By.id("currentAddress");
-    public By select_state= By.id("state");
-    public By select_city= By.id("city");
+    public By select_state= By.xpath("//*[@id=\"react-select-3-input\"]");
+    public By select_city= By.xpath("//*[@id=\"react-select-4-input\"]");
     public By submit_button= By.id("submit");
 
 
@@ -63,6 +63,9 @@ public class PageForms {
 
     public void fill_form_practice_Form(){
         WebElement subjects = driver.findElement(subjects_Input);
+        WebElement stateList = driver.findElement(select_state);
+        WebElement cityList = driver.findElement(select_city);
+
 
         helpers.SendText(firstName_input, "Jhon");
         helpers.SendText(lastName_input, "Ramos");
@@ -85,9 +88,14 @@ public class PageForms {
         helpers.findFile(seleccionar_archivo_button,"D:\\QA\\github\\demoqa_company\\Documentation\\iron-man-full-hd-wallpaper-for-desktop-mobiles-3840x2160.jpg");
         helpers.scrollDown();
         helpers.SendText(current_address_input,"Calle 5 # 34B sur");
-      //  helpers.SelectByIndex(select_state);
-      //  helpers.SelectByIndex(select_city);
-      //  helpers.clickBy(submit_button);
+        helpers.zoomPage();
+        helpers.SendText(select_state,"NCR");
+        stateList.sendKeys(Keys.ENTER);
+        helpers.SendText(select_city,"Noida");
+        cityList.sendKeys(Keys.ENTER);
 
+    }
+    public void click_submit_button(){
+        helpers.clickBy(submit_button);
     }
 }
