@@ -46,11 +46,11 @@ public class Page_Index implements Page  {
             try{
                 return this.listCategoryCards.get(indexCategory);
             }catch (IndexOutOfBoundsException e){
-                System.out.println("Indice fuera de rango");
+                helpers.Print("Indice fuera de rango");
             }
         }
         else{
-            System.out.println("la lista de categoorias Está vacia");
+            helpers.Print("la lista de categoorias Está vacia");
         }
         return null;
     }

@@ -34,7 +34,7 @@ public class Page_Accordian implements Page{
                 this.cardsAccordian = Accordian.findElements(By.className("card"));
                 return this.cardsAccordian;
             }catch (NoSuchElementException e){
-                System.out.println("No se pudieron obtener las cards");
+                helpers.Print("No se pudieron obtener las cards");
                 return null;
             }
         }
@@ -63,7 +63,7 @@ public class Page_Accordian implements Page{
                    getCardsAccordian().get(index).findElement(By.className("show"));
                    return  true; //Si no tira la excepcion es porque lo encontró.
                }catch (NoSuchElementException e){
-                   System.out.println("la carta " + index + " no se está mostrando");
+                   helpers.Print("la carta " + index + " no se está mostrando");
                    return false;
                }
 
