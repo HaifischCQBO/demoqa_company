@@ -1,15 +1,14 @@
-package Pages.Blazedemo;
+package Pages;
 
 import Helpers.Helpers;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class PageIndex {
-
+public class PageTextBox {
     public WebDriver driver;
     public Helpers helpers;
 
-    public PageIndex(WebDriver driver) {
+    public PageTextBox(WebDriver driver) {
         this.driver = driver;
         helpers = new Helpers(driver);
     }
@@ -19,15 +18,30 @@ public class PageIndex {
      *  WebElements // WebElements // WebElements // WebElements // WebElements // WebElements // WebElements //
      * ---------------------------------------------------------------------------------------------------------
      */
-        public By elements = By.xpath("//div[@id=\"app\"]/div/div/div[2]/div/div[1]");
+    public By elementsTextBox = By.xpath("//*[@id=\"item-0\"]");
+    public By inputFullname = By.id("userName");
+    public By inputEmail = By.id("userEmail");
+    private By inputCurrentAddress = By.id("currentAddress");
+    private By inputPermanentAddress = By.id("permanentAddress");
+    private By submitButton = By.id("submit");
 
     /**
      * -----------------------------------------------------------------------------------------------------------
      *  Funciones // Funciones //  Funciones //  Funciones //  Funciones //  Funciones //  Funciones //  Funciones
      * -----------------------------------------------------------------------------------------------------------
      */
-    public void clickElements() {
-        helpers.clickBy(elements);
+
+    public void fillTextBox(){
+        helpers.SendText(inputFullname, "Andres Felipe Ramirez Morales");
+        helpers.SendText(inputEmail,"2320557@tcs.com");
+        helpers.SendText(inputCurrentAddress,"***####");
+        helpers.SendText(inputPermanentAddress,"*****####");
     }
 
+    public void clickElementsTextbox(){
+        helpers.clickBy(elementsTextBox);
+    }
+    public void clickSubmit(){
+        helpers.clickBy(submitButton);
+    }
 }
