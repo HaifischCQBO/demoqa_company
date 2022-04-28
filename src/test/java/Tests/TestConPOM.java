@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 public class TestConPOM extends BaseClass {
 
      @Test
-         public void scenario1(){
+         public void Scenario1(){
          Helpers helpers = new Helpers(driver);
          helpers.getURL("https://demoqa.com/checkbox");
          Page_Index page_index = new Page_Index(driver);
@@ -19,7 +19,7 @@ public class TestConPOM extends BaseClass {
 
 
     @Test
-    public void scenario2(){
+    public void Scenario2(){
         Helpers helpers = new Helpers(driver);
         helpers.getURL("https://demoqa.com/checkbox");
         Page_elements page_elements = new Page_elements(driver);
@@ -27,7 +27,7 @@ public class TestConPOM extends BaseClass {
     }
 
     @Test
-    public void scenario3(){
+    public void Scenario3(){
         Helpers helpers = new Helpers(driver);
         helpers.getURL("https://demoqa.com/checkbox");
         Page_elements page_elements = new Page_elements(driver);
@@ -35,7 +35,7 @@ public class TestConPOM extends BaseClass {
     }
 
     @Test
-    public void scenario4(){
+    public void Scenario4(){
         Helpers helpers = new Helpers(driver);
         helpers.getURL("https://demoqa.com/checkbox");
         Page_elements page_elements = new Page_elements(driver);
@@ -44,7 +44,7 @@ public class TestConPOM extends BaseClass {
     }
 
     @Test
-    public void scenario5(){
+    public void Scenario5(){
         Helpers helpers = new Helpers(driver);
         helpers.getURL("https://demoqa.com/checkbox");
         Page_elements page_elements = new Page_elements(driver);
@@ -54,7 +54,7 @@ public class TestConPOM extends BaseClass {
     }
 
     @Test
-    public void scenario6(){
+    public void Scenario6(){
         Helpers helpers = new Helpers(driver);
         helpers.getURL("https://demoqa.com/checkbox");
         Page_elements page_elements = new Page_elements(driver);
@@ -65,7 +65,7 @@ public class TestConPOM extends BaseClass {
     }
 
     @Test
-    public void scenario7(){
+    public void Scenario7(){
         Helpers helpers = new Helpers(driver);
         helpers.getURL("https://demoqa.com/checkbox");
         Page_elements page_elements = new Page_elements(driver);
@@ -77,7 +77,7 @@ public class TestConPOM extends BaseClass {
     }
 
     @Test
-    public void scenario8(){
+    public void Scenario8(){
         Helpers helpers = new Helpers(driver);
         helpers.getURL("https://demoqa.com/checkbox");
         Page_elements page_elements = new Page_elements(driver);
@@ -90,7 +90,7 @@ public class TestConPOM extends BaseClass {
     }
 
     @Test
-    public void scenario9(){
+    public void Scenario9(){
         Helpers helpers = new Helpers(driver);
         helpers.getURL("https://demoqa.com/checkbox");
         Page_elements page_elements = new Page_elements(driver);
@@ -104,7 +104,7 @@ public class TestConPOM extends BaseClass {
     }
 
     @Test
-    public void scenarioDiez(){
+    public void ScenarioDiez(){
         Helpers helpers = new Helpers(driver);
         helpers.getURL("https://demoqa.com/checkbox");
         Page_elements page_elements = new Page_elements(driver);
@@ -119,7 +119,7 @@ public class TestConPOM extends BaseClass {
     }
 
     @Test
-    public void scenarioOnce(){
+    public void ScenarioOnce(){
         Helpers helpers = new Helpers(driver);
         helpers.getURL("https://demoqa.com/checkbox");
         Page_elements page_elements = new Page_elements(driver);
@@ -135,7 +135,7 @@ public class TestConPOM extends BaseClass {
     }
 
     @Test
-    public void scenarioDoce(){
+    public void ScenarioDoce(){
         Helpers helpers = new Helpers(driver);
         helpers.getURL("https://demoqa.com/checkbox");
         Page_elements page_elements = new Page_elements(driver);
