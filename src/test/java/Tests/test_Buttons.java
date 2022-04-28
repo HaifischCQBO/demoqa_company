@@ -2,8 +2,8 @@ package Tests;
 
 import Baseclass.BaseClass;
 import Helpers.Helpers;
-import Pages.Blazedemo.Page_Buttons;
-import Pages.Blazedemo.Page_Index;
+import Pages.Blazedemo.PageRadioButtons;
+import Pages.Blazedemo.PageIndex;
 import org.openqa.selenium.JavascriptExecutor;
 import org.testng.annotations.Test;
 
@@ -13,20 +13,21 @@ public class test_Buttons extends BaseClass {
     public void Test_elements() {
         Helpers helpers = new Helpers(driver);
         helpers.getURL(helpers.getXMLParameter("url"));
+
+        // Ingresamos desde la pagina principal a la seccion Elements
+        PageIndex pageindex = new PageIndex(driver);
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollTo(0,500)");
+        pageindex.clickElements();
 
-        Page_Index page_index = new Page_Index(driver);
-        page_index.click_elements_div();
-
-        // FUNCIONES CLICK
-
-        Page_Buttons page_buttons = new Page_Buttons(driver);
-        JavascriptExecutor js_2 = (JavascriptExecutor) driver;
-        js_2.executeScript("window.scrollTo(0,10)");
-        page_buttons.clickButtons();
-        page_buttons.clickMe_buttons();
-        page_buttons.doubleClick();
-        page_buttons.rightClick();
+        // Recorremos desde elements hasta RadioButtons y los probamos
+        PageRadioButtons pageRadiobuttons = new PageRadioButtons(driver);
+        JavascriptExecutor jsButtons2 = (JavascriptExecutor) driver;
+        jsButtons2.executeScript("window.scrollTo(0,300)");
+        pageRadiobuttons.clickRadioButtons();
+        helpers.Pause(3);
+        pageRadiobuttons.clickRadioYes();
+        helpers.Pause(3);
+        pageRadiobuttons.clickRadioImpressive();
     }
 }
