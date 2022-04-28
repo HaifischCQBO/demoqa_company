@@ -1,0 +1,46 @@
+Test Case 1
+registrarse
+
+Scenario
+el usuario debe registrarse
+
+nombre: carlos andres
+apellido: ramirez henao
+nombre de usuario: cRamirez
+contraseña: 1989Carlos0310@
+
+precondition
+el usuario no debe estar registrado
+
+Steps to reproduce
+1. ir a la pagina https://demoqa.com/register
+2. Ingresar datos en el formulario de registro
+3. seleccionar el boton reCaptcha
+4. dar clic en el boton registrarse
+
+Expected Results
+
+se espera que la plataforma muestre un alert cuando el usuario se registro exitosamente
+se espera que la plataforma muestre un mensaje en la parte inferior de la pantalla en rojo
+en caso de que el nombre de usuario ya exista
+
+Test Case 6
+Cerrar Sesión
+
+Scenario
+el usuario debe haber iniciado
+
+nombre: carlos andres
+apellido: ramirez henao
+nombre de usuario: cRamirez
+contraseña: 1989Carlos0310@
+
+Precondition
+El usuario ya debe estar registrado y haber iniciado sesion en la plataforma
+
+Steps to reproduce
+1. Ir a https://demoqa.com/profile
+2. Dar clic en el boton cerrar sesion
+
+Expected Results
+Se espera que la Plataforma muestre un alert cuando el usuarios ciere sesion exitosamente
