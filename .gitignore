@@ -1,0 +1,3 @@
+# Ignora carpetas y sus archivos
+.idea/*
+allure-results/*

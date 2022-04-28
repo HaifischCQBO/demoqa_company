@@ -14,7 +14,22 @@ public class Page_Index {
         helpers = new Helpers(driver);
     }
 
+    /**
+     * ---------------------------------------------------------------------------------------------------------
+     *  WebElements // WebElements // WebElements // WebElements // WebElements // WebElements // WebElements //
+     * ---------------------------------------------------------------------------------------------------------
+     */
+
+    private By card_Elements = By.xpath("//*[@id=\"app\"]/div/div/div[2]/div/div[1]/div/div[3]");
+    private By Download = By.xpath("//*[@id=\"downloadButton\"]");
+    private By SeleccionarArchivo = By.xpath("//*[@id=\"uploadFile\"]");
 
 
-    public By card_body_button = By.xpath("//div[@class='card_body']");
+    /**
+     * -----------------------------------------------------------------------------------------------------------
+     *  Funciones // Funciones //  Funciones //  Funciones //  Funciones //  Funciones //  Funciones //  Funciones
+     * -----------------------------------------------------------------------------------------------------------
+     */
+
+
 }
