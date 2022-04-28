@@ -33,6 +33,6 @@ public class PageIndex {
 
     public void click_card_Forms() {
         helpers.clickBy(card_Forms);
-    }
+    } //click
 
 }
