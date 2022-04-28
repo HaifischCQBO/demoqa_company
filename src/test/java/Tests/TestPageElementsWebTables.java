@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 public class TestPageElementsWebTables extends BaseClass {
 
-    @Test
+
     public void Test_case_1() {
         Helpers helpers = new Helpers(driver);
         helpers.getURL(helpers.getXMLParameter("url"));
@@ -25,16 +25,41 @@ public class TestPageElementsWebTables extends BaseClass {
         String pageElements = pageElementsWebTables.confirm_div_text_elements();
         Assert.assertEquals(pageElements, "Elián");
 
+
+    }
+
+
+    public void Test_case_2() {
+        Helpers helpers = new Helpers(driver);
+        helpers.getURL(helpers.getXMLParameter("url"));
+        PageIndex pageIndex = new PageIndex(driver);
+        pageIndex.click_elements_div();
+
+        PageElementsWebTables pageElementsWebTables = new PageElementsWebTables(driver);
+        pageElementsWebTables.click_web_tables_li();
+
         //____________________________________________________________-
         //test case 2
-        String dataToSearch = "Elián";
+        String dataToSearch = "Cierra";
         pageElementsWebTables.fill_web_tables_search_box(dataToSearch);
 
         String pageElementsSearch = pageElementsWebTables.confirm_div_text_elements_search();
-        Assert.assertEquals(pageElementsSearch, "Elián");
+        Assert.assertEquals(pageElementsSearch, "Cierra");
 
-        pageElementsWebTables.fill_web_tables_search_box(".");
+        //pageElementsWebTables.fill_web_tables_search_box(".");
         //pageElementsWebTables.delete_search();
+
+    }
+
+    @Test
+    public void Test_case_3() {
+        Helpers helpers = new Helpers(driver);
+        helpers.getURL(helpers.getXMLParameter("url"));
+        PageIndex pageIndex = new PageIndex(driver);
+        pageIndex.click_elements_div();
+
+        PageElementsWebTables pageElementsWebTables = new PageElementsWebTables(driver);
+        pageElementsWebTables.click_web_tables_li();
 
         //____________________________________________________________-
         //test case 3
@@ -43,6 +68,19 @@ public class TestPageElementsWebTables extends BaseClass {
         pageElementsWebTables.click_web_tables_edit_form_button();
         String pageElementsModify = pageElementsWebTables.confirm_div_text_elements_modify();
         Assert.assertEquals(pageElementsModify, "Andrés");
+
+
+    }
+
+
+    public void Test_case_4() {
+        Helpers helpers = new Helpers(driver);
+        helpers.getURL(helpers.getXMLParameter("url"));
+        PageIndex pageIndex = new PageIndex(driver);
+        pageIndex.click_elements_div();
+
+        PageElementsWebTables pageElementsWebTables = new PageElementsWebTables(driver);
+        pageElementsWebTables.click_web_tables_li();
 
         //____________________________________________________________-
         //test case 4
