@@ -1,46 +1,34 @@
-Test Case 1
-registrarse
+// SCENARIO
+El usuario dara click derecho en el botón "Download"
 
-Scenario
-el usuario debe registrarse
+// PRECONDITIONS
+Conexion a internet.
+Disponibilidad de un navegador.
 
-nombre: carlos andres
-apellido: ramirez henao
-nombre de usuario: cRamirez
-contraseña: 1989Carlos0310@
+// STEP TO TEST
+1. Ingresar al enlace "https://demoqa.com/"
+2. Dar click en la sección "Elements".
+3. Dar click en el apartado "Upload and Download"
+4. Dar click "Download"
 
-precondition
-el usuario no debe estar registrado
+// EXPECTED RESULT
+El sistema descargara una imagen.
 
-Steps to reproduce
-1. ir a la pagina https://demoqa.com/register
-2. Ingresar datos en el formulario de registro
-3. seleccionar el boton reCaptcha
-4. dar clic en el boton registrarse
+-----------------------------------------------------
+// SCENARIO
+El usuario hara click en el button "Seleccionar archivo"
 
-Expected Results
+// PRECONDITIONS
+Conexion a internet.
+Disponibilidad de un navegador.
 
-se espera que la plataforma muestre un alert cuando el usuario se registro exitosamente
-se espera que la plataforma muestre un mensaje en la parte inferior de la pantalla en rojo
-en caso de que el nombre de usuario ya exista
+// STEP TO TEST
+1. Ingresar al enlace "https://demoqa.com/"
+2. Dar click en la sección "Elements".
+3. Dar click en el apartado "Upload and Download"
+4. Dar click "Seleccionar archivo"
+5. Se despliega la ventana de explorador de archivo.
+6. Selecciona el archivo que desees.
 
-Test Case 6
-Cerrar Sesión
-
-Scenario
-el usuario debe haber iniciado
-
-nombre: carlos andres
-apellido: ramirez henao
-nombre de usuario: cRamirez
-contraseña: 1989Carlos0310@
-
-Precondition
-El usuario ya debe estar registrado y haber iniciado sesion en la plataforma
-
-Steps to reproduce
-1. Ir a https://demoqa.com/profile
-2. Dar clic en el boton cerrar sesion
-
-Expected Results
-Se espera que la Plataforma muestre un alert cuando el usuarios ciere sesion exitosamente
+// EXPECTED RESULTS
+- El sistema mostrara el nombre del archivo seleccionado y su ruta de ubicacion.
