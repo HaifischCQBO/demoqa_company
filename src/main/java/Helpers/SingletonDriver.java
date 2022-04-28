@@ -1,7 +1,6 @@
 package Helpers;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -34,6 +33,10 @@ public class SingletonDriver {
         }
 
         return driver;
+    }
+
+    public static void setDriverNull(){
+        driver = null;
     }
 
     public static void setCloseWhenFinished(boolean close){
