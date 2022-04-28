@@ -31,7 +31,13 @@ public class PageIndex {
      * -----------------------------------------------------------------------------------------------------------
      */
 
+    public void click_card_Elements() {
+
+        helpers.clickBy(card_Elements);
+    } //click
+
     public void click_card_Forms() {
+
         helpers.clickBy(card_Forms);
     } //click
 
