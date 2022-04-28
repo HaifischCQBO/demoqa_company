@@ -2,7 +2,8 @@
 Radio Buttons
 
 // SCENARIO
-El usuario hara click en el radio button "yes"
+El usuario hara click en el radio button "yes" y posteriormente
+al boton "Impressive"
 
 // PRECONDITIONS
 Conexion a internet.
