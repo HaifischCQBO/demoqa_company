@@ -1,6 +1,7 @@
 package Helpers;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -23,6 +24,8 @@ public class SingletonDriver {
                 options.addArguments("--headless");
             }
             driver = new ChromeDriver(options);
+            driver.manage().window().maximize();
+
         }
 
         return driver;
