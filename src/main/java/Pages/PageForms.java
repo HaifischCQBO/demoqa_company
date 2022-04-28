@@ -1,8 +1,10 @@
 package Pages;
 
 import Helpers.Helpers;
-import org.openqa.selenium.*;
-import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 //==========================================Constructor========================================================
 public class PageForms {
@@ -42,6 +44,8 @@ public class PageForms {
     public By select_state= By.xpath("//*[@id=\"react-select-3-input\"]");
     public By select_city= By.xpath("//*[@id=\"react-select-4-input\"]");
     public By submit_button= By.id("submit");
+    public By close_button= By.xpath("//*[@id=\"closeLargeModal\"]");
+
 
 
     /**
@@ -93,9 +97,15 @@ public class PageForms {
         stateList.sendKeys(Keys.ENTER);
         helpers.SendText(select_city,"Noida");
         cityList.sendKeys(Keys.ENTER);
+        cityList.sendKeys(Keys.TAB);
+
 
     }
-    public void click_submit_button(){
-        helpers.clickBy(submit_button);
+    public void press_submit_button(){
+
+        WebElement submit = driver.findElement(submit_button);
+        submit.sendKeys(Keys.ENTER);
+        System.out.println("Se hace ENTER en: "+ submit_button);
     }
+
 }
