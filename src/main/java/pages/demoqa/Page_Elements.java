@@ -19,7 +19,7 @@ public class Page_Elements {
      *  WebElements // WebElements // WebElements // WebElements // WebElements // WebElements // WebElements //
      * ---------------------------------------------------------------------------------------------------------
      */
-    public By select_element_link = By.xpath("//*[@id=\"item-5\"]");
+    public By select_element = By.xpath("//*[@id=\"item-5\"]");
 
 
 
@@ -29,8 +29,8 @@ public class Page_Elements {
      * -----------------------------------------------------------------------------------------------------------
      */
 
-    public void click_element_link(){
-        helpers.clickBy(select_element_link);
+    public void click_element(){
+        helpers.clickBy(select_element);
         //driver.findElement(find_flights_button).click();
     }
 
