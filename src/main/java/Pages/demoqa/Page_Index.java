@@ -18,10 +18,10 @@ public class Page_index {
     public By nav_lef_menu = By.id("item-7");
     public By nav = By.xpath("//*[@id=\"app\"]/div/div/div[2]/div[1]/div/div/div[4]/div/ul/li[8]");
     public void ClickedCard(){
-        helpers.ClickAction(card_widgets,400);
+        helpers.ClickAction(card_widgets,600);
     }
     public void ClickedNav(){
-       helpers.ClickAction(nav,700);
+       helpers.ClickAction(nav,900);
     }
 
 }

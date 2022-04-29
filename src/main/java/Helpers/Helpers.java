@@ -122,7 +122,6 @@ public class Helpers {
      * **/
 
     public void ClickAction(By by, int HeightPage){
-        System.out.println(" hsadjkjashkda " + by);
         JavascriptExecutor jse = (JavascriptExecutor)driver;
         jse.executeScript("scroll(0, "+HeightPage+")");
         clickBy(by);
