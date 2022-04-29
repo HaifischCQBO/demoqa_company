@@ -11,6 +11,5 @@
     <packages>
         <package name="Tests.Widgets.*"/>
     </packages>
-    
-    
+
 </suite>
