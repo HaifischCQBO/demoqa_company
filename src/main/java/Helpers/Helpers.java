@@ -1,10 +1,7 @@
 package Helpers;
 
 import com.github.javafaker.Faker;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -129,6 +126,16 @@ public class Helpers {
     public void goToElement(WebElement element){
         JavascriptExecutor js = (JavascriptExecutor) this.driver;
         js.executeScript("arguments[0].scrollIntoView(true);", element);
+    }
+
+    public String findElement(By by){
+        try {
+            WebElement elementos = driver.findElement(by);
+            return "Elemento visible";
+        } catch (NoSuchElementException noSuchElementException){
+            return "Elemento borrado";
+        }
+
     }
 
 }

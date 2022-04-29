@@ -157,5 +157,9 @@ public class PageElementsWebTables {
         //driver.findElement(find_flights_button).click();
     }
 
+    public String confirm_web_tables_row_deleted(){
+        return helpers.findElement(web_tables_delete_span);
+    }
+
 
 }

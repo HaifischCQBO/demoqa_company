@@ -86,6 +86,9 @@ public class TestPageElementsWebTables extends BaseClass {
         //test case 4
         pageElementsWebTables.click_web_tables_delete_span();
 
+        String elementoBorrado = pageElementsWebTables.confirm_web_tables_row_deleted();
+        Assert.assertEquals("Elemento borrado", elementoBorrado);
+
     }
 
 }
