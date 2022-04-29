@@ -17,13 +17,18 @@ public class Helpers {
 
     public Helpers(){
     }
+    //usamos el patron de diseño singleton o instancia unica para poder usar los driver
     public Helpers(WebDriver driver){
         this.driver = driver;
     }
 
+
+
     public String getXMLParameter(String key){
         return Reporter.getCurrentTestResult().getTestContext().getCurrentXmlTest().getParameter(key);
     }
+
+    //Creacion de metodos
 
     public void getURL(String url) {
         Print("Se ingresa a la URL:" + url);
