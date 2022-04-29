@@ -1,10 +1,11 @@
 package Helpers;
-import com.github.javafaker.Faker;
+
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -61,14 +62,6 @@ public class Helpers {
         }
 
     }
-    public String returnFullAdress(){
-        Faker f = new Faker();
-        String street =f.address().streetAddress();
-        String appartment= f.address().secondaryAddress();
-        String address = street + " " + appartment;
-
-        return address;
-    }
 
     public String SelectByOptionValue(By by, String value){
     Select select = new Select(driver.findElement(by));
@@ -90,8 +83,6 @@ public class Helpers {
         Select select = new Select(driver.findElement(by));
         int option_number = select.getOptions().size();
         int index_option = r.nextInt(option_number-1);
-        //size: 1,2,3,4,5
-        //index: 0,1,2,3,4
         select. selectByIndex(index_option);
         return  select.getFirstSelectedOption().getText();
     }
@@ -112,7 +103,7 @@ public class Helpers {
 
         actions.dragAndDrop(a, b);
 
-        new WebDriverWait(driver, 10).until(ExpectedConditions.alertIsPresent()).accept();
+        new WebDriverWait(driver, 60).until(ExpectedConditions.alertIsPresent()).accept();
         if(a.getAttribute("class").contains("active")){
 
         }
@@ -130,6 +121,12 @@ public class Helpers {
      * Pauses -> !!!!!!!! NUNCA SE OCUPA!!!!!!!!!!!
      * **/
 
+    public void ClickAction(By by, int HeightPage){
+        System.out.println(" hsadjkjashkda " + by);
+        JavascriptExecutor jse = (JavascriptExecutor)driver;
+        jse.executeScript("scroll(0, "+HeightPage+")");
+        clickBy(by);
+    }
 
 
 
