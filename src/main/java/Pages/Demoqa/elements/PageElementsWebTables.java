@@ -1,4 +1,4 @@
-package Pages.demoqa.elements;
+package Pages.Demoqa.elements;
 
 import Helpers.Helpers;
 import com.github.javafaker.Faker;
@@ -13,17 +13,6 @@ public class PageElementsWebTables {
     public PageElementsWebTables(WebDriver driver){
         this.driver = driver;
         helpers = new Helpers(driver);
-        JavascriptExecutor js = (JavascriptExecutor) this.driver; // scroll down
-        js.executeScript("window.scrollBy(0,14)"); // scroll down
-
-        //hacer zoom
-        //JavascriptExecutor js = (JavascriptExecutor) driver;
-        //driver.get("chrome://settings/");
-        //js.executeScript("chrome.settingsPrivate.setDefaultZoom(0.5);");
-
-
-
-
     }
 
     /**
@@ -168,10 +157,5 @@ public class PageElementsWebTables {
         //driver.findElement(find_flights_button).click();
     }
 
-    public void delete_search() {
-        helpers.deleteInput(web_tables_search_box);
-    }
-
 
 }
-

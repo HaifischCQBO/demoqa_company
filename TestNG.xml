@@ -9,7 +9,7 @@
 
     </test>
     <packages>
-        <package name="Tests.Widgets.*"/>
+        <package name="Tests"/>
     </packages>
     
     

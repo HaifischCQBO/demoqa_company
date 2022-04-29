@@ -1,4 +1,4 @@
-package Pages.demoqa.elements;
+package Pages.Demoqa.elements;
 
 import Helpers.Helpers;
 import org.openqa.selenium.By;
@@ -12,9 +12,6 @@ public class PageIndex {
     public PageIndex(WebDriver driver){
         this.driver = driver;
         helpers = new Helpers(driver);
-        JavascriptExecutor js = (JavascriptExecutor) this.driver; // scroll down
-        js.executeScript("window.scrollBy(0,500)"); // scroll down
-
     }
 
     /**

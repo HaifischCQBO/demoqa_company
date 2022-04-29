@@ -2,14 +2,14 @@ package Tests;
 
 import Baseclass.BaseClass;
 import Helpers.Helpers;
-import Pages.demoqa.elements.PageElementsWebTables;
-import Pages.demoqa.elements.PageIndex;
+import Pages.Demoqa.elements.PageElementsWebTables;
+import Pages.Demoqa.elements.PageIndex;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class TestPageElementsWebTables extends BaseClass {
 
-
+    @Test
     public void Test_case_1() {
         Helpers helpers = new Helpers(driver);
         helpers.getURL(helpers.getXMLParameter("url"));
@@ -28,7 +28,7 @@ public class TestPageElementsWebTables extends BaseClass {
 
     }
 
-
+    @Test
     public void Test_case_2() {
         Helpers helpers = new Helpers(driver);
         helpers.getURL(helpers.getXMLParameter("url"));
@@ -72,7 +72,7 @@ public class TestPageElementsWebTables extends BaseClass {
 
     }
 
-
+    @Test
     public void Test_case_4() {
         Helpers helpers = new Helpers(driver);
         helpers.getURL(helpers.getXMLParameter("url"));

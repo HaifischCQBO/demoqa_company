@@ -2,6 +2,7 @@ package Helpers;
 
 import com.github.javafaker.Faker;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedCondition;
@@ -32,20 +33,45 @@ public class Helpers {
     public void Print(String texto){
         System.out.println(texto);
     }
+
     public void clickBy(By by){
-        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(by)).click();
+        // Espera dinamica
+        WebDriverWait wait = new WebDriverWait(driver,10);
+        wait.until(ExpectedConditions.elementToBeClickable(by));
+        // ----------------------------------------------------
+
+        WebElement elemento = driver.findElement(by);
+
+        // ir al elemento (scroll)
+        goToElement(elemento);
+        // ----------------------------------------------------
+
+        elemento.click();
         Print("Se realiza Click a Elemento:"+ by);
     }
+
     public void clickWebelement(WebElement Elemento){
         Elemento.click();
         Print("Se realiza Click a Elemento:"+ Elemento);
     }
+
     public void SendText(By by, String text){
+        // Espera dinamica
+        WebDriverWait wait = new WebDriverWait(driver,10);
+        wait.until(ExpectedConditions.presenceOfElementLocated(by));
+        // ----------------------------------------------------
+
         WebElement elemento = driver.findElement(by);
+
+        // ir al elemento (scroll)
+        goToElement(elemento);
+        // ----------------------------------------------------
+
         elemento.clear();
         elemento.sendKeys(text);
         Print("Se envia texto:"+ text + " al elemento: "+ by);
     }
+
     public String getText(By by) {
         String text = driver.findElement(by).getText();
         Print("Se Obtiene texto: "+ text + " del elemento: "+ by);
@@ -100,12 +126,12 @@ public class Helpers {
     }
 
 
-    public void deleteInput(By by) {
-        WebElement elemento = driver.findElement(by);
-        elemento.clear();
-
-        }
+    public void goToElement(WebElement element){
+        JavascriptExecutor js = (JavascriptExecutor) this.driver;
+        js.executeScript("arguments[0].scrollIntoView(true);", element);
     }
+
+}
 
 
     /**
@@ -117,10 +143,3 @@ public class Helpers {
      * Estaticas
      * Pauses -> !!!!!!!! NUNCA SE OCUPA!!!!!!!!!!!
      * **/
-
-
-
-
-
-
-}
