@@ -29,7 +29,7 @@ public class Test_con_POM extends BaseClass {
         Page_Elements page_elements = new Page_Elements(driver);
         page_elements.click_element();
 
-        //Pagina Page_Elements_Links        Page_Elements_Links page_elements_links = new Page_Elements_Links(driver);
+        //Pagina Page_Elements_Links
         Page_Elements_Links page_elements_links = new Page_Elements_Links(driver);
 
 
@@ -59,12 +59,17 @@ public class Test_con_POM extends BaseClass {
         helpers.Pause(4);
         Assert.assertEquals(page_elements_links.message_confirmation_badrequest(),"Link has responded with staus 400 and status text Bad Request");
 
-        // Link Bad Request
+        // Link Unauthorized
+        page_elements_links.click_link_unauthorized();
+        helpers.Pause(4);
+        Assert.assertEquals(page_elements_links.message_confirmation_unauthorized(),"Link has responded with staus 401 and status text Unauthorized");
+
+        // Link Forbidden
         page_elements_links.click_link_forbidden();
-        helpers.Pause(5);
+        helpers.Pause(4);
         Assert.assertEquals(page_elements_links.message_confirmation_forbidden(),"Link has responded with staus 403 and status text Forbidden");
 
-        // Link Bad Request
+        // Link Not Found
         page_elements_links.click_link_notfound();
         helpers.Pause(4);
         Assert.assertEquals(page_elements_links.message_confirmation_notfound(),"Link has responded with staus 404 and status text Not Found");
