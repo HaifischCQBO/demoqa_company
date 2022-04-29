@@ -106,14 +106,14 @@ public class Helpers {
         driver.findElement(by).sendKeys(path);
     }
 
-    public void scrollDown(){
+    public void scrollDown(int distance){
         JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("window.scrollTo(0,500)");
+        js.executeScript("window.scrollTo(0, "+distance+")");
     }
 
-    public void zoomPage(){
+    public void zoomPage(double factor){
         JavascriptExecutor executor = (JavascriptExecutor)driver;
-        executor.executeScript("document.body.style.zoom = '0.5'");
+        executor.executeScript("document.body.style.zoom = "+factor+"");
     }
 
 
