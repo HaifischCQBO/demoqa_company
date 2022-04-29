@@ -31,7 +31,7 @@ public class PageIndex {
      * -----------------------------------------------------------------------------------------------------------
      */
     public void click_elements_div(){
-        helpers.clickBy(elements_div);
+        helpers.clickByToElement(elements_div);
         //driver.findElement(find_flights_button).click();
     }
 }

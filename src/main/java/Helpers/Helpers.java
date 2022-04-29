@@ -30,45 +30,20 @@ public class Helpers {
     public void Print(String texto){
         System.out.println(texto);
     }
-
     public void clickBy(By by){
-        // Espera dinamica
-        WebDriverWait wait = new WebDriverWait(driver,10);
-        wait.until(ExpectedConditions.elementToBeClickable(by));
-        // ----------------------------------------------------
-
-        WebElement elemento = driver.findElement(by);
-
-        // ir al elemento (scroll)
-        goToElement(elemento);
-        // ----------------------------------------------------
-
-        elemento.click();
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(by)).click();
         Print("Se realiza Click a Elemento:"+ by);
     }
-
     public void clickWebelement(WebElement Elemento){
         Elemento.click();
         Print("Se realiza Click a Elemento:"+ Elemento);
     }
-
     public void SendText(By by, String text){
-        // Espera dinamica
-        WebDriverWait wait = new WebDriverWait(driver,10);
-        wait.until(ExpectedConditions.presenceOfElementLocated(by));
-        // ----------------------------------------------------
-
         WebElement elemento = driver.findElement(by);
-
-        // ir al elemento (scroll)
-        goToElement(elemento);
-        // ----------------------------------------------------
-
         elemento.clear();
         elemento.sendKeys(text);
         Print("Se envia texto:"+ text + " al elemento: "+ by);
     }
-
     public String getText(By by) {
         String text = driver.findElement(by).getText();
         Print("Se Obtiene texto: "+ text + " del elemento: "+ by);
@@ -93,9 +68,9 @@ public class Helpers {
     }
 
     public String SelectByOptionValue(By by, String value){
-    Select select = new Select(driver.findElement(by));
-    select.selectByValue(value);
-    return  select.getFirstSelectedOption().getText();
+        Select select = new Select(driver.findElement(by));
+        select.selectByValue(value);
+        return  select.getFirstSelectedOption().getText();
     }
     public String SelectByVisibleText(By by, String text){
         Select select = new Select(driver.findElement(by));
@@ -123,6 +98,39 @@ public class Helpers {
     }
 
 
+    public void clickByToElement(By by){
+        // Espera dinamica
+        WebDriverWait wait = new WebDriverWait(driver,20);
+        wait.until(ExpectedConditions.elementToBeClickable(by));
+        // ----------------------------------------------------
+
+        WebElement elemento = driver.findElement(by);
+
+        // ir al elemento (scroll)
+        goToElement(elemento);
+        // ----------------------------------------------------
+
+        elemento.click();
+        Print("Se realiza Click a Elemento:"+ by);
+    }
+
+    public void SendTextToElement(By by, String text){
+        // Espera dinamica
+        WebDriverWait wait = new WebDriverWait(driver,20);
+        wait.until(ExpectedConditions.presenceOfElementLocated(by));
+        // ----------------------------------------------------
+
+        WebElement elemento = driver.findElement(by);
+
+        // ir al elemento (scroll)
+        goToElement(elemento);
+        // ----------------------------------------------------
+
+        elemento.clear();
+        elemento.sendKeys(text);
+        Print("Se envia texto:"+ text + " al elemento: "+ by);
+    }
+
     public void goToElement(WebElement element){
         JavascriptExecutor js = (JavascriptExecutor) this.driver;
         js.executeScript("arguments[0].scrollIntoView(true);", element);
@@ -139,14 +147,3 @@ public class Helpers {
     }
 
 }
-
-
-    /**
-     *Esperas Dinamicas:
-     * Esperas Explicitas -> Esperas donde EXPLICITAMENTE se aguarda poor un elemento o condicion del mismo
-     * Esperas Implicitas -> que al buscar un elemento, este IMPLICITO que tiene que esperar una cantidad de tiempo.
-     *
-     *
-     * Estaticas
-     * Pauses -> !!!!!!!! NUNCA SE OCUPA!!!!!!!!!!!
-     * **/
