@@ -28,10 +28,9 @@ public class BaseClass {
     }
     @AfterTest
     public void FinishedAll(){
-        if(SingletonDriver.getCloseWhenFinished()) {
-            //driver.quit();
-            //SingletonDriver.setDriverNull();
-        }
+        driver.quit();
+        SingletonDriver.setDriverNull();
+
     }
 
 }
