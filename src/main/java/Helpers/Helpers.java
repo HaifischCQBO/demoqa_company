@@ -2,6 +2,7 @@ package Helpers;
 
 import com.github.javafaker.Faker;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedCondition;
@@ -39,6 +40,12 @@ public class Helpers {
         Print("Se realiza Click a Elemento:"+ by);
     }
      */
+
+    public void scroll(int distance){
+
+        JavascriptExecutor jse = (JavascriptExecutor)driver;
+        jse.executeScript("window.scrollTo(0,"+distance+")");
+    }
 
     public void clickBy (By by){
         driver.findElement(by).click();

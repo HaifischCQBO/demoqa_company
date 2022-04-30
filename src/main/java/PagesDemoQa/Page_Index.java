@@ -18,6 +18,7 @@ public class Page_Index {
 
     public void click_btnElements(){
         helpers.clickBy(botonElements);
+
         //driver.findElement(botonElements).click();
     }
 

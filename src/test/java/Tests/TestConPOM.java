@@ -4,6 +4,8 @@ import Baseclass.BaseClass;
 import Helpers.Helpers;
 import PagesDemoQa.Page_Index;
 import PagesDemoQa.Page_elements;
+import org.openqa.selenium.By;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class TestConPOM extends BaseClass {
@@ -11,20 +13,31 @@ public class TestConPOM extends BaseClass {
      @Test
          public void Scenario1(){
          Helpers helpers = new Helpers(driver);
+         helpers.getURL("https://demoqa.com");
          helpers.getURL("https://demoqa.com/checkbox");
+
          Page_Index page_index = new Page_Index(driver);
          page_index.click_btnElements();
-    }
 
+    }
 
 
     @Test
     public void Scenario2(){
+         //variable nueva
+        String messajeTxt = "home";
         Helpers helpers = new Helpers(driver);
         helpers.getURL("https://demoqa.com/checkbox");
         Page_elements page_elements = new Page_elements(driver);
         page_elements.click_CheckHome();
+
+
+        Assert.assertTrue(page_elements.messajeCheckBoxHome(messajeTxt), "El mensaje es correcto!");
+
     }
+
+
+
 
     @Test
     public void Scenario3(){
@@ -45,12 +58,15 @@ public class TestConPOM extends BaseClass {
 
     @Test
     public void Scenario5(){
+        String messajeTxt = "desktop";
         Helpers helpers = new Helpers(driver);
         helpers.getURL("https://demoqa.com/checkbox");
         Page_elements page_elements = new Page_elements(driver);
         page_elements.click_btnrct();
         page_elements.click_buttonDesktop();
         page_elements.click_checkDesktop();
+
+        Assert.assertTrue(page_elements.messajeCheckBoxDesktop(messajeTxt), "El mensaje es correcto!");
     }
 
     @Test
@@ -66,6 +82,7 @@ public class TestConPOM extends BaseClass {
 
     @Test
     public void Scenario7(){
+        String messajeTxt = "You have selected : documents workspace react angular veu office public private classified general";
         Helpers helpers = new Helpers(driver);
         helpers.getURL("https://demoqa.com/checkbox");
         Page_elements page_elements = new Page_elements(driver);
@@ -74,6 +91,8 @@ public class TestConPOM extends BaseClass {
         page_elements.click_checkDesktop();
         page_elements.click_buttonDocuments();
         page_elements.click_checkDocuments();
+
+        Assert.assertTrue(page_elements.messajeCheckBoxDocuments(messajeTxt), "El mensaje es correcto!");
     }
 
     @Test
@@ -91,6 +110,7 @@ public class TestConPOM extends BaseClass {
 
     @Test
     public void Scenario9(){
+        String messajeTxt = "desktop";
         Helpers helpers = new Helpers(driver);
         helpers.getURL("https://demoqa.com/checkbox");
         Page_elements page_elements = new Page_elements(driver);
@@ -101,6 +121,8 @@ public class TestConPOM extends BaseClass {
         page_elements.click_checkDocuments();
         page_elements.click_workSpace();
         page_elements.click_checkWorkSpace();
+
+        Assert.assertTrue(page_elements.messajeCheckBoxWS(messajeTxt), "El mensaje es correcto!");
     }
 
     @Test
@@ -119,7 +141,7 @@ public class TestConPOM extends BaseClass {
     }
 
     @Test
-    public void ScenarioOnce(){
+    public void ScenarioDiez_Uno(){
         Helpers helpers = new Helpers(driver);
         helpers.getURL("https://demoqa.com/checkbox");
         Page_elements page_elements = new Page_elements(driver);
@@ -136,6 +158,7 @@ public class TestConPOM extends BaseClass {
 
     @Test
     public void ScenarioDoce(){
+        String messajeTxt = "desktop";
         Helpers helpers = new Helpers(driver);
         helpers.getURL("https://demoqa.com/checkbox");
         Page_elements page_elements = new Page_elements(driver);
@@ -149,6 +172,9 @@ public class TestConPOM extends BaseClass {
         page_elements.click_buttonOffice();
         page_elements.click_buttonDownloads();
         page_elements.click_checkDownloads();
+
+        Assert.assertTrue(page_elements.messajeCheckDown(messajeTxt), "El mensaje es correcto!");
+
     }
 
 
