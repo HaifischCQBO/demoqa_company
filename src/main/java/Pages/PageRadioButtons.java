@@ -18,10 +18,10 @@ public class PageRadioButtons {
      * WebElements // WebElements // WebElements // WebElements // WebElements // WebElements // WebElements //
      * ---------------------------------------------------------------------------------------------------------
      */
-    public By elementsRadioButtons = By.xpath("//*[@id=\"item-2\"]");
-    public By radioButtonsclickYes = By.xpath("//*[@id=\"app\"]/div/div/div[2]/div[2]/div[2]/div[2]");
-    public By radioButtonsclickImpressive = By.xpath("//*[@id=\"app\"]/div/div/div[2]/div[2]/div[2]/div[3]");
-
+    public By elementsRadioButtons = By.id("item-2");
+    public By radioButtonsclickYes = By.xpath("//div[@class=\"custom-control custom-radio custom-control-inline\"][1]");
+    //button[text()='Click Me']
+    public By radioButtonsclickImpressive = By.xpath("//div[@class=\"custom-control custom-radio custom-control-inline\"][2]");
     /**
      * -----------------------------------------------------------------------------------------------------------
      * Funciones // Funciones //  Funciones //  Funciones //  Funciones //  Funciones //  Funciones //  Funciones
@@ -40,5 +40,6 @@ public class PageRadioButtons {
     public void clickRadioImpressive(){
         helpers.clickBy(radioButtonsclickImpressive);
     }
+
 
 }

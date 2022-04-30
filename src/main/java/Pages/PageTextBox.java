@@ -3,6 +3,7 @@ package Pages;
 import Helpers.Helpers;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.NoSuchElementException;
 
 public class PageTextBox {
     public WebDriver driver;
@@ -18,7 +19,7 @@ public class PageTextBox {
      *  WebElements // WebElements // WebElements // WebElements // WebElements // WebElements // WebElements //
      * ---------------------------------------------------------------------------------------------------------
      */
-    public By elementsTextBox = By.xpath("//*[@id=\"item-0\"]");
+    public By elementsTextBox = By.id("item-0");
     public By inputFullname = By.id("userName");
     public By inputEmail = By.id("userEmail");
     private By inputCurrentAddress = By.id("currentAddress");
@@ -44,4 +45,6 @@ public class PageTextBox {
     public void clickSubmit(){
         helpers.clickBy(submitButton);
     }
+
 }
+

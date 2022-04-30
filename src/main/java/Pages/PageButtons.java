@@ -4,12 +4,12 @@ import Helpers.Helpers;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class PageIndex {
 
+public class PageButtons {
     public WebDriver driver;
-    public Helpers helpers;
+    public static Helpers helpers;
 
-    public PageIndex(WebDriver driver) {
+    public PageButtons(WebDriver driver){
         this.driver = driver;
         helpers = new Helpers(driver);
     }
@@ -19,15 +19,32 @@ public class PageIndex {
      *  WebElements // WebElements // WebElements // WebElements // WebElements // WebElements // WebElements //
      * ---------------------------------------------------------------------------------------------------------
      */
-    public By elements = By.xpath("//div[@class=\"card mt-4 top-card\"][1]");
+    public By ElementsButtons = By.id("item-4");
+    public By buttons_clickMe = By.xpath("//button[text()='Click Me']");
+    public By buttonsDoubleClick = By.id("doubleClickBtn");
+    public By buttonsRightClick = By.id("rightClickBtn");
+
 
     /**
      * -----------------------------------------------------------------------------------------------------------
      *  Funciones // Funciones //  Funciones //  Funciones //  Funciones //  Funciones //  Funciones //  Funciones
      * -----------------------------------------------------------------------------------------------------------
      */
-    public void clickElements() {
-        helpers.clickBy(elements);
+
+    public void clickElementsButtons(){
+        helpers.clickBy(ElementsButtons);
+    }
+
+    public void clickMeButton(){
+        helpers.clickBy(buttons_clickMe);
+    }
+
+    public void doubleClick(){
+        helpers.doubleClick(buttonsDoubleClick);
+    }
+
+    public void rightClick() {
+        helpers.rightClick(buttonsRightClick);
     }
 
 }

@@ -1,3 +1,6 @@
+// AUTHOR
+Andres Felipe Ramirez Morales
+
 // TEST CASE
 Radio Buttons
 
@@ -18,4 +21,4 @@ Disponibilidad de un navegador.
 
 // RESULTS
 - El sistema mostrara el siguiente mensaje "You have selected Yes" despues se borrara ese mensaje
-y pasara a msotrar "You have selected Impressive"
+y pasara a mostrar "You have selected Impressive"
