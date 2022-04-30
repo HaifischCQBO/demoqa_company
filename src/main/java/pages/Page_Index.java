@@ -23,7 +23,7 @@ public class Page_Index {
      *  WebElements // WebElements // WebElements // WebElements // WebElements // WebElements // WebElements //
      * ---------------------------------------------------------------------------------------------------------
      */
-    private By Elements = By.xpath("//*[@id='app']/div/div/div[2]/div/div[1]");
+    private By Elements = By.xpath("//div[@class=\"card mt-4 top-card\"][1]");
 
 
 
