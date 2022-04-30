@@ -36,7 +36,7 @@ public class Helpers {
     }
     public void clickBy(By by){
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(by)).click();
-        Print("Se realiza Click a Elemento:"+ by);
+        Print("Se realiza Click a Elemento:"+  driver.findElement(by).getText());
     }
     public void clickWebelement(WebElement Elemento){
         Elemento.click();
