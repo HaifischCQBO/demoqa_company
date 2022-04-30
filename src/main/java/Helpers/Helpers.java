@@ -2,6 +2,7 @@ package Helpers;
 
 import com.github.javafaker.Faker;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedCondition;
@@ -33,6 +34,9 @@ public class Helpers {
         System.out.println(texto);
     }
     public void clickBy(By by){
+        WebElement elemento = driver.findElement(by);
+        // ir al elemento (scroll)
+        goToElement(elemento);
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(by)).click();
         Print("Se realiza Click a Elemento:"+ by);
     }
@@ -98,7 +102,14 @@ public class Helpers {
     public int GetRandomNumber(int bound){
         return new Random().nextInt(bound);
     }
-
+    public void goToElement(WebElement element){
+        JavascriptExecutor js = (JavascriptExecutor) this.driver;
+        js.executeScript("arguments[0].scrollIntoView(true);", element);
+    }
+    public void scrollDown(int distance){
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollTo(0, "+distance+")");
+    }
 
 
 
