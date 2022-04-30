@@ -115,6 +115,17 @@ public class Helpers {
         JavascriptExecutor executor = (JavascriptExecutor)driver;
         executor.executeScript("document.body.style.zoom = "+factor+"");
     }
+    public String getValue(By by) {
+        String value = driver.findElement(by).getAttribute("value");
+        Print("Se Obtiene value: "+ value + " del elemento: "+ by);
+        return value;
+
+    }
+
+    public void goToElement(WebElement element){
+        JavascriptExecutor js = (JavascriptExecutor) this.driver;
+        js.executeScript("arguments[0].scrollIntoView(true);", element);
+    }
 
 
     /**
