@@ -175,7 +175,7 @@ public class TestConPOM extends BaseClass {
 
         Assert.assertTrue(page_elements.messajeCheckDown(messajeTxt), "El mensaje es correcto!");
 
-    }
+     }
 
 
 }
