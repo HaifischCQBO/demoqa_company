@@ -22,7 +22,7 @@ public class SingletonDriver {
                 options.addArguments("--headless");
             }*/
             options.addArguments("--headless");
-            driver = new ChromeDriver(options);
+            driver = new ChromeDriver();
             //driver.manage().window().maximize();
 
         }
