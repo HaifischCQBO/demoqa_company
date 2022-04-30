@@ -174,7 +174,8 @@ public class TestConPOM extends BaseClass {
         page_elements.click_checkDownloads();
 
         Assert.assertTrue(page_elements.messajeCheckDown(messajeTxt), "El mensaje es correcto!");
-     }
+
+    }
 
 
 }
