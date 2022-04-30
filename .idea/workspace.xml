@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c7c3fc7f-0aba-4e8d-97f2-a1109456173a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/0502edb1-9b63-47ca-a86d-8fa3147f7386-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/13d15b0d-0a69-4603-af76-36358798ac66-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/1925e610-5078-4d28-a39d-664d010ff582-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/3ec01208-3fd5-42ce-baca-2ea5d29351d3-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/40f56b86-47fc-4c47-8557-86c1e6fd020d-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/45e1b708-936f-4d44-a21a-d88d8dcc8be8-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/5ad05bec-ddd5-48a1-86f4-afeac20c5aeb-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/609ab58d-e782-4f22-8713-bb58fb8be14c-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/61e79031-1279-4e53-892d-480fad5447b0-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/68564901-443a-4dd9-8f5d-1ab1515056e4-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/6b80cff3-14f6-4b88-88c9-2bd2c04e8325-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/749b9336-4906-4cf9-9220-9bda1055ee99-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/7abbd4ce-2093-40b8-8e09-608b998472c1-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/9bcd3e5c-80bd-4cea-ba7c-71b837896b3d-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/a62f4f09-aecc-439c-8085-fb19116475b6-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/ac54b212-0512-4460-a8ba-58a618483220-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/c0e86389-07d3-422c-a29c-d5981f35a738-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/d4021adb-962b-4fd0-bf2c-33cd467bbe8b-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/d42102fa-1f24-4af1-b11a-90bca220c189-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/e00f31e4-5f08-496a-bccd-a4c2ce8e66aa-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/e0ff8476-c957-410d-a273-1f940a3c5dff-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/f9fba91b-bb4f-4a92-9f9f-225a37e3512a-result.json" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="28SdlvT7RHprsf1J3U8TsC0jFnC" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="D:/BMahecha_EquipoAlfa/TestNG.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="UI-Regression-Framework" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/TestNG.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.D:/BMahecha_EquipoAlfa/TestNG.xml" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c7c3fc7f-0aba-4e8d-97f2-a1109456173a" name="Changes" comment="" />
+      <created>1651214087853</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1651214087853</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
