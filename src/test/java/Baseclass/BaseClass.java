@@ -28,7 +28,8 @@ public class BaseClass {
     }
     @AfterTest
     public void FinishedAll(){
-        driver.quit();
+        helpers.Print("quitando driver...");
+       driver.quit();
         SingletonDriver.setDriverNull();
 
     }

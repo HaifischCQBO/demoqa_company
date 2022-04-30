@@ -2,10 +2,13 @@ package Tests.Widgets;
 
 import Helpers.Helpers;
 import Pages.demoqa.Page_AutoComplete;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+
+import java.util.ArrayList;
 
 public class TestAutoComplete {
 
@@ -29,8 +32,21 @@ public class TestAutoComplete {
         //Miro que los dos input existan.
         helpers.clickBy(autoComplete.multipleColor);
         helpers.SendText(autoComplete.multipleColor,"w");
-        Assert.assertTrue(autoComplete.existElement_MultipleColorList("white"));
-        Assert.assertTrue(autoComplete.existElement_MultipleColorList("Yellow"));
+        Assert.assertTrue(autoComplete.existElement_ListAutoComplete("white",autoComplete.listAutoCompleteMultipleC));
+        Assert.assertTrue(autoComplete.existElement_ListAutoComplete("Yellow",autoComplete.listAutoCompleteMultipleC));
+    }
+
+    public void addElements_Input(String[][] steps,Helpers helpers, Page_AutoComplete autoComplete, By input, By list){
+        int indexElement = -1;
+        for (int i = 0; i < steps.length; i++) {
+            //helpers.clickBy(input); //Por alguna razon falla el case W-AC07 con el click...
+            helpers.SendText(input, steps[i][0]);
+            helpers.PauseMilisegundos(200);
+            indexElement = autoComplete.getIndexElement_ListAutoComplete(steps[i][1],list);
+            Assert.assertNotEquals(indexElement, -1);
+            autoComplete.clickElement_ListAutoComplete(indexElement,list);
+            indexElement = -1;
+        }
     }
 
     @DataProvider(name = "id_Tc")
@@ -49,38 +65,69 @@ public class TestAutoComplete {
         WebDriver driver = autoComplete.driver;
         String[][] steps = {{"w", "yellow"}, {"w", "white"}, {"b", "blue"}, {"b", "black"}};
 
+        helpers.getURL(autoComplete.getUrl());//Voy a l url en la primera ejecucion
+        addElements_Input(steps,helpers,autoComplete,autoComplete.multipleColor,autoComplete.listAutoCompleteMultipleC); //Procedimiento para agregar los elementos al input multiple color. tiene asserts dentro. NO SE DONDE DEBERPIA IR ALGO ASÍ
+
+
         if(id_tc == 3) {
             helpers.Print("Test case ID_w_AC03");
-            int indexElement = -1;
-            helpers.getURL(autoComplete.getUrl());//Voy a l url en la primera ejecucion
-
-            //Procedimiento para agregar los elementos al input multiple color
-            for (int i = 0; i < steps.length; i++) {
-                helpers.clickBy(autoComplete.multipleColor);
-                helpers.SendText(autoComplete.multipleColor, steps[i][0]);
-                Thread.sleep(100);
-                indexElement = autoComplete.getIndexElementList_MultipleColorList(steps[i][1]);
-                Assert.assertNotEquals(indexElement, -1);
-                autoComplete.clickElementList_MultipleColor(indexElement);
-                indexElement = -1;
-            }
 
             //Verificamos que hayan sido agregados
-            Assert.assertTrue(autoComplete.areElementsAdded_MultipleColorInput(steps)); //Verifica que se hayan agregado todos los elementos que se seleccionaron
-            Assert.assertTrue(autoComplete.inputHaveCloseBUtton_MultipleColor()); //Verifica que esté el botton que borra todos los inputs
-            Assert.assertTrue(autoComplete.elementsHaveCloseButton_MultipleColor_Input(steps)); //Verifica que todos los botones tengan su boton de X
+            Assert.assertTrue(autoComplete.areElementsAdded_Input(steps,autoComplete.label_elements_MultipleColorInput)); //Verifica que se hayan agregado todos los elementos que se seleccionaron
+            Assert.assertTrue(autoComplete.inputHaveCloseButton_MultipleColor()); //Verifica que esté el botton que borra todos los inputs
+            Assert.assertTrue(autoComplete.elementsHaveCloseButton_Input(steps,autoComplete.elements_MultipleColorInput)); //Verifica que todos los botones tengan su boton de X
         }
         else if(id_tc == 4){
+            //aprovecho los elementos agregados y validados anteriormente.
             helpers.Print("Test case ID_w_AC04");
-            Assert.assertTrue(autoComplete.areElementsAdded_MultipleColorInput(steps));
+            Assert.assertTrue(autoComplete.areElementsAdded_Input(steps,autoComplete.label_elements_MultipleColorInput));
             helpers.clickBy(autoComplete.buttonDeleteMultipleColorInput);
-            Assert.assertEquals(autoComplete.getSizeElements_MultipleColor_Input(),0);//Comprueba que no queden elementos
+            Assert.assertEquals(autoComplete.getSizeElements_Input(autoComplete.elements_MultipleColorInput),0);//Comprueba que no queden elementos
         }
-
-
-
+        else if(id_tc == 5)
+        {
+            helpers.Print("Test case ID_w_AC05");
+            ArrayList<String> elements = new ArrayList<>();
+            String elementToSave = steps[1][1]; //white
+            //getCloseButtonElement_MultipleColor_Input
+            //Agrego los elementos a un array list.
+            for (int i = 0; i < steps.length; i++) {
+                if(!steps[i][1].equals(elementToSave)) //Borro todos menos el white.
+                    elements.add(steps[i][1]);
+            }
+            //Borro los elementos
+            for (String element: elements) {
+                helpers.clickWebelement(autoComplete.getCloseButtonElement_MultipleColor_Input(element,autoComplete.elements_MultipleColorInput));
+            }
+            Assert.assertEquals(autoComplete.getSizeElements_Input(autoComplete.elements_MultipleColorInput),1); //Verifica que haya quedado un solo elemento
+            Assert.assertTrue(autoComplete.isElementAdded_Label(elementToSave,autoComplete.elements_MultipleColorInput)); // Verifica que el elmento sea white.
+        }
     }
 
+    @Test
+    public void Test_ID_w_AC06(){
+        Page_AutoComplete autoComplete = new Page_AutoComplete();
+        Helpers helpers = new Helpers();
+        WebDriver driver = autoComplete.driver;
+        helpers.getURL(autoComplete.getUrl()); //Voy a l url
+        //Miro que los dos input existan.
+        helpers.clickBy(autoComplete.singleColor);
+        helpers.SendText(autoComplete.singleColor,"w");
+        Assert.assertTrue(autoComplete.existElement_ListAutoComplete("white",autoComplete.listAutoCompleteMonoC));
+        Assert.assertTrue(autoComplete.existElement_ListAutoComplete("Yellow",autoComplete.listAutoCompleteMonoC));
+    }
 
+    @Test
+    public void Test_ID_w_AC07(){
+        Page_AutoComplete autoComplete = new Page_AutoComplete();
+        Helpers helpers = new Helpers();
+        int indexElement;
+        WebDriver driver = autoComplete.driver;
+        helpers.getURL(autoComplete.getUrl()); //Voy a l url
+        //Miro que los dos input existan.
+        String[][] steps = {{"w", "yellow"}, {"w", "white"}};
+        addElements_Input(steps,helpers,autoComplete,autoComplete.singleColor,autoComplete.listAutoCompleteMonoC);
+        Assert.assertTrue(autoComplete.isElementAdded_Label(steps[steps.length -1][1],autoComplete.element_SingleColorInput)); // Verifica que el elmento sea white.
+    }
 
 }

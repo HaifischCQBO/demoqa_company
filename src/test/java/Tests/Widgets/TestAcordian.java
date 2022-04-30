@@ -9,7 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import Baseclass.BaseClass;
+
 public class TestAcordian extends BaseClass {
     @Test
     public void Test_ID_W_A01()
