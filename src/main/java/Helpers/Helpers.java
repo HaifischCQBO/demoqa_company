@@ -1,6 +1,7 @@
 package Helpers;
 import com.github.javafaker.Faker;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -100,22 +101,30 @@ public class Helpers {
         return new Random().nextInt(bound);
     }
 
-    public void ejemplos(){
-        Actions actions = new Actions(driver);
-        //click derecho
-        actions.contextClick();
-        //double click
-        actions.doubleClick();
+    public void scrollDown(int distance){
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollTo(0,"+distance+")");
+    }
 
-        WebElement a = driver.findElement(By.xpath("xpath"));
-        WebElement b = driver.findElement(By.xpath("xpath"));
+    /**
+     * public void ejemplos(){
+     *         Actions actions = new Actions(driver);
+     *         //click derecho
+     *         actions.contextClick();
+     *         //double click
+     *         actions.doubleClick();
+     *
+     *         WebElement a = driver.findElement(By.xpath("xpath"));
+     *         WebElement b = driver.findElement(By.xpath("xpath"));
+     *
+     *         actions.dragAndDrop(a, b);
+     *
+     *         new WebDriverWait(driver, 10).until(ExpectedConditions.alertIsPresent()).accept();
+     *         if(a.getAttribute("class").contains("active")){
+     *
+     *         }
+     */
 
-        actions.dragAndDrop(a, b);
-
-        new WebDriverWait(driver, 10).until(ExpectedConditions.alertIsPresent()).accept();
-        if(a.getAttribute("class").contains("active")){
-
-        }
 
 
     }
@@ -135,4 +144,4 @@ public class Helpers {
 
 
 
-}
+
