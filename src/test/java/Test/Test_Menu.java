@@ -28,6 +28,8 @@ public class Test_Menu extends BaseClass {
         InicioChrome();
         Page_select page_select = new Page_select(driver);
         page_select.ClickSelect();
+        page_select.StandardMultiSelect();
+        page_select.OldStyleSelectMenu();
     }
 
 }
