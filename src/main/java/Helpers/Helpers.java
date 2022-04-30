@@ -36,7 +36,7 @@ public class Helpers {
     }
     public void clickBy(By by){
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(by)).click();
-        Print("Se realiza Click a Elemento:"+  driver.findElement(by).getText());
+        Print("Se realiza Click a Elemento: "+  by);
     }
     public void clickWebelement(WebElement Elemento){
         Elemento.click();
@@ -127,7 +127,10 @@ public class Helpers {
         clickBy(by);
     }
 
-
+    public void SelectedOption(By by, String options){
+        driver.findElement(by).sendKeys(options);
+        Print("La Opcion seleccionada es: " + options);
+    }
 
 
 
