@@ -1,11 +1,15 @@
 package pages;
 
+import Helpers.Helpers;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
 public class Page_Elements {
 
     public WebDriver driver;
     public Helpers helpers;
 
-    public Page_Index(WebDriver driver){
+    public Page_Elements(WebDriver driver){
         this.driver = driver;
         helpers = new Helpers(driver);
     }
@@ -15,8 +19,9 @@ public class Page_Elements {
      *  WebElements // WebElements // WebElements // WebElements // WebElements // WebElements // WebElements //
      * ---------------------------------------------------------------------------------------------------------
      */
-    private By Broken_Button = By.xpath("//*[@id='item-6']/span");
-    private By Text_Box_Button = By.xpath("//*[@id='item-0']/span");
+    private By Broken_Button_option = By.xpath(// li[@id="item-6"]);
+    private By Text_Box_Button_option = By.xpath(// li[@id="item-0"]);
+
 
 
 
@@ -27,13 +32,14 @@ public class Page_Elements {
      */
 
     public void click_Broken_Links(){
-        helpers.clickBy(Broken_Button);
+        helpers.clickBy(Broken_Button_option);
     }
 
 
 
     public void click_text_box(){
-        helpers.clickBy(Text_Box_Button);
+
+        helpers.clickBy(Text_Box_Button_option);
     }
 
 

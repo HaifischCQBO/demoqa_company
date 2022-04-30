@@ -10,6 +10,9 @@ public class Page_Index {
     public WebDriver driver;
     public Helpers helpers;
 
+
+    // Inicializamos driver
+
     public Page_Index(WebDriver driver){
         this.driver = driver;
         helpers = new Helpers(driver);
@@ -20,7 +23,7 @@ public class Page_Index {
      *  WebElements // WebElements // WebElements // WebElements // WebElements // WebElements // WebElements //
      * ---------------------------------------------------------------------------------------------------------
      */
-    private By Elements = By.xpath("//*[@id='app']/div/div/div[2]/div/div[1]/div/div[2]/svg/path");
+    private By Elements = By.xpath("//*[@id='app']/div/div/div[2]/div/div[1]");
 
 
 

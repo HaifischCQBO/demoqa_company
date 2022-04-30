@@ -28,7 +28,7 @@ public class Helpers {
         return Reporter.getCurrentTestResult().getTestContext().getCurrentXmlTest().getParameter(key);
     }
 
-    //Creacion de metodos
+    //Creacion de metodos o constructores
 
     public void getURL(String url) {
         Print("Se ingresa a la URL:" + url);
