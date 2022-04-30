@@ -130,6 +130,7 @@ public class Page_elements {
     public boolean messajeCheckBoxHome(String messajeTxt){
         String checkTxtHome = driver.findElement(messajeCheckHome).getText();
         return checkTxtHome.contains(messajeTxt);
+
     }
 
     public boolean messajeCheckBoxDesktop(String messajeTxt){

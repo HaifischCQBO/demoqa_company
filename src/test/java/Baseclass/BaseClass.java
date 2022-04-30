@@ -3,6 +3,7 @@ package Baseclass;
 import Helpers.Helpers;
 import Helpers.SingletonDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -20,16 +21,17 @@ public class BaseClass {
 
         options.addArguments("--disable-gpu");// argumento para no consumir demasiados recursos
         driver = new ChromeDriver(options);
+
+
     }
 
     @AfterMethod
     public void Finished(){
-        driver.quit();
-    }
+        driver.quit();}
 
 
 
-    ///////////ORIGINAAAAAAAAAALLLLLL
+
    /* @BeforeMethod
     public void setUp(){
         driver = SingletonDriver.getWebDriver();
