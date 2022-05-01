@@ -26,6 +26,12 @@ public class PageTextBox {
     private By inputPermanentAddress = By.id("permanentAddress");
     private By submitButton = By.id("submit");
 
+    // Results
+    public By textName = By.xpath("//p[text()='Name:']");
+    public By textEmail = By.xpath("//p[text()='Email:']");
+    public By textCurrentAddress = By.xpath("//p[text()='Current Address :']");
+    public By textPermanentAddress = By.xpath("//p[text()='Permananet Address :']");
+
     /**
      * -----------------------------------------------------------------------------------------------------------
      *  Funciones // Funciones //  Funciones //  Funciones //  Funciones //  Funciones //  Funciones //  Funciones
@@ -35,8 +41,8 @@ public class PageTextBox {
     public void fillTextBox(){
         helpers.SendText(inputFullname, "Andres Felipe Ramirez Morales");
         helpers.SendText(inputEmail,"2320557@tcs.com");
-        helpers.SendText(inputCurrentAddress,"***####");
-        helpers.SendText(inputPermanentAddress,"*****####");
+        helpers.SendText(inputCurrentAddress,"94 North Jennings St, Sun Prairie, WI 53590");
+        helpers.SendText(inputPermanentAddress,"55 Ivy Lane, Lebanon, PA 17042");
     }
 
     public void clickElementsTextbox(){
@@ -44,6 +50,36 @@ public class PageTextBox {
     }
     public void clickSubmit(){
         helpers.clickBy(submitButton);
+    }
+
+    public String getTextFullName(){
+
+        return helpers.getValue(inputFullname);
+    }
+    public String getTextEmail(){
+
+        return helpers.getValue(inputEmail);
+    }
+    public String getTextCurrentAddress(){
+
+        return helpers.getValue(inputCurrentAddress);
+    }
+    public String getTextPermanentAddress(){
+
+        return helpers.getValue(inputPermanentAddress);
+    }
+
+    public String getResultTextName(){
+        return helpers.getText(textName);
+    }
+    public String getResultTextEmail(){
+        return helpers.getText(textEmail);
+    }
+    public String getResultTextCurrentAddress(){
+        return helpers.getText(textCurrentAddress);
+    }
+    public String getResultTextPermanentAddress(){
+        return helpers.getText(textPermanentAddress);
     }
 
 }

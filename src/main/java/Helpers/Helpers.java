@@ -108,11 +108,21 @@ public class Helpers {
         return new Random().nextInt(bound);
     }
 
-    public void scroll(int Up, int Down){
+    public void scrolls(int Up, int Down){
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollTo("+Up+", "+Down+")");
     }
+    public String getValue(By by) {
+        String value = driver.findElement(by).getAttribute("value");
+        Print("Se Obtiene value: "+ value + " del elemento: "+ by);
+        return value;
 
+    }
+
+    public void goToElement(WebElement element){
+        JavascriptExecutor js = (JavascriptExecutor) this.driver;
+        js.executeScript("arguments[0].scrollIntoView(true);", element);
+    }
 
 
 
