@@ -20,6 +20,9 @@ public class Test_Menu extends BaseClass {
         InicioChrome();
         Page_menu page_menu = new Page_menu(driver);
         page_menu.ClickedNav();
+        page_menu.ClickOptionsItem2();
+        page_menu.ClickSublista();
+        page_menu.ClickedNav3();
 
     }
 
