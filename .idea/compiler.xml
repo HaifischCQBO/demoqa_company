@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="demoqa_company" />
         <module name="UI-Regression-Framework" />
+        <module name="Demoqa" />
       </profile>
     </annotationProcessing>
   </component>
