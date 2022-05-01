@@ -10,7 +10,10 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import org.testng.Assert;
 import org.testng.Reporter;
+
+import java.util.List;
 import java.util.Random;
 
 public class Helpers {
@@ -127,9 +130,22 @@ public class Helpers {
         clickBy(by);
     }
 
+    public void ValidateAssert(String text, By by){
+        if(driver.findElement(by).getText().equals(text)){
+            Assert.assertEquals(driver.findElement(by).getText(), text);
+            clickBy(by);
+        }
+    }
+
+    public void ChangeWebElement(By by){
+        WebElement valueText = driver.findElement(by);
+        ValidateAssert(valueText.getText(), by);
+    }
+
     public void SelectedOption(By by, String options){
-        driver.findElement(by).sendKeys(options);
-        Print("La Opcion seleccionada es: " + options);
+        Select opcion = new Select(driver.findElement(by));
+        opcion.selectByVisibleText(options);
+        Print("la Opcion seleccionada es: "+ options);
     }
 
 
