@@ -4,7 +4,7 @@ import Helpers.Helpers;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class Page_Index {
+public class Pages_Alerts_Frame&Windows {
 
     public WebDriver driver;
     public Helpers helpers;
@@ -15,6 +15,6 @@ public class Page_Index {
     }
 
 
+
     public By card_body_button = By.xpath("//div[@class='card_body']");
-    public By hover_me_to_see = By.xpath("//input[@id='toolTipButton']");
 }
