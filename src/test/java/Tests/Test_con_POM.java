@@ -2,21 +2,17 @@ package Tests;
 
 import Baseclass.BaseClass;
 import Helpers.Helpers;
-import org.openqa.selenium.JavascriptExecutor;
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pages.demoqa.Page_Elements;
 import pages.demoqa.Page_Elements_Links;
 import pages.demoqa.Page_Index;
 
-import java.util.ArrayList;
-import java.util.concurrent.TimeUnit;
-
 public class Test_con_POM extends BaseClass {
 
-
-    @Test
-    public void Take_a_card_test() {
+    @Test(priority = 1)
+    public void link_newtab_test_home() {
 
         //Pagina Page_Index
         driver.manage().window().maximize();
@@ -34,10 +30,49 @@ public class Test_con_POM extends BaseClass {
 
 
         // Link Home
-        //page_elements_links.click_link_home();
+        page_elements_links.click_link_home();
+
+
+    }
+    @Test(priority = 2)
+    public void link_newtab_test_homer3K5x(){
+
+        //Pagina Page_Index
+        driver.manage().window().maximize();
+        Helpers helpers = new Helpers(driver);
+        helpers.getURL(helpers.getXMLParameter("url"));
+        Page_Index page_index = new Page_Index(driver);
+        page_index.click_card();
+
+        //Pagina Page_Elements
+        Page_Elements page_elements = new Page_Elements(driver);
+        page_elements.click_element();
+
+        //Pagina Page_Elements_Links
+        Page_Elements_Links page_elements_links = new Page_Elements_Links(driver);
 
         // Link HomeFWDZo
-        //page_elements_links.click_link_homefwdzo();
+        page_elements_links.click_link_homefwdzo();
+
+
+
+    }
+    @Test(priority = 3)
+    public void link_apicall_test(){
+
+        //Pagina Page_Index
+        driver.manage().window().maximize();
+        Helpers helpers = new Helpers(driver);
+        helpers.getURL(helpers.getXMLParameter("url"));
+        Page_Index page_index = new Page_Index(driver);
+        page_index.click_card();
+
+        //Pagina Page_Elements
+        Page_Elements page_elements = new Page_Elements(driver);
+        page_elements.click_element();
+
+        //Pagina Page_Elements_Links
+        Page_Elements_Links page_elements_links = new Page_Elements_Links(driver);
 
         // Lin*k Created
         page_elements_links.click_link_created();
