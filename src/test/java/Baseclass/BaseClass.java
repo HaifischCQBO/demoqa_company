@@ -37,10 +37,10 @@ public class BaseClass {
     }
     @AfterTest
     public void FinishedAll(){
-        if(SingletonDriver.getCloseWhenFinished()) {
-            //driver.quit();
-            //SingletonDriver.setDriverNull();
-        }
+        helpers.Print("quitando driver...");
+       driver.quit();
+        SingletonDriver.setDriverNull();
+
     }
 
 }

@@ -72,7 +72,14 @@ public class Helpers {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+    }
 
+    public void PauseMilisegundos(long millis) {
+        try {
+            Thread.sleep(millis);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
     public String returnFullAdress(){
         Faker f = new Faker();
