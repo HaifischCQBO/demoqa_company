@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
+
 public class SingletonDriver {
 
     private static WebDriver driver;
@@ -13,19 +14,25 @@ public class SingletonDriver {
     private SingletonDriver(){}
 
     public static WebDriver getWebDriver(){
-        Helpers helpers = new Helpers();
         if(driver == null){
-
             WebDriverManager.chromedriver().setup();
             ChromeOptions options = new ChromeOptions();
             options.addArguments("--disable-gpu");
+            /*
             if(helpers.getXMLParameter("headless").equals("true")) {
                 options.addArguments("--headless");
-            }
-            driver = new ChromeDriver(options);
+            }*/
+            options.addArguments("--headless");
+            driver = new ChromeDriver();
+            //driver.manage().window().maximize();
+
         }
 
         return driver;
+    }
+
+    public static void setDriverNull(){
+        driver = null;
     }
 
     public static void setCloseWhenFinished(boolean close){
