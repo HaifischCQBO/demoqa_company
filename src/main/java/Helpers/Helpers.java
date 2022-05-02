@@ -1,10 +1,11 @@
 package Helpers;
-
 import com.github.javafaker.Faker;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -17,6 +18,7 @@ public class Helpers {
     private static WebDriver driver;
 
     public Helpers(){
+        this.driver = SingletonDriver.getWebDriver();
     }
     public Helpers(WebDriver driver){
         this.driver = driver;
@@ -123,9 +125,7 @@ public class Helpers {
         JavascriptExecutor js = (JavascriptExecutor) this.driver;
         js.executeScript("arguments[0].scrollIntoView(true);", element);
     }
-
-
-
+   
     /**
      *Esperas Dinamicas:
      * Esperas Explicitas -> Esperas donde EXPLICITAMENTE se aguarda poor un elemento o condicion del mismo
