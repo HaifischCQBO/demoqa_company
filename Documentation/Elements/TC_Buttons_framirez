@@ -1,0 +1,51 @@
+// SCENARIO
+El usuario dara click izquierdo en el botón "Click Me"
+
+// PRECONDITIONS
+Conexion a internet.
+Disponibilidad de un navegador.
+
+// STEP TO TEST
+1. Ingresar al enlace "https://demoqa.com/"
+2. Dirigirse a la sección "Elements" dando click sobre el mismo.
+3. Dar click en el apartado "Buttons"
+4. Dar click izquierdo en el botón "Click Me"
+
+// RESULT
+El sistema imprimira un mensaje el cual dira: "You have done a dynamic click"
+
+*******************************************************************************
+
+// SCENARIO
+El usuario dara click derecho en el botón "Right Click Me"
+
+// PRECONDITIONS
+Conexion a internet.
+Disponibilidad de un navegador.
+
+// STEP TO TEST
+1. Ingresar al enlace "https://demoqa.com/"
+2. Dirigirse a la sección "Elements" dando click sobre el mismo.
+3. Dar click en el apartado "Buttons"
+4. Dar click derecho en el botón "Right Click Me"
+
+// RESULT
+El sistema imprimira un mensaje el cual dira: "You have done a double click"
+
+*************************************************************************************
+
+// SCENARIO
+El usuario dara click derecho en el botón "Right Click Me"
+
+// PRECONDITIONS
+Conexion a internet.
+Disponibilidad de un navegador.
+
+// STEP TO TEST
+1. Ingresar al enlace "https://demoqa.com/"
+2. Dirigirse a la sección "Elements" dando click sobre el mismo.
+3. Dar click en el apartado "Buttons"
+4. Dar click derecho en el botón "Right Click Me"
+
+// RESULT
+El sistema imprimira un mensaje el cual dira: "You have done a right click"
