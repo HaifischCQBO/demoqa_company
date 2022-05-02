@@ -1,4 +1,4 @@
-package Pages.Demoqa;
+package Pages;
 
 import Helpers.Helpers;
 import org.openqa.selenium.By;
@@ -29,13 +29,13 @@ public class Page_select {
         helpers.ClickAction(SelectsMenu, 900);
     }
     public void SelectValue(){
-        helpers.clickBy(SelectValue);
+        helpers.clickElement(SelectValue);
     }
     public void SelectOne(){
-        helpers.clickBy(SelectOne);
+        helpers.clickElement(SelectOne);
     }
     public void OldStyleSelectMenu(){
-        helpers.clickBy(OldStyleSelectMenu);
+        helpers.clickElement(OldStyleSelectMenu);
         helpers.SelectedOption(OldStyleSelectMenu, "Blue");
     }
     public void MultipleDelectDropDown(){

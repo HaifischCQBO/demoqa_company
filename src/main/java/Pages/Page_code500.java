@@ -1,3 +1,3 @@
-package Pages.demoqa;
+package Pages;
 public class Page_code500 {
 }

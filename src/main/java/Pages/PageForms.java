@@ -61,7 +61,7 @@ public class PageForms {
     }*/
     public void click_practice_Form_button(){
 
-        helpers.clickBy(practice_Form_button);
+        helpers.clickElement(practice_Form_button);
 
     }
 
@@ -73,22 +73,22 @@ public class PageForms {
         helpers.SendText(firstName_input, "Jhon");
         helpers.SendText(lastName_input, "Ramos");
         helpers.SendText(userEmail_input,"2320601@tcs.com");
-        helpers.clickBy(radio_button_gender_male);
+        helpers.clickElement(radio_button_gender_male);
         helpers.SendText(userNumber_input,"3005551234");
         helpers.scrollDown(500);
-        helpers.clickBy(dateOfBirth_input);
+        helpers.clickElement(dateOfBirth_input);
         helpers.SelectByIndex(select_month);
         helpers.SelectByIndex(select_year);
         helpers.scrollDown(500);
-        helpers.clickBy(day_button);
+        helpers.clickElement(day_button);
         helpers.SendText(subjects_Input,"Maths");
         subjects.sendKeys(Keys.ENTER);
         helpers.SendText(subjects_Input,"Economics");
         subjects.sendKeys(Keys.ENTER);
-        helpers.clickBy(sports_checkbox);
-        helpers.clickBy(reading_checkbox);
-        helpers.clickBy(music_checkbox);
-        helpers.findFile(seleccionar_archivo_button,filePath);
+        helpers.clickElement(sports_checkbox);
+        helpers.clickElement(reading_checkbox);
+        helpers.clickElement(music_checkbox);
+        helpers.SendFile(seleccionar_archivo_button,filePath);
         helpers.scrollDown(500);
         helpers.SendText(current_address_input,"Calle 5 # 34B sur");
         helpers.zoomPage(0.5);

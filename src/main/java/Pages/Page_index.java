@@ -1,36 +1,51 @@
-package Pages.demoqa;
+package Pages.bookstore;
 
 import Helpers.Helpers;
-import Helpers.SingletonDriver;
 import org.openqa.selenium.By;
+import Helpers.SingletonDriver;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import javax.lang.model.element.Element;
-import java.util.ArrayList;
 import java.util.List;
 
-public class Page_Index implements Page  {
-    private final String URL = Page.URL_INDEX;
+public class Page_index {
     private List<WebElement> listCategoryCards;
     public WebDriver driver;
     public Helpers helpers;
 
-
-    public Page_Index(){
-        driver = SingletonDriver.getWebDriver();
+    public Page_index(WebDriver driver){
+        this.driver = SingletonDriver.getWebDriver();
         helpers = new Helpers(driver);
     }
 
-    @Override
-    public String getUrl() {
-        return this.URL;
+    // WEB ELEMENT // WEB ELEMENT //WEB ELEMENT //WEB ELEMENT //WEB ELEMENT //WEB ELEMENT
+
+    public By cardBookStore = By.xpath("//div[@class='card mt-4 top-card'][6]");
+    public By botonElements = By.xpath("//div[@id=\"app\"]/div/div/div[2]/div/div[1]");
+    private By card_Elements = By.xpath("//div[@class=\"card mt-4 top-card\"][1]");
+    private By card_Forms = By.xpath("//div[@class=\"card mt-4 top-card\"][2]");
+    public By categoryCards = By.name("category-cards");
+
+
+    // FUNCIONES // FUNCIONES // FUNCIONES // FUNCIONES // FUNCIONES // FUNCIONES // FUNCIONES // FUNCIONES
+
+    public void clickBookStore(){
+        helpers.clickElement(cardBookStore);
     }
 
-    /**
-     * WebElements.
-     */
-    public By categoryCards = By.name("category-cards");
+    public void click_btnElements(){helpers.clickElement(botonElements);}
+
+    public void click_card_Elements() {
+
+        helpers.clickElement(card_Elements);
+    } //click
+
+    public void click_card_Forms() {
+
+        helpers.clickElement(card_Forms);
+    } //click
+
 
     private List<WebElement> getCategoryCards(){
         List<WebElement> categoryCards = driver.findElements(By.xpath("//div[contains(@class,'category-cards')]/div"));

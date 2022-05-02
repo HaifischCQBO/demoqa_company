@@ -5,7 +5,7 @@ import Helpers.Helpers;
 import Pages.PageConfirmationForm;
 import Pages.PageElementsDynamicsProperties;
 import Pages.PageForms;
-import Pages.PageIndex;
+import Pages.bookstore.Page_index;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -18,7 +18,7 @@ public class Test_demoqa extends BaseClass {
         helpers.getURL(helpers.getXMLParameter("url"));
         helpers.scrollDown(500);
 
-        PageIndex pageIndex = new PageIndex(driver);
+        Page_index pageIndex = new Page_index(driver);
         pageIndex.click_card_Forms();
 
         PageForms pageForms = new PageForms(driver);
@@ -68,7 +68,7 @@ public class Test_demoqa extends BaseClass {
         helpers.getURL(helpers.getXMLParameter("url"));
         helpers.scrollDown(500);
 
-        PageIndex pageIndex = new PageIndex(driver);
+        Page_index pageIndex = new Page_index(driver);
         pageIndex.click_card_Elements();
         helpers.scrollDown(1000);
         PageElementsDynamicsProperties pageElementsDynamicsProperties = new PageElementsDynamicsProperties(driver);

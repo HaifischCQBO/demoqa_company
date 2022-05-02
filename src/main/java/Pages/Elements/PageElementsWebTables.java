@@ -73,11 +73,11 @@ public class PageElementsWebTables {
     //  test case 1
 
     public void click_web_tables_li(){
-        helpers.clickByToElement(web_tables_li);
+        helpers.clickElement(web_tables_li);
         //driver.findElement(find_flights_button).click();
     }
     public void click_web_tables_add_button(){
-        helpers.clickByToElement(web_tables_add_button);
+        helpers.clickElement(web_tables_add_button);
         //driver.findElement(find_flights_button).click();
     }
 

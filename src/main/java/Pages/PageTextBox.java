@@ -46,10 +46,10 @@ public class PageTextBox {
     }
 
     public void clickElementsTextbox(){
-        helpers.clickBy(elementsTextBox);
+        helpers.clickElement(elementsTextBox);
     }
     public void clickSubmit(){
-        helpers.clickBy(submitButton);
+        helpers.clickElement(submitButton);
     }
 
     public String getTextFullName(){

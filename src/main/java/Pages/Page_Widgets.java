@@ -1,4 +1,4 @@
-package Pages.demoqa;
+package Pages;
 
 import Helpers.Helpers;
 import Helpers.SingletonDriver;
@@ -8,9 +8,8 @@ import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
-public class Page_Widgets implements Page{
+public class Page_Widgets {
 
-    private final String URL = Page.URL_INDEX + "widgets";
     public WebDriver driver;
     public Helpers helpers;
 
@@ -29,11 +28,4 @@ public class Page_Widgets implements Page{
         return categoryCards;
     }
 
-
-
-
-    @Override
-    public String getUrl() {
-        return this.URL;
-    }
 }

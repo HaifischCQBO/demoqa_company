@@ -33,7 +33,7 @@ public class PageElementsDynamicsProperties {
 
     public void click_DynamicsProperties_button() {
 
-        helpers.clickBy(DynamicsProperties_button);
+        helpers.clickElement(DynamicsProperties_button);
     }
 
     public void wait_seconds(int seconds){
@@ -42,14 +42,13 @@ public class PageElementsDynamicsProperties {
     }
     public String getTextVisibleButton(){
 
-        helpers.goToElement(driver.findElement(visible_After_button));
+        helpers.goToElement(helpers.returnWebElement(visible_After_button));
 
         return helpers.getValue(visible_After_button);
     }
 
     public boolean DynamicsP_confirmation(){
         boolean present;
-
         try{
             driver.findElement(visible_After_button);
             present = true;
