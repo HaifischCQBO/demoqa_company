@@ -1,15 +1,15 @@
-package Pages;
+package Pages.Demoqa.elements;
 
 import Helpers.Helpers;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 
 public class PageIndex {
-
     public WebDriver driver;
     public Helpers helpers;
 
-    public PageIndex(WebDriver driver) {
+    public PageIndex(WebDriver driver){
         this.driver = driver;
         helpers = new Helpers(driver);
     }
@@ -19,8 +19,8 @@ public class PageIndex {
      *  WebElements // WebElements // WebElements // WebElements // WebElements // WebElements // WebElements //
      * ---------------------------------------------------------------------------------------------------------
      */
-    private By card_Elements = By.xpath("//div[@class=\"card mt-4 top-card\"][1]");
-    private By card_Forms = By.xpath("//div[@class=\"card mt-4 top-card\"][2]");
+    public By elements_div = By.xpath("//div[@class=\"card mt-4 top-card\"][1]");
+
 
 
 
@@ -30,15 +30,5 @@ public class PageIndex {
      *  Funciones // Funciones //  Funciones //  Funciones //  Funciones //  Funciones //  Funciones //  Funciones
      * -----------------------------------------------------------------------------------------------------------
      */
-
-    public void click_card_Elements() {
-
-        helpers.clickBy(card_Elements);
-    } //click
-
-    public void click_card_Forms() {
-
-        helpers.clickBy(card_Forms);
-    } //click
 
 }

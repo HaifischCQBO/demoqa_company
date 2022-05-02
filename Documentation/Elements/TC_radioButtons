@@ -1,0 +1,24 @@
+// AUTHOR
+Andres Felipe Ramirez Morales
+
+// TEST CASE
+Radio Buttons
+
+// SCENARIO
+El usuario hara click en el radio button "yes" y posteriormente
+al boton "Impressive"
+
+// PRECONDITIONS
+Conexion a internet.
+Disponibilidad de un navegador.
+
+// STEP TO TEST
+1. Ingresar a la direccion "https://demoqa.com/"
+2. Dar click en la sección "Elements"
+3. Dar click en "Radio Buttons" de la seccion "Elements"
+4. Dar click en el boton "Yes"
+5. Dar click en el boton "Impresive"
+
+// RESULTS
+- El sistema mostrara el siguiente mensaje "You have selected Yes" despues se borrara ese mensaje
+y pasara a mostrar "You have selected Impressive"

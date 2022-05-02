@@ -1,0 +1,117 @@
+4.Web Tables:
+primer caso: click boton Add y llenar formulario
+segundo caso: hacer una busqueda
+tercer caso: click en boton edit y modificar el formulario
+cuarto caso: eliminar registro
+
+----------------------------------------------------------------------------------------------------------
+Tests Case1
+//Scenario
+Añadir una nueva fila a la tabla, hacer click en el boton Add y llenar formulario
+
+//Tests Data
+First Name = Elián
+Last Name = Díaz
+Email = eadv@dominio.com
+Age = 21
+Salary = 99999
+Department = Santander
+
+//Preconditions
+Conexión a internet
+Tener el navegador google chrome instalado
+
+//Steps to reproduce
+1. Ir a la dirección : "https://demoqa.com/"
+2. Dar click en el campo "Elements"
+3. Dar click en la opción "Web Tables" del menú que se despliega
+4. Dar click en el boton "Add"
+5. Llenar los campos solicitados en el formulario
+6. Dar click en el boton "Submit"
+
+//Expected Results
+Se espera una nueva fila de la tabla con los datos ingresados en el formulario
+
+----------------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------------
+Tests Case2
+//Scenario
+Hacer una busqueda en la tabla
+
+//Tests Data
+First Name = Elián
+Last Name = Díaz
+Email = eadv@dominio.com
+Age = 21
+Salary = 99999
+Department = Santander
+
+//Preconditions
+Conexión a internet
+Tener el navegador google chrome instalado
+
+//Steps to reproduce
+1. Ir a la dirección : "https://demoqa.com/"
+2. Dar click en el campo "Elements"
+3. Dar click en la opción "Web Tables" del menú que se despliega
+4. Dirigirse al input "Type to search" e ingresar cualquiera de los 6 campos de la tabla para hacer la busqueda:
+   First Name, Last Name, Email, Age, Salary, Department
+
+
+//Expected Results
+Se espera ver unicamente la o las filas de la tabla que coincidan con la busqueda
+
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+Tests Case3
+//Scenario
+Modificar los valores de una fila de la tabla, click en "edit" y cambiar la informacion que contiene el formulario
+
+//Tests Data
+First Name = Andrés
+Last Name = Díaz
+Email = eadv@dominio.com
+Age = 21
+Salary = 99999
+Department = Santander
+
+//Preconditions
+Conexión a internet
+Tener el navegador google chrome instalado
+
+//Steps to reproduce
+1. Ir a la dirección : "https://demoqa.com/"
+2. Dar click en el campo "Elements"
+3. Dar click en la opción "Web Tables" del menú que se despliega
+4. Dar click en la opción de editar "edit"(span que contiene una imagen de un lápiz)
+5. Modificar los campos necesarios en el formulario
+6. Dar click en el boton "Submit"
+
+
+//Expected Results
+Se espera que la fila seleccionada para hacer la modificación se vea con los cambios realizados
+
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+Tests Case4
+//Scenario
+Eliminar un registro (fila) de la tabla, click en "Delete"
+
+//Preconditions
+Conexión a internet
+Tener el navegador google chrome instalado
+
+//Tests Data
+No aplica
+
+//Steps to reproduce
+1. Ir a la dirección : "https://demoqa.com/"
+2. Dar click en el campo "Elements"
+3. Dar click en la opción "Web Tables" del menú que se despliega
+4. Dar click en la opción de eliminar "Delete"(span que contiene una imagen de un contenedor de basura)
+
+//Expected Results
+Se espera que la fila donde se dió click en "Delete" se borre de la tabla
+
+-----------------------------------------------------------------------------------------------------------
