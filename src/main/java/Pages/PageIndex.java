@@ -19,15 +19,26 @@ public class PageIndex {
      *  WebElements // WebElements // WebElements // WebElements // WebElements // WebElements // WebElements //
      * ---------------------------------------------------------------------------------------------------------
      */
-    public By elements = By.xpath("//div[@class=\"card mt-4 top-card\"][1]");
+    private By card_Elements = By.xpath("//div[@class=\"card mt-4 top-card\"][1]");
+    private By card_Forms = By.xpath("//div[@class=\"card mt-4 top-card\"][2]");
+
+
+
 
     /**
      * -----------------------------------------------------------------------------------------------------------
      *  Funciones // Funciones //  Funciones //  Funciones //  Funciones //  Funciones //  Funciones //  Funciones
      * -----------------------------------------------------------------------------------------------------------
      */
-    public void clickElements() {
-        helpers.clickBy(elements);
-    }
+
+    public void click_card_Elements() {
+
+        helpers.clickBy(card_Elements);
+    } //click
+
+    public void click_card_Forms() {
+
+        helpers.clickBy(card_Forms);
+    } //click
 
 }

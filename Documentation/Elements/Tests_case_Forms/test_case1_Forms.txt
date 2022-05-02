@@ -1,0 +1,44 @@
+Autor : Jhon Sebastián Ramos Muñoz
+
+===========================================================================================================
+Test Case 1 - Forms:
+
+--Scenario--
+El usuario llena todos los campos del formulario "Practice Form".
+
+--PRECONDITIONS--
+1. Conexión a internet.
+2. Contar con un navegador.
+
+--TEST DATA--
+First Name: Jhon
+LastName: Ramos
+Email: 2320601@tcs.com
+Gender: Male
+Mobile : 3005551234
+Date of Birth: 25 Nov 2015
+Subjects: Maths, Economics
+Hobbies: Sports, Reading, Music
+Current Address: Calle 5 # 34B sur
+
+--Steps to reproduce--
+1.Ingresar a la siguiente url: https://demoqa.com/
+2.Dar click en el icono Forms.
+3.Dar click en el botón Practice Form.
+4.Ingresar los Test Data en los campos First Name, Last Name e 
+Email. 
+5.Dar click en el radio button Male del campo Gender.
+6.Ingresar los Test Data en el campo Mobile. 
+7.Dar click en el campo Date of Birth y seleccionar 
+el mes y el año propuestos en el Test data en cada lista correspondiente.
+8.Dar click en el dia que corresponda al Test Data.
+9.Dar click en todos los Check buttons del campo Hobbies.
+10.Dar click en el botón Seleccionar archivo y elegir un archivo.
+11.Ingresar los Test Data en el campo Current Address.
+12.Seleccionar una opción aleatoria en cada lista desplegable del campo State and City.
+13.Dar click en el botón Submit.
+14.Dar click en el botón Close de la ventana de confirmación.
+
+--Expected Results--
+Al dar click en el botón Submite, se obsevaran en una ventana de confirmación todos los datos ingresados en los campos
+del formulario la cual se cerrara despues del último paso (14).

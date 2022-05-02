@@ -1,0 +1,23 @@
+Autor : Jhon Sebastián Ramos Muñoz
+
+===========================================================================================================
+Test Case 2 - Forms:
+
+--Scenario--
+El usuario NO ingresa información en ninguno de los campos del formulario "Practice Form".
+
+--PRECONDITIONS--
+1. Conexión a internet.
+2. Contar con un navegador.
+
+--TEST DATA--
+No aplica
+
+--Steps to reproduce--
+1.Ingresar a la siguiente url: https://demoqa.com/
+2.Dar click en el icono Forms.
+3.Dar click en el botón Practice Form.
+4.Dar click en el botón Submit.
+
+--Expected Results--
+Al dar click en el botón Submit NO se registrara exitosamente el formulario.
