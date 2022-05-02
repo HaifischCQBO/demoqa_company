@@ -1,0 +1,19 @@
+Escenario
+Eliminar libro de coleccion de seccion profile
+
+Precondiciones:
+1.Estar registrado
+2.Estar logeado
+
+Pasos:
+1.Dirigirse a la pagina principal de ToolsQA  en https://demoqa.com/
+2.hacer click en tarjeta Book Store Application.
+3.Hacer click en profile de la lista de Book Store Application.
+4.Hacer click en el icono de basura.
+5.Hacer click enel el boton ok de la seccion Delete Book.
+6.Hacer click en el boton aceptar del alert
+
+
+Resultados:
+1.Al hacer click en el icono de basura de la seccion de profile,mostrara la seccion Delete
+Book para dar ok luego aceptar la alerta , para que se elimine el libro añadido.

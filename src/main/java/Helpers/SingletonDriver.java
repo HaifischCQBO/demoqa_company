@@ -5,6 +5,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
+
+import java.util.concurrent.TimeUnit;
+
 public class SingletonDriver {
 
     private static WebDriver driver;
@@ -19,17 +22,13 @@ public class SingletonDriver {
             WebDriverManager.chromedriver().setup();
             ChromeOptions options = new ChromeOptions();
             options.addArguments("--disable-gpu");
+
             if(helpers.getXMLParameter("headless").equals("true")) {
                 options.addArguments("--headless");
             }
             driver = new ChromeDriver(options);
             driver.manage().window().maximize();
-
-            //hacer zoom
-            //JavascriptExecutor js = (JavascriptExecutor) driver;
-            //driver.get("chrome://settings/");
-            //js.executeScript("chrome.settingsPrivate.setDefaultZoom(0.5);");
-
+            driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         }
 
         return driver;

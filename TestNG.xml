@@ -9,8 +9,7 @@
 
     </test>
     <packages>
-        <package name="Tests"/>
+        <package name="Tests.*"/>
     </packages>
-    
-    
+
 </suite>
