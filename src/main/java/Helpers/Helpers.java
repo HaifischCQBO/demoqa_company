@@ -2,6 +2,7 @@ package Helpers;
 
 import com.github.javafaker.Faker;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedCondition;
@@ -35,6 +36,13 @@ public class Helpers {
     public void clickBy(By by){
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(by)).click();
         Print("Se realiza Click a Elemento:"+ by);
+    }
+
+    public void clickWebElementByJs(WebElement elemento){
+        JavascriptExecutor js = (JavascriptExecutor)driver;
+        js.executeScript("arguments[0].click()", elemento);
+        Print("Se realiza Click a Elemento: "+ elemento);
+
     }
     public void clickWebelement(WebElement Elemento){
         Elemento.click();

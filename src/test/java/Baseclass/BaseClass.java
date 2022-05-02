@@ -15,15 +15,32 @@ public class BaseClass {
 
     @BeforeMethod
     public void setUp(){
-        driver = SingletonDriver.getWebDriver();
-        SingletonDriver.setCloseWhenFinished(true);
+        Helpers helpers = new Helpers();
+        WebDriverManager.chromedriver().setup();
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--disable-gpu");
+        if(helpers.getXMLParameter("headless").equals("true")) {
+            options.addArguments("--headless");
+        }
+        driver = new ChromeDriver(options);
     }
 
     @AfterMethod
     public void Finished(){
+        driver.quit();
+    }
+
+   /* @BeforeMethod
+    public void setUp(){
+        driver = SingletonDriver.getWebDriver();
+        SingletonDriver.setCloseWhenFinished(true);
+    }*/
+
+   /* @AfterMethod
+    public void Finished(){
         if(SingletonDriver.getCloseWhenFinished())
             driver.quit();
-    }
+    }*/
 
 
 }

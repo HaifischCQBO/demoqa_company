@@ -3,6 +3,9 @@ package Pages.Demoqa;
 import Helpers.Helpers;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+import java.util.List;
 
 public class Page_Index {
 
@@ -19,17 +22,18 @@ public class Page_Index {
      *  WebElements // WebElements // WebElements // WebElements // WebElements // WebElements // WebElements //
      * ---------------------------------------------------------------------------------------------------------
      */
-
-    private By card_Elements = By.xpath("//*[@id=\"app\"]/div/div/div[2]/div/div[1]/div/div[3]");
-    private By Download = By.xpath("//*[@id=\"downloadButton\"]");
-    private By SeleccionarArchivo = By.xpath("//*[@id=\"uploadFile\"]");
-
-
+    public By category_Cards = By.xpath("//div[@class='category-cards']");
+    public By cards = By.cssSelector(".card");
     /**
      * -----------------------------------------------------------------------------------------------------------
      *  Funciones // Funciones //  Funciones //  Funciones //  Funciones //  Funciones //  Funciones //  Funciones
      * -----------------------------------------------------------------------------------------------------------
      */
-
+    public void clickElements() {
+        WebElement categoryCard = driver.findElement(category_Cards);
+        List<WebElement> cardsElements = categoryCard.findElements(cards);
+        WebElement elements = cardsElements.get(0);
+        helpers.clickWebElementByJs(elements);
+    }
 
 }
