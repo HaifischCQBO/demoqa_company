@@ -1,13 +1,20 @@
 package Helpers;
 import com.github.javafaker.Faker;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.interactions.Actions;
 
+import org.testng.Assert;
 import org.testng.Reporter;
+
+import java.util.List;
 import java.util.Random;
 
 public class Helpers {
@@ -33,7 +40,15 @@ public class Helpers {
     }
     public void clickBy(By by){
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(by)).click();
-        Print("Se realiza Click a Elemento:"+ by);
+        Print("Se realiza Click a Elemento: "+  by);
+    }
+    public void doubleClick(By by){
+        Actions dobleClick = new Actions(driver);
+        dobleClick.doubleClick();
+    }
+        public void rightClick(By by) {
+        Actions clickDerecho = new Actions(driver);
+        clickDerecho.contextClick();
     }
     public void clickWebelement(WebElement Elemento){
         Elemento.click();
@@ -66,7 +81,6 @@ public class Helpers {
             e.printStackTrace();
         }
     }
-
     public String returnFullAdress(){
         Faker f = new Faker();
         String street =f.address().streetAddress();
@@ -106,8 +120,21 @@ public class Helpers {
         return new Random().nextInt(bound);
     }
 
+    public void scrolls(int Up, int Down){
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollTo("+Up+", "+Down+")");
+    }
+    public String getValue(By by) {
+        String value = driver.findElement(by).getAttribute("value");
+        Print("Se Obtiene value: "+ value + " del elemento: "+ by);
+        return value;
 
+        }
 
+    public void goToElement(WebElement element){
+        JavascriptExecutor js = (JavascriptExecutor) this.driver;
+        js.executeScript("arguments[0].scrollIntoView(true);", element);
+    }
 
     /**
      *Esperas Dinamicas:
@@ -119,8 +146,29 @@ public class Helpers {
      * Pauses -> !!!!!!!! NUNCA SE OCUPA!!!!!!!!!!!
      * **/
 
+    public void ClickAction(By by, int HeightPage){
+        JavascriptExecutor jse = (JavascriptExecutor)driver;
+        jse.executeScript("scroll(0, "+HeightPage+")");
+        clickBy(by);
+    }
 
+    public void ValidateAssert(String text, By by){
+        if(driver.findElement(by).getText().equals(text)){
+            Assert.assertEquals(driver.findElement(by).getText(), text);
+            clickBy(by);
+        }
+    }
 
+    public void ChangeWebElement(By by){
+        WebElement valueText = driver.findElement(by);
+        ValidateAssert(valueText.getText(), by);
+    }
+
+    public void SelectedOption(By by, String options){
+        Select opcion = new Select(driver.findElement(by));
+        opcion.selectByVisibleText(options);
+        Print("la Opcion seleccionada es: "+ options);
+    }
 
 
 

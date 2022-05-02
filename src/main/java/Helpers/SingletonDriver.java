@@ -15,7 +15,6 @@ public class SingletonDriver {
 
     public static WebDriver getWebDriver(){
         if(driver == null){
-            System.out.println("me cree");
             WebDriverManager.chromedriver().setup();
             ChromeOptions options = new ChromeOptions();
             options.addArguments("--disable-gpu");
@@ -23,8 +22,10 @@ public class SingletonDriver {
             if(helpers.getXMLParameter("headless").equals("true")) {
                 options.addArguments("--headless");
             }*/
-            //options.addArguments("--headless");
-            driver = new ChromeDriver(options);
+            options.addArguments("--headless");
+            driver = new ChromeDriver();
+            //driver.manage().window().maximize();
+
         }
 
         return driver;
