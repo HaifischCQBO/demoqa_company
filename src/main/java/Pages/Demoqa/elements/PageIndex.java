@@ -30,8 +30,5 @@ public class PageIndex {
      *  Funciones // Funciones //  Funciones //  Funciones //  Funciones //  Funciones //  Funciones //  Funciones
      * -----------------------------------------------------------------------------------------------------------
      */
-    public void click_elements_div(){
-        helpers.clickByToElement(elements_div);
-        //driver.findElement(find_flights_button).click();
-    }
+
 }
