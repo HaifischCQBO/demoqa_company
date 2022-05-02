@@ -1,25 +1,37 @@
-package Pages.Demoqa;
+package Pages.demoqa;
 
 import Helpers.Helpers;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 
-public class Page_index {
+public class Page_Index {
+
     public WebDriver driver;
     public Helpers helpers;
 
-    public Page_index(WebDriver driver){
+    public Page_Index(WebDriver driver){
         this.driver = driver;
         helpers = new Helpers(driver);
     }
-    public By card_widgets = By.xpath("//div[4]");
+
+    /**
+     * ---------------------------------------------------------------------------------------------------------
+     *  WebElements // WebElements // WebElements // WebElements // WebElements // WebElements // WebElements //
+     * ---------------------------------------------------------------------------------------------------------
+     */
+    public By select_card = By.xpath("//div[@class=\"card mt-4 top-card\"][6]");
 
 
-    public void ClickedCard(){
-        helpers.ClickAction(card_widgets,600);
+
+    /**
+     * -----------------------------------------------------------------------------------------------------------
+     *  Funciones // Funciones //  Funciones //  Funciones //  Funciones //  Funciones //  Funciones //  Funciones
+     * -----------------------------------------------------------------------------------------------------------
+     */
+
+    public void click_card(){
+        helpers.clickBy(select_card);
+        //driver.findElement(find_flights_button).click();
     }
-
 
 }

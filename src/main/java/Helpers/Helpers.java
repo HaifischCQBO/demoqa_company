@@ -39,6 +39,9 @@ public class Helpers {
         System.out.println(texto);
     }
     public void clickBy(By by){
+        WebElement elemento = driver.findElement(by);
+        // ir al elemento (scroll)
+        goToElement(elemento);
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(by)).click();
         Print("Se realiza Click a Elemento: "+  by);
     }
@@ -126,14 +129,16 @@ public class Helpers {
     }
     public String getValue(By by) {
         String value = driver.findElement(by).getAttribute("value");
-        Print("Se Obtiene value: "+ value + " del elemento: "+ by);
+        Print("Se Obtiene value: " + value + " del elemento: " + by);
         return value;
-
-        }
-
+    }
     public void goToElement(WebElement element){
         JavascriptExecutor js = (JavascriptExecutor) this.driver;
         js.executeScript("arguments[0].scrollIntoView(true);", element);
+    }
+    public void scrollDown(int distance){
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollTo(0, "+distance+")");
     }
 
     /**
