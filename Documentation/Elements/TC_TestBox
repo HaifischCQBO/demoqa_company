@@ -1,0 +1,21 @@
+Tests Case
+TextBox
+
+Scenario
+Colocar datos de usuario en una caja de texto (Text Box)
+
+Steps to reproduce
+1. ir a https://demoqa.com/text-box
+2. dar click en el boton elements
+3. dar click en el boton text box
+4. Posicionarse en el campo full name
+5. ingresar nombre y apellido
+6. Posicionarse en el email
+7. ingresar datos de email
+6. Posicionarse en el Current Address
+7. ingresar datos de Permanent Address
+8. dar click en submit
+
+Expected Results
+Div con los datos ingresados por el usuario
+
