@@ -3,44 +3,27 @@ package Baseclass;
 import Helpers.Helpers;
 import Helpers.SingletonDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 
 public class BaseClass {
-
     public WebDriver driver;
+    Helpers helpers = new Helpers();
+
     @BeforeMethod
     public void setUp(){
-        Helpers helpers = new Helpers();
-        WebDriverManager.chromedriver().setup();
-        ChromeOptions options = new ChromeOptions();
-
-        options.addArguments("--disable-gpu");// argumento para no consumir demasiados recursos
-        options.addArguments("start-maximized");
-        if(helpers.getXMLParameter("headless").equals("true")) {
-            options.addArguments("--headless");
-        }
-        driver = new ChromeDriver(options);
-
+        driver = SingletonDriver.getWebDriver();
+        SingletonDriver.setCloseWhenFinished(true);
     }
 
+    @AfterMethod
     public void Finished(){
-      /*
         if(SingletonDriver.getCloseWhenFinished())
-            driver.close();
-            */
+            driver.quit();
     }
-    @AfterTest
-    public void FinishedAll(){
-        helpers.Print("quitando driver...");
-       driver.quit();
-        SingletonDriver.setDriverNull();
 
-    }
 
 }

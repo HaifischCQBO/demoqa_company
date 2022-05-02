@@ -1,5 +1,9 @@
 package Helpers;
+
 import com.github.javafaker.Faker;
+import org.jetbrains.annotations.NotNull;
+import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -10,10 +14,9 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.interactions.Actions;
-
 import org.testng.Assert;
 import org.testng.Reporter;
-
+import javax.swing.*;
 import java.util.List;
 import java.util.Random;
 
@@ -43,15 +46,28 @@ public class Helpers {
         // ir al elemento (scroll)
         goToElement(elemento);
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(by)).click();
-        Print("Se realiza Click a Elemento: "+  by);
+        Print("Se realiza Click a Elemento:"+ by);
     }
-    public void doubleClick(By by){
-        Actions dobleClick = new Actions(driver);
-        dobleClick.doubleClick();
+    public void double_clickBy(WebElement element){
+        Actions actions =  new Actions(driver);
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(element));
+        actions.doubleClick(element).perform();
+        Print("Se realiza Click a Elemento:"+ element);
     }
-        public void rightClick(By by) {
-        Actions clickDerecho = new Actions(driver);
-        clickDerecho.contextClick();
+
+    public void click_drag(WebElement element, int x, int y){
+        Actions actions = new Actions(driver);
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(element));
+        actions.dragAndDropBy(element,x,y).build().perform();
+    }
+    public void click_drag_element(WebElement element, WebElement target){
+        Actions actions = new Actions(driver);
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(element));
+        actions.dragAndDrop(element, target).build().perform();
+    }
+    public void zoom(){
+        WebElement zoomPage = driver.findElement(By.tagName("html"));
+        zoomPage.sendKeys(Keys.chord(Keys.CONTROL, Keys.ADD));
     }
     public void clickWebelement(WebElement Elemento){
         Elemento.click();
@@ -111,12 +127,19 @@ public class Helpers {
     public String SelectByIndex(By by){
         Random r = new Random();
         Select select = new Select(driver.findElement(by));
+        System.out.println(select);
         int option_number = select.getOptions().size();
         int index_option = r.nextInt(option_number-1);
         //size: 1,2,3,4,5
         //index: 0,1,2,3,4
         select. selectByIndex(index_option);
         return  select.getFirstSelectedOption().getText();
+
+    }
+
+    public void scrollDown() {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollTo(0,500)");
     }
 
     public int GetRandomNumber(int bound){

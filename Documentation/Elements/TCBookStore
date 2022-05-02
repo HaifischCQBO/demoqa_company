@@ -1,0 +1,59 @@
+Test case 3: Doble clic al añadir un libro a la colección - TRAZABILIDAD: test_double_click_add (nombre de test)
+
+El usuario no puede añadir más de una vez un libro a su colección
+
+Data:
+Lroldan
+Lroldan6!
+
+Steps to reproduce:
+1. Ingresar a la pagina https://demoqa.com/login
+2. Llenar el formulario del login
+3. Dar clic a "Go to Book Store"
+4. Doble clic al boton "Add To Your Collection"
+5. Clic a boton "Acept" de la alerta "Book added to your collection"
+6. Clic a boton "Acept" de la alerta "Book already present in the your collection!"
+
+Se espera:
+El sistema debe mostrar un alert con "Book already present in the your collection!",
+y que solo se muestre una vez dicho libro en la colección del usuario.
+
+Precondición:
+El usuario debe tener una cuenta en el sistema y estar logueado y el libro seleccionado no debe
+estar añadido a la colección
+=============================================================================
+Test case 4: Añadir libro a colección - TRAZABILIDAD: test_add_book (nombre de test)
+
+Scenario:
+El ususario debe poder añadir a un libro a su colección
+
+Data:
+Lroldan
+Lroldan6!
+
+Steps to reproduce:
+1. Ingresar a la pagina https://demoqa.com/login
+2. Llenar el formulario del login
+3. Dar clic a "Go to Book Store"
+4  Dar Clic en el titulo del libro
+3. Clic al boton "Add To Your Collection"
+4. Clic al boton "Accept" de la alerta
+
+Expected Results:
+Se espera que el sistema muestre un alert con el mensaje "Book added to your collection"
+
+Precondition:
+El usuario debe tener una cuenta en el sistema y estar logueado y el libro seleccionado no debe
+estar añadido a la colección
+
+====================================================================================================================
+Test case 9 confirmacion - TRAZABILIDAD: confirmation (nombre de test)
+El usuario debe poder ver mas detalles del libro antes de agregarlo a su estante
+
+pasos:
+1. Ingresar a la siguiente url: https://demoqa.com/books
+2. Clic en cualquier titulo de un libro
+3. Verificar el  TITLE del libro seleccionado
+
+Se espera:
+El sistema debe mostrar el TITLE del libro seleccionado anteriormente.
