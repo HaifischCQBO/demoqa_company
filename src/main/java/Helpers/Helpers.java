@@ -16,6 +16,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.Reporter;
+import java.util.ArrayList;
 import javax.swing.*;
 import java.util.List;
 import java.util.Random;
@@ -72,6 +73,19 @@ public class Helpers {
     public void clickWebelement(WebElement Elemento){
         Elemento.click();
         Print("Se realiza Click a Elemento:"+ Elemento);
+    }
+    public void focoPage(){
+        String rutaAntigua = driver.getCurrentUrl();
+        ArrayList tabs = new ArrayList(driver.getWindowHandles());
+        System.out.println(tabs.size());
+        driver.switchTo().window(tabs.get(1).toString());
+        String rutaNueva = driver.getCurrentUrl();
+        if (rutaAntigua.equals(rutaNueva)){
+            System.out.println("ERROR...");
+        }else{
+            System.out.println("Navegacion OK...");
+        }
+        System.out.println(rutaNueva);
     }
     public void SendText(By by, String text){
         WebElement elemento = driver.findElement(by);
