@@ -1,0 +1,22 @@
+// AUTHOR
+Andres Felipe Ramirez Morales
+
+// SCENARIO
+El usuario va a interactuar con los botones de la sección "Buttons"
+
+// PRECONDITIONS
+Conexion a internet.
+Disponibilidad de un navegador.
+
+// STEP TO TEST
+1. Ingresar al enlace "https://demoqa.com/"
+2. Dirigirse a la sección "Elements" dando click sobre el mismo.
+3. Dar click en el apartado "Buttons"
+4. Dar click izquierdo en el botón "Click Me"
+5. Dar click derecho en el botón "Right Click Me"
+6. Dar click derecho en el botón "Right Click Me"
+
+// RESULT
+- El sistema imprimira un mensaje el cual dira: "You have done a dynamic click"
+- El sistema imprimira un mensaje el cual dira: "You have done a double click"
+- El sistema imprimira un mensaje el cual dira: "You have done a right click"

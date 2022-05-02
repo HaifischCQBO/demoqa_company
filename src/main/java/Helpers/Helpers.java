@@ -1,14 +1,15 @@
 package Helpers;
-
-
+import com.github.javafaker.Faker;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.interactions.Actions;
 
 import org.testng.Assert;
 import org.testng.Reporter;
@@ -41,6 +42,14 @@ public class Helpers {
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(by)).click();
         Print("Se realiza Click a Elemento: "+  by);
     }
+    public void doubleClick(By by){
+        Actions dobleClick = new Actions(driver);
+        dobleClick.doubleClick();
+    }
+        public void rightClick(By by) {
+        Actions clickDerecho = new Actions(driver);
+        clickDerecho.contextClick();
+    }
     public void clickWebelement(WebElement Elemento){
         Elemento.click();
         Print("Se realiza Click a Elemento:"+ Elemento);
@@ -65,6 +74,14 @@ public class Helpers {
         }
 
     }
+    public String returnFullAdress(){
+        Faker f = new Faker();
+        String street =f.address().streetAddress();
+        String appartment= f.address().secondaryAddress();
+        String address = street + " " + appartment;
+
+        return address;
+    }
 
     public String SelectByOptionValue(By by, String value){
     Select select = new Select(driver.findElement(by));
@@ -86,6 +103,8 @@ public class Helpers {
         Select select = new Select(driver.findElement(by));
         int option_number = select.getOptions().size();
         int index_option = r.nextInt(option_number-1);
+        //size: 1,2,3,4,5
+        //index: 0,1,2,3,4
         select. selectByIndex(index_option);
         return  select.getFirstSelectedOption().getText();
     }
@@ -94,24 +113,20 @@ public class Helpers {
         return new Random().nextInt(bound);
     }
 
-    public void ejemplos(){
-        Actions actions = new Actions(driver);
-        //click derecho
-        actions.contextClick();
-        //double click
-        actions.doubleClick();
-
-        WebElement a = driver.findElement(By.xpath("xpath"));
-        WebElement b = driver.findElement(By.xpath("xpath"));
-
-        actions.dragAndDrop(a, b);
-
-        new WebDriverWait(driver, 60).until(ExpectedConditions.alertIsPresent()).accept();
-        if(a.getAttribute("class").contains("active")){
+    public void scrolls(int Up, int Down){
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollTo("+Up+", "+Down+")");
+    }
+    public String getValue(By by) {
+        String value = driver.findElement(by).getAttribute("value");
+        Print("Se Obtiene value: "+ value + " del elemento: "+ by);
+        return value;
 
         }
 
-
+    public void goToElement(WebElement element){
+        JavascriptExecutor js = (JavascriptExecutor) this.driver;
+        js.executeScript("arguments[0].scrollIntoView(true);", element);
     }
 
     /**
