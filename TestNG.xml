@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="suite_mentorias">
+<suite name="suite_widgets">
     
+
     <test name="Full Regresion Blazedemo" allow-return-values="false">
         <parameter name="browser" value="chrome"/>
         <parameter name="headless" value="false"/>
         <parameter name="url" value="https://demoqa.com/"/>
+
     </test>
     <packages>
         <package name="Tests.*"/>
     </packages>
-    
-    
+
 </suite>
