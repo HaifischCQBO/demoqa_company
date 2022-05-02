@@ -1,0 +1,28 @@
+Test case1 Arrastable revertible -  TRAZABILIDAD: Will_Revert (nombre de test)
+
+El usuario debe arrastrar el recuadro "Will Revert" hasta el recuadro "Drop here"
+
+Step to reproduce
+1. Ingresar a la siguiente url: https://demoqa.com/droppable
+2. Clic a la pestaña "Revert Draggable"
+3. Clic sostenido al recuado "Will Revert"
+4. Mover el recuadro a "Drop here"
+Se espera:
+El recuadro  "Drop here" cambiará su color a azul y su titulo ahora será "Dropped!"
+El recuadro "Will Revert" volvera a su posición inicial
+=====================================================================================
+Test case2 Arrastable no revertible - TRAZABILIDAD: No_Revert (nombre de test)
+
+El usuario debe arrastrar el recuadro "Not Revert" hasta el recuadro "Drop here"
+
+Step to reproduce
+1. Ingresar a la siguiente url: https://demoqa.com/droppable
+2. Clic a la pestaña "Revert Draggable"
+3. Clic sostenido al recuado "Not Revert"
+4. Mover el recuadro a "Drop here"
+Se espera:
+
+El recuadro  "Drop here" cambiará su color a azul y su titulo ahora será "Dropped!"
+El recuado "Not Revert" quedara posicionado dentro del recuado "Dropped!"
+
+El usuario debe poder arrastrar los recuadros punteado hasta el recuadro "Crear aquí"
