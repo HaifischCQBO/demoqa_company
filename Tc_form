@@ -1,19 +1,25 @@
-test case 8
+test  case  busqueda de libro por nombre de autor,editor y titulo del libro
 escenario
-el usuario debe buscar por nombre del autor el libro
 
 Datos de prueba
-Nombre del autor del libro
+Nombre del autor del libron
+Nombre del  editor de libro
+Nombre del titulo del libro
 
 precondicion
-el usario debe estar registrado en
-https://demoqa.com/books
+el usario puede o no estar registrado aun
+https://demoqa.com/login
 
 Paso a Prueba
-1.Click  al item libreria
-2.en la barra de bisqueda ingresar el nombre del autor
-3.click al nombre del libro del autor buscado
-4.dar click en el boton de agregar a seleccion
+1Clic en el scroll de Book Store .
+2.click en el  item de 
+
+3.En la barra de busqueda escriba el nombre del titulo,autor,editor del libro 
+4.Click sobre el  titulo del  libro
+5.Clic en el boton de acceso para poder acceder y añadir el libro a su coleccion
+6.ingresar usuario o contraseña  para ingresar o click en new user para registrarse
+7.ya con la sesion iniciada puede dar clik en boton de  agregar a su coleccion
+
 
 Resultado esperado
 mensaje de confirmacion de libro añadido a la coleccion
