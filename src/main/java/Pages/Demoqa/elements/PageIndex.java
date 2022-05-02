@@ -1,15 +1,15 @@
-package Pages.demoqa;
+package Pages.Demoqa.elements;
 
 import Helpers.Helpers;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 
-public class Page_Index {
-
+public class PageIndex {
     public WebDriver driver;
     public Helpers helpers;
 
-    public Page_Index(WebDriver driver){
+    public PageIndex(WebDriver driver){
         this.driver = driver;
         helpers = new Helpers(driver);
     }
@@ -19,7 +19,9 @@ public class Page_Index {
      *  WebElements // WebElements // WebElements // WebElements // WebElements // WebElements // WebElements //
      * ---------------------------------------------------------------------------------------------------------
      */
-    public By select_card = By.xpath("//div[@class=\"card mt-4 top-card\"][6]");
+    public By elements_div = By.xpath("//div[@class=\"card mt-4 top-card\"][1]");
+
+
 
 
 
@@ -28,10 +30,5 @@ public class Page_Index {
      *  Funciones // Funciones //  Funciones //  Funciones //  Funciones //  Funciones //  Funciones //  Funciones
      * -----------------------------------------------------------------------------------------------------------
      */
-
-    public void click_card(){
-        helpers.clickBy(select_card);
-        //driver.findElement(find_flights_button).click();
-    }
 
 }
