@@ -2,12 +2,13 @@ package Helpers;
 
 import com.github.javafaker.Faker;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.interactions.Actions;
 
 import org.testng.Reporter;
 import java.util.Random;
@@ -35,6 +36,14 @@ public class Helpers {
     public void clickBy(By by){
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(by)).click();
         Print("Se realiza Click a Elemento:"+ by);
+    }
+    public void doubleClick(By by){
+        Actions dobleClick = new Actions(driver);
+        dobleClick.doubleClick();
+    }
+        public void rightClick(By by) {
+        Actions clickDerecho = new Actions(driver);
+        clickDerecho.contextClick();
     }
     public void clickWebelement(WebElement Elemento){
         Elemento.click();
@@ -99,6 +108,21 @@ public class Helpers {
         return new Random().nextInt(bound);
     }
 
+    public void scrolls(int Up, int Down){
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollTo("+Up+", "+Down+")");
+    }
+    public String getValue(By by) {
+        String value = driver.findElement(by).getAttribute("value");
+        Print("Se Obtiene value: "+ value + " del elemento: "+ by);
+        return value;
+
+    }
+
+    public void goToElement(WebElement element){
+        JavascriptExecutor js = (JavascriptExecutor) this.driver;
+        js.executeScript("arguments[0].scrollIntoView(true);", element);
+    }
 
 
 
