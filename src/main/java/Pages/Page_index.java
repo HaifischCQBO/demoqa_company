@@ -1,4 +1,4 @@
-package Pages.bookstore;
+package Pages;
 
 import Helpers.Helpers;
 import org.openqa.selenium.By;
