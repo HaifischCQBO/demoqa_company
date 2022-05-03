@@ -1,4 +1,4 @@
-package Pages;
+package Pages.Forms;
 
 import Helpers.Helpers;
 import org.openqa.selenium.By;
@@ -11,7 +11,7 @@ public class PageForms {
 
     public WebDriver driver;
     public Helpers helpers;
-    public String filePath = "D:\\QA\\github\\demoqa_company\\Documentation\\iron-man-full-hd-wallpaper-for-desktop-mobiles-3840x2160.jpg";
+    public String filePath = "Documentation/test_image.jpg";
 
     public PageForms(WebDriver driver){
         this.driver = driver;
