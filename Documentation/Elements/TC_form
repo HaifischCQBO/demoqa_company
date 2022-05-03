@@ -42,5 +42,6 @@ Steps to reproduce
 1. Ir a https://demoqa.com/profile
 2. Dar clic en el boton cerrar sesion
 
-Expected Results
+
 Se espera que la Plataforma muestre un alert cuando el usuarios ciere sesion exitosamente
+
