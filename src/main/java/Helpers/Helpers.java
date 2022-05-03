@@ -105,6 +105,11 @@ public class Helpers {
         System.out.println(rutaNueva);
     }
     public void SendText(By by, String text){
+        /* metodo que hace scroll hasta el elemento al que se va enviar texto y envia el texto a ese elemento
+         * Se realizó la modificacion para corregir el error de elemento no encontrado en la sección "Web Tables"
+         * Es necesario para los casos de prueba de Web tables
+         * Cambios realizados por: Elián Andrés Díaz Vargas
+         */
         // Espera dinamica
         WebDriverWait wait = new WebDriverWait(driver,20);
         wait.until(ExpectedConditions.presenceOfElementLocated(by));
@@ -201,6 +206,11 @@ public class Helpers {
         return value;
     }
     public void goToElement(WebElement element){
+        /* metodo que ejecuta código JavaScript para hacer scroll hasta el elemento indicado
+         * Se realizó para corregir el error de click interceptado por otro elemento en la sección "Web Tables"
+         * Es necesario para los casos de prueba de Web tables
+         * realizado por: Elián Andrés Díaz Vargas
+         */
         JavascriptExecutor js = (JavascriptExecutor) this.driver;
         js.executeScript("arguments[0].scrollIntoView(true);", element);
     }
@@ -241,6 +251,42 @@ public class Helpers {
         Select opcion = new Select(driver.findElement(by));
         opcion.selectByVisibleText(options);
         Print("la Opcion seleccionada es: "+ options);
+    }
+
+    public void clickGoToElement(By by){
+        /* metodo que hace scroll hasta el elemento al que se va a hacer click y hace click a ese elemento
+         * Se realizó para corregir el error de click interceptado por otro elemento en la sección "Web Tables"
+         * Es necesario para los casos de prueba de Web tables
+         * realizado por: Elián Andrés Díaz Vargas
+         */
+        // Espera dinamica
+        WebDriverWait wait = new WebDriverWait(driver,20);
+        wait.until(ExpectedConditions.elementToBeClickable(by));
+        // ----------------------------------------------------
+
+        WebElement elemento = driver.findElement(by);
+
+        // ir al elemento (scroll)
+        goToElement(elemento);
+        // ----------------------------------------------------
+
+        elemento.click();
+        Print("Se realiza Click a Elemento:"+ by);
+    }
+
+    public String findElement(By by){
+        /* metodo que intenta encontrar un elemento dentro de la pagina web
+         * devuelve si fue encontrado "Elemento visible" o si el elemento ya fue eliminado "Elemento borrado"
+         * Se realizó para comprobar que una fila de la tabla de la seccion de "Web Tables" fue eliminada
+         * realizado por: Elián Andrés Díaz Vargas
+         */
+        try {
+            WebElement elementos = driver.findElement(by);
+            return "Elemento visible";
+        } catch (NoSuchElementException noSuchElementException){
+            return "Elemento borrado";
+        }
+
     }
 
 

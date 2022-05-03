@@ -1,4 +1,4 @@
-package Pages.bookstore;
+package Pages;
 
 import Helpers.Helpers;
 import org.openqa.selenium.By;
@@ -70,4 +70,12 @@ public class Page_index {
         return null;
     }
 
+    public void click_elements_div(){
+        /* metodo para hacer click en Elements de la pagina principal.
+         * Se hace porque el scroll esta contenido dentro del metodo "clickGoToElement" de la clase "helpers"
+         * realizado por: Elián Andrés Díaz Vargas
+         */
+        helpers.clickGoToElement(card_Elements);
+        //driver.findElement(find_flights_button).click();
+    }
 }
