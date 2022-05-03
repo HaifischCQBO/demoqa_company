@@ -52,8 +52,6 @@ public class Page_Date_Picker {
     public void clkSelect_date_and_time(){
         helpers.scrollDown(200);
         helpers.clickElement(select_date_and_time);
-        WebElement elemento = driver.findElement(select_date_and_time);
-        elemento.clear();
         helpers.SendText(select_date_and_time,"June 24, 1994 06:30 AM");
 
     }

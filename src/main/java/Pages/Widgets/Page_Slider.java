@@ -41,10 +41,17 @@ public class Page_Slider {
         helpers.clickElement(range);
         Actions actions = new Actions(driver);
 
-        WebElement element01 = helpers.returnWebElement(By.xpath("//input[@value='30']"));
-        WebElement element02 = helpers.returnWebElement(By.xpath("//input[@value='50']"));
+        //WebElement element01 = driver.findElement(By.xpath("//input[@value='30']"));
+        //WebElement element02 = driver.findElement(By.xpath("//input[@value='50']"));
 
-        actions.dragAndDrop(element02, element01);
+        WebElement element01 = driver.findElement(By.xpath("//div[@class='range-slider__tooltip range-slider__tooltip--auto range-slider__tooltip--bottom']"));
+
+        actions.dragAndDropBy(element01, 10, 0);
+
+    }
+
+    public String valor(){
+        return helpers.getValue(range);
     }
 
 }
