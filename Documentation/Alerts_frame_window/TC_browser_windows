@@ -1,0 +1,40 @@
+@author: Jean Carlos Carrillo Machado
+@date: 26/04/2022
+Test Case
+
+Scenario
+Verificar el funcionamiento de Browser Windows botón #1
+Steps to reproduce
+1.El usuario ingresa a la página https://demoqa.com/browser-windows
+2.El usuario visualiza el contenido de Browser Windows y sus tres diferentes botones
+3.El usuario revisa el primer botón dando click y verificando que abra una nueva pestaña
+Expected Results
+Se abre una ventana en la misma pestaña con un mensaje
+
+
+
+Test Case
+
+Scenario
+Verificar el funcionamiento de Browser Windows botón #2
+Steps to reproduce
+1.El usuario ingresa a la página https://demoqa.com/browser-windows
+2.El usuario visualiza el contenido de Browser Windows y sus tres diferentes botones
+3.El usuario revisa el segundo botón dando click y verificando que se abra una nueva ventana
+Expected Results
+Se debe abrir una nueva ventana con un mensaje
+
+
+
+Test Case
+
+Scenario
+Verificar el funcionamiento de Browser Windows botón #3
+Steps to reproduce
+1.El usuario ingresa a la página https://demoqa.com/browser-windows
+2.El usuario visualiza el contenido de Browser Windows y sus tres diferentes botones
+3.El usuario revisa el tercer botón dando click y verificando que salga un mensaje de ventana nueva
+Expected Results
+Se debe abrir una nueva ventana emergente con un mensaje
+
+
