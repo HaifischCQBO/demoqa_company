@@ -19,8 +19,6 @@ Conexion a internet
 
 //RESULT
  El sistema nos envia a la siguiente direccion https://demoqa.com
- public By web_tables_li = By.xpath("//li[@class=\"btn btn-light \"][4]");
- public By web_tables_li = By.xpath("//li[@class=\"btn btn-light \"][4]");
 
 
 

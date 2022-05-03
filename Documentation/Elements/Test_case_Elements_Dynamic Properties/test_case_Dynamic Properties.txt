@@ -1,0 +1,24 @@
+Autor : Jhon Sebastián Ramos Muñoz
+
+===========================================================================================================
+Test Case - Dynamic Properties:
+
+--Scenario--
+El usuario ingresa al apartado "Dynamic Properties".
+
+--PRECONDITIONS--
+1. Conexión a internet.
+2. Contar con un navegador.
+
+--TEST DATA--
+No aplica
+
+--Steps to reproduce--
+1.Ingresar a la siguiente url: https://demoqa.com/
+2.Dar click en el icono Elements.
+3.Dar click en el botón Dynamic Properties.
+4.Esperar 5 segundos.
+
+--Expected Results--
+Al pasar 5 segundos el nombre del botón "Color Change" debe cambiar de blanco 
+a rojo y aparecera un tercer botón llamado "Visible After 5 seconds".
