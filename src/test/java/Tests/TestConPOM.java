@@ -2,9 +2,7 @@ package Tests;
 
 import Baseclass.BaseClass;
 import Helpers.Helpers;
-import PagesDemoQa.Page_Index;
-import PagesDemoQa.Page_elements;
-import org.openqa.selenium.By;
+import Pages.Page_elements;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

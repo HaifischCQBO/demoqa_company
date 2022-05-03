@@ -39,19 +39,19 @@ public class Page_Date_Picker {
 
     public void click_date_picker(){
         helpers.scrollDown(500);
-        helpers.clickBy(date_picker_select);
+        helpers.clickElement(date_picker_select);
     }
 
     public void click_select_date(){
-        helpers.clickBy(select_date);
+        helpers.clickElement(select_date);
         helpers.SelectByIndex(select_year);
         helpers.SelectByIndex(select_month);
-        helpers.clickBy(select_day);
+        helpers.clickElement(select_day);
     }
 
     public void clkSelect_date_and_time(){
         helpers.scrollDown(200);
-        helpers.clickBy(select_date_and_time);
+        helpers.clickElement(select_date_and_time);
         WebElement elemento = driver.findElement(select_date_and_time);
         elemento.clear();
         helpers.SendText(select_date_and_time,"June 24, 1994 06:30 AM");

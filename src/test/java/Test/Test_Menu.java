@@ -2,9 +2,9 @@ package Test;
 
 import Baseclass.BaseClass;
 import Helpers.Helpers;
-import Pages.Demoqa.Page_index;
-import Pages.Demoqa.Page_menu;
-import Pages.Demoqa.Page_select;
+import Pages.Page_menu;
+import Pages.Page_select;
+import Pages.bookstore.Page_index;
 import org.testng.annotations.Test;
 
 public class Test_Menu extends BaseClass {
@@ -13,7 +13,7 @@ public class Test_Menu extends BaseClass {
         Helpers helpers = new Helpers(driver);
         helpers.getURL("https://demoqa.com/");
         Page_index page_index = new Page_index(driver);
-        page_index.ClickedCard();
+        page_index.click_card_Forms();
     }
     @Test
     public void TestMenu() {

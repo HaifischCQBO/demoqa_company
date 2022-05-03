@@ -24,7 +24,7 @@ public class Page_Widgets {
 
     public void click_widgets(){
         helpers.scrollDown(500);
-        helpers.clickBy(card_body_button);
+        helpers.clickElement(card_body_button);
     }
 
 

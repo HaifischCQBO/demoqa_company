@@ -3,7 +3,6 @@ package Tests;
 import Baseclass.BaseClass;
 import Helpers.Helpers;
 import Pages.Demoqa.elements.PageElementsWebTables;
-import Pages.Demoqa.elements.PageIndex;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

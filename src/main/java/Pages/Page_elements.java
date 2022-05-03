@@ -1,4 +1,4 @@
-package PagesDemoQa;
+package Pages;
 
 import Helpers.Helpers;
 import org.openqa.selenium.By;
@@ -22,7 +22,7 @@ public class Page_elements {
     public By checkHome= By.className("rct-checkbox");
 
     public void click_CheckHome(){
-        helpers.clickBy(checkHome);
+        helpers.clickElement(checkHome);
         helpers.Pause(2);
         //driver.findElement(botonElements).click();
 
@@ -32,7 +32,7 @@ public class Page_elements {
     public By buttonrct = By.xpath("//*[@id=\"tree-node\"]/ol/li/span/button");
 
     public void click_btnrct(){
-        helpers.clickBy(buttonrct);
+        helpers.clickElement(buttonrct);
         //driver.findElement(botonElements).click();
         helpers.Pause(2);
     }
@@ -40,7 +40,7 @@ public class Page_elements {
     public By buttonDesktop= By.xpath("//*[@id=\"tree-node\"]/ol/li/ol/li[1]/span/button");
 
     public void click_buttonDesktop(){
-        helpers.clickBy(buttonDesktop);
+        helpers.clickElement(buttonDesktop);
         //driver.findElement(botonElements).click();
         helpers.Pause(2);
     }
@@ -48,16 +48,16 @@ public class Page_elements {
     public By checkDesktop= By.xpath("//*[@id=\"tree-node\"]/ol/li/ol/li[1]/span/label/span[1]");
 
     public void click_checkDesktop(){
-        helpers.clickBy(checkDesktop);
+        helpers.clickElement(checkDesktop);
         //driver.findElement(botonElements).click();
         helpers.Pause(2);
-        helpers.scroll(420);
+        helpers.scrollDown(420);
     }
 
     public By click_ButtonDocuments= By.xpath("//*[@id=\"tree-node\"]/ol/li/ol/li[2]/span/button");
 
     public void click_buttonDocuments(){
-        helpers.clickBy(click_ButtonDocuments);
+        helpers.clickElement(click_ButtonDocuments);
         //driver.findElement(botonElements).click();
         helpers.Pause(2);
     }
@@ -65,7 +65,7 @@ public class Page_elements {
     public By checkDocuments= By.xpath("//*[@id=\"tree-node\"]/ol/li/ol/li[2]/span/label/span[1]");
 
     public void click_checkDocuments(){
-        helpers.clickBy(checkDocuments);
+        helpers.clickElement(checkDocuments);
         //driver.findElement(botonElements).click();
         helpers.Pause(2);
 
@@ -76,7 +76,7 @@ public class Page_elements {
     public By ButtonWorkSpace= By.xpath("//*[@id=\"tree-node\"]/ol/li/ol/li[2]/ol/li[1]/span/button");
 
     public void click_workSpace(){
-        helpers.clickBy(ButtonWorkSpace);
+        helpers.clickElement(ButtonWorkSpace);
         //driver.findElement(botonElements).click();
         helpers.Pause(2);
 
@@ -85,7 +85,7 @@ public class Page_elements {
     public By checkWorkSpace= By.xpath("//*[@id=\"tree-node\"]/ol/li/ol/li[2]/ol/li[1]/span/label/span[1]");
 
     public void click_checkWorkSpace(){
-        helpers.clickBy(checkWorkSpace);
+        helpers.clickElement(checkWorkSpace);
         //driver.findElement(botonElements).click();
         helpers.Pause(2);
     }
@@ -93,7 +93,7 @@ public class Page_elements {
     public By buttonOffice= By.xpath("//*[@id=\"tree-node\"]/ol/li/ol/li[2]/ol/li[2]/span/button");
 
     public void click_buttonOffice(){
-        helpers.clickBy(buttonOffice);
+        helpers.clickElement(buttonOffice);
         //driver.findElement(botonElements).click();
         helpers.Pause(2);
     }
@@ -101,7 +101,7 @@ public class Page_elements {
     public By click_Downloads= By.xpath("//*[@id=\"tree-node\"]/ol/li/ol/li[3]/span/button");
 
     public void click_buttonDownloads(){
-        helpers.clickBy(click_Downloads);
+        helpers.clickElement(click_Downloads);
         //driver.findElement(botonElements).click();
         helpers.Pause(2);
     }
@@ -111,7 +111,7 @@ public class Page_elements {
     public By checkDownloads= By.xpath("//*[@id=\"tree-node\"]/ol/li/ol/li[3]/span/label/span[1]");
 
     public void click_checkDownloads(){
-        helpers.clickBy(checkDownloads);
+        helpers.clickElement(checkDownloads);
         //driver.findElement(botonElements).click();
         helpers.Pause(2);
     }

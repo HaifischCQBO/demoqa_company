@@ -34,15 +34,15 @@ public class Page_Slider {
 
     public void click_slider(){
         helpers.scrollDown(500);
-        helpers.clickBy(slider_select);
+        helpers.clickElement(slider_select);
     }
 
     public void slider(){
-        helpers.clickBy(range);
+        helpers.clickElement(range);
         Actions actions = new Actions(driver);
 
-        WebElement element01 = driver.findElement(By.xpath("//input[@value='30']"));
-        WebElement element02 = driver.findElement(By.xpath("//input[@value='50']"));
+        WebElement element01 = helpers.returnWebElement(By.xpath("//input[@value='30']"));
+        WebElement element02 = helpers.returnWebElement(By.xpath("//input[@value='50']"));
 
         actions.dragAndDrop(element02, element01);
     }
