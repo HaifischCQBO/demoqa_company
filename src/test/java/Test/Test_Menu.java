@@ -32,7 +32,11 @@ public class Test_Menu extends BaseClass {
         Page_select page_select = new Page_select(driver);
         page_select.ClickSelect();
         page_select.StandardMultiSelect();
+        page_select.MultipleDelectDropDown();
         page_select.OldStyleSelectMenu();
+        page_select.SelectOne();
+        page_select.SelectValue();
+
     }
 
 }

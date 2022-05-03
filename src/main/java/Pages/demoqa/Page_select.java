@@ -1,9 +1,14 @@
 package Pages.Demoqa;
 
 import Helpers.Helpers;
+import org.apache.hc.core5.util.Asserts;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Page_select {
 
@@ -26,7 +31,7 @@ public class Page_select {
     //valores
     public By  MultiDeleteOptions = By.xpath("//*[@id=\"selectMenuContainer\"]/div[7]/div/div/div/div[1]/div[1]/div/div[1]/font/font");
     public void ClickSelect(){
-        helpers.ClickAction(SelectsMenu, 900);
+        helpers.ClickAction(SelectsMenu, 990);
     }
     public void SelectValue(){
         helpers.clickBy(SelectValue);
@@ -35,8 +40,10 @@ public class Page_select {
         helpers.clickBy(SelectOne);
     }
     public void OldStyleSelectMenu(){
+        String opcion = "Blue";
         helpers.clickBy(OldStyleSelectMenu);
-        helpers.SelectedOption(OldStyleSelectMenu, "Blue");
+        helpers.SelectedOption(OldStyleSelectMenu, opcion);
+
     }
     public void MultipleDelectDropDown(){
         helpers.ClickAction(MultiDelectDropDown,600);

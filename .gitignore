@@ -1,3 +1,4 @@
 # Ignora archivos del ide.
 .idea/*
 allure-results/*
+target/*
