@@ -1,10 +1,9 @@
-package Pages;
+package Pages.Elements;
 
 import Helpers.Helpers;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
-
 
 public class PageButtons {
     public WebDriver driver;
