@@ -8,7 +8,7 @@ import Baseclass.BaseClass;
 import Helpers.Helpers;
 import Pages.Forms.PageConfirmationForm;
 import Pages.Forms.PageForms;
-import Pages.bookstore.Page_index;
+import Pages.Page_index;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

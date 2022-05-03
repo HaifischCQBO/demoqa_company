@@ -7,7 +7,7 @@ package Tests.Elements;
 import Baseclass.BaseClass;
 import Helpers.Helpers;
 import Pages.Elements.PageElementsDynamicsProperties;
-import Pages.bookstore.Page_index;
+import Pages.Page_index;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
