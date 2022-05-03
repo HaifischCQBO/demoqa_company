@@ -1,13 +1,17 @@
 package Helpers;
 import com.github.javafaker.Faker;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import org.testng.Assert;
 import org.testng.Reporter;
+
+import java.util.Objects;
 import java.util.Random;
 
 public class Helpers {
@@ -98,7 +102,7 @@ public class Helpers {
         int index_option = r.nextInt(option_number-1);
         //size: 1,2,3,4,5
         //index: 0,1,2,3,4
-        select. selectByIndex(index_option);
+        select.selectByIndex(index_option);
         return  select.getFirstSelectedOption().getText();
     }
 
@@ -106,8 +110,92 @@ public class Helpers {
         return new Random().nextInt(bound);
     }
 
+    /*
+        oswaldo
+    */
 
+    /**
+     * cargar la pagina
+     */
+    public void loadSite(String siteUrl){
+        getURL(siteUrl);
+    }
 
+    /**
+     * Validar titulo del sitio
+     */
+    public boolean validateSiteTitle(String siteUrl){
+        String title = driver.getTitle();
+        return Objects.equals(title, siteUrl);
+    }
+
+    /**
+     * Cambiar el color del body(extra)
+     */
+    public void changeBodyColor(String BodyId, String color){
+        ((JavascriptExecutor) driver).executeScript("" +
+                "document.getElementById(" +
+                "'"+ BodyId+ "" +
+                "').style.backgroundColor = '"+ color+"';"
+        );
+    }
+
+    /**
+     * Click usando JS
+     */
+
+    public void clickUsingJs(String jsCommand){
+        JavascriptExecutor jse = (JavascriptExecutor)driver;
+        jse.executeScript(jsCommand);
+    }
+
+    /**
+     * Validando titulo de iframe
+     */
+    public String validateIframeTitle(){
+        var element = driver.switchTo().frame(driver.findElement(By.id("frame1")));
+        var element2 = element.findElement(By.id("sampleHeading"));
+        return element2.getText();
+    }
+
+    /*
+    * Miguel Herrera
+    * */
+
+    public void ClickAction(By by, int HeightPage){
+        JavascriptExecutor jse = (JavascriptExecutor)driver;
+        jse.executeScript("scroll(0, "+HeightPage+")");
+        clickBy(by);
+    }
+
+    public void ValidateAssert(String text, By by){
+        if(driver.findElement(by).getText().equals(text)){
+            Assert.assertEquals(driver.findElement(by).getText(), text);
+            clickBy(by);
+        }
+    }
+
+    public void ChangeWebElement(By by){
+        WebElement valueText = driver.findElement(by);
+        ValidateAssert(valueText.getText(), by);
+    }
+
+    public void SelectedOption(By by, String options){
+        Select opcion = new Select(driver.findElement(by));
+        opcion.selectByVisibleText(options);
+        Print("la Opcion seleccionada es: "+ options);
+    }
+
+    public void scrollDown(int distance){
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollTo(0, "+distance+")");
+    }
+
+    public String getValue(By by) {
+        String value = driver.findElement(by).getAttribute("value");
+        Print("Se Obtiene value: " + value + " del elemento: " + by);
+        return value;
+    }
 
     /**
      *Esperas Dinamicas:

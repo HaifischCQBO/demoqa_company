@@ -1,0 +1,79 @@
+@Author: Cristian Cortes
+@date: 26/04/2022
+
+Test case #1
+
+ Modal dialogs:
+
+
+Scenario:
+
+    El usuario podrá abrir el  “small modal”
+
+precondiciones:
+
+    El usuario debe tener una conexión a internet
+    El usuario abre el navegador exitosamente
+
+
+
+Pasos a prueba:
+
+    1.	abrir un navegador y dirijirse a esta url: https://demoqa.com/
+    2.	dar click  sobre la tarjeta  “alerts, frame & windows ”
+    3.	hacer scroll sobre el menú principal
+    4.	dar  click  sobre el botón “ modal dialogs “
+    5.	se redireccionara en la misma ventana a https://demoqa.com/modal-dialogs
+    6.	Hacer click en el botón para ver el modal “ small modal” or “ large modal”
+    7.	El usuario hace click en el botón “small modal”
+    8.	al abrir el modal el usuario podrá ver el contenido
+    9.	cerrar el modal deberá dar click en “close”
+
+
+Post-condición:
+
+	validar que se encuentra en esta url para seguir con los pasos:
+    se redireccionara a https://demoqa.com/modal-dialogs
+
+Resultado esperado:
+
+    1. El usuario podrá ver el modal abierto y el texto que contiene.
+    2. el usuario podrá cerrar el modal.
+
+
+	Test case #2
+
+Scenario:
+
+El usuario podrá abrir el “large modal”
+
+
+
+Pre-condiciones:
+
+El usuario debe tener una conexión a internet
+El usuario abre el navegador exitosamente
+
+Pasos a prueba:
+
+    1.	abrir un navegador y dirijirse a esta url: https://demoqa.com/
+    2.	dar click  sobre la tarjeta  “alerts, frame & windows ”
+    3.	hacer scroll sobre el menú principal
+    4.	dar  click  sobre el botón “ modal dialogs “
+    5.	se redireccionara en la misma ventana a https://demoqa.com/modal-dialogs
+    6.	Hacer click en el botón para ver el modal “ small modal” or “ large modal”
+    7.	El usuario hace click en el botón “large modal”
+    8.	al abrir el modal el usuario podrá ver el contenido
+    9.	cerrar el modal deberá dar click en “close”
+
+
+pos-condición:
+
+	validar que se encuentra en esta url para seguir con los pasos:
+    se redireccionara a https://demoqa.com/modal-dialogs
+
+
+Resultado esperado:
+
+    1. El usuario podrá ver el modal abierto y el texto que contiene.
+    2. el usuario podrá cerrar el modal.

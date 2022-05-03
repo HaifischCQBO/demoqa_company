@@ -1,7 +1,8 @@
-package Pages.demoqa;
+package Pages.demoqa.Widgets;
 
 import Helpers.Helpers;
 import Helpers.SingletonDriver;
+import Pages.demoqa.Page;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
@@ -11,7 +12,7 @@ import javax.lang.model.element.Element;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Page_Accordian implements Page{
+public class Page_Accordian implements Page {
     private final String URL = Page.URL_INDEX + "accordian";
     public WebDriver driver;
     public Helpers helpers;

@@ -2,7 +2,7 @@ package Tests.Widgets;
 
 import Baseclass.BaseClass;
 import Helpers.Helpers;
-import Pages.demoqa.Page_Accordian;
+import Pages.demoqa.Widgets.Page_Accordian;
 import Pages.demoqa.Page_Index;
 import Pages.demoqa.Page_Widgets;
 import org.openqa.selenium.WebElement;

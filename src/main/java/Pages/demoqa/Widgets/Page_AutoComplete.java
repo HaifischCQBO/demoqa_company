@@ -1,7 +1,8 @@
-package Pages.demoqa;
+package Pages.demoqa.Widgets;
 
 import Helpers.Helpers;
 import Helpers.SingletonDriver;
+import Pages.demoqa.Page;
 import org.apache.commons.lang3.StringUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
@@ -11,7 +12,7 @@ import org.openqa.selenium.WebElement;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Page_AutoComplete implements Page{
+public class Page_AutoComplete implements Page {
     private final String URL = Page.URL_INDEX + "auto-complete";
     public WebDriver driver;
     public Helpers helpers;

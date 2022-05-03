@@ -31,6 +31,13 @@ public class Page_Index implements Page  {
      * WebElements.
      */
     public By categoryCards = By.name("category-cards");
+    public By card_widgets = By.xpath("//div[4]");
+    public By card_body_button = By.xpath("//div[@class='card_body']");
+    public By hover_me_to_see = By.xpath("//input[@id='toolTipButton']");
+
+    public void ClickedCard(){
+        helpers.ClickAction(card_widgets,600);
+    }
 
     private List<WebElement> getCategoryCards(){
         List<WebElement> categoryCards = driver.findElements(By.xpath("//div[contains(@class,'category-cards')]/div"));
@@ -54,5 +61,6 @@ public class Page_Index implements Page  {
         }
         return null;
     }
+
 
 }

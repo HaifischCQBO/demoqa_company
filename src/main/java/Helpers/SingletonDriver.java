@@ -15,7 +15,6 @@ public class SingletonDriver {
 
     public static WebDriver getWebDriver(){
         if(driver == null){
-            System.out.println("me cree");
             WebDriverManager.chromedriver().setup();
             ChromeOptions options = new ChromeOptions();
             options.addArguments("--disable-gpu");
