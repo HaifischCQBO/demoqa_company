@@ -1,4 +1,4 @@
-package Pages.demoqa;
+package Pages.bookstore;
 
 import Helpers.Helpers;
 import org.openqa.selenium.Alert;

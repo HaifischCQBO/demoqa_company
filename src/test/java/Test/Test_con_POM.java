@@ -3,8 +3,7 @@ package Test;
 import Baseclass.BaseClass;
 import Helpers.Helpers;
 import Pages.demoqa.Page_Index;
-import Pages.demoqa.Page_Profile;
-import org.openqa.selenium.Alert;
+import Pages.bookstore.Page_Profile;
 import org.testng.annotations.Test;
 
 public class Test_con_POM extends BaseClass {
