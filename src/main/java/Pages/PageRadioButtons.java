@@ -33,15 +33,15 @@ public class PageRadioButtons {
 
 
     public void clickRadioButtons() {
-        helpers.clickBy(elementsRadioButtons);
+        helpers.clickElement(elementsRadioButtons);
     }
 
     public void clickRadioYes() {
-        helpers.clickBy(radioButtonsclickYes);
+        helpers.clickElement(radioButtonsclickYes);
     }
 
     public void clickRadioImpressive(){
-        helpers.clickBy(radioButtonsclickImpressive);
+        helpers.clickElement(radioButtonsclickImpressive);
     }
     public String getTextSelectionMessage(){
 

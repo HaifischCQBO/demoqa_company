@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 
 public class BaseClass {
@@ -16,14 +17,21 @@ public class BaseClass {
     @BeforeMethod
     public void setUp(){
         driver = SingletonDriver.getWebDriver();
-        SingletonDriver.setCloseWhenFinished(true);
+        SingletonDriver.setCloseWhenFinished(false);
     }
 
     @AfterMethod
-    public void Finished(){
+    public void Finished(){/*
         if(SingletonDriver.getCloseWhenFinished())
-            driver.quit();
+            driver.close();
+            */
     }
-
+    @AfterTest
+    public void FinishedAll(){
+        if(SingletonDriver.getCloseWhenFinished()) {
+            //driver.quit();
+            //SingletonDriver.setDriverNull();
+        }
+    }
 
 }

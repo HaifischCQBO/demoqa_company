@@ -29,6 +29,6 @@ public class Page_perfil {
     }
 
     public void click_back_button(){
-        helpers.clickBy(back_store_button);
+        helpers.clickElement(back_store_button);
     }
 }

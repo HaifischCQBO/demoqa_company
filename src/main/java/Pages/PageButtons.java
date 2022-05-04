@@ -36,15 +36,15 @@ public class PageButtons {
      */
 
     public void clickElementsButtons(){
-        helpers.clickBy(ElementsButtons);
+        helpers.clickElement(ElementsButtons);
     }
 
     public void clickMeButton(){
-        helpers.clickBy(buttons_clickMe);
+        helpers.clickElement(buttons_clickMe);
     }
 
     public void doubleClick(){
-        helpers.doubleClick(buttonsDoubleClick);
+        helpers.double_clickBy(buttonsDoubleClick);
     }
 
     public void rightClick() {

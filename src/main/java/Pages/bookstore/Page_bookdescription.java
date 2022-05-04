@@ -20,11 +20,10 @@ public class Page_bookdescription {
     }
     public By button_add_book= By.xpath("//button[contains(text(),'Add To Your Collection')]");
     public By title_description = By.xpath("//div[@id='title-wrapper']/*/label[@id='userName-value']");
-    //div[@id='title-wrapper']/*/label[@id='userName-value']
+
     public void click_button_add(){
-        helpers.clickBy(button_add_book);
-      //WebElement element = driver.findElement(button_add_book);
-      //helpers.clickWebelement(element);
+        helpers.clickElement(button_add_book);
+
     }
 
     public void double_click_add(){

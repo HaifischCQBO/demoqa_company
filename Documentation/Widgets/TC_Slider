@@ -1,0 +1,21 @@
+Escenario #2
+
+El usuario debe poder presionar el botón y mover el circulo en diferentes longitudes
+
+Test Case Slider
+Nombre Marlon
+Apellido Soto
+
+Precondiciones:
+
+Debe haber abierto el navegador y estar conectado a internet
+Debe haber ingresado a la pagina https://demoqa.com/
+
+Pasos a reproducir
+
+seleccionar la opción "Widgets"
+dar click en la opción de "Slider"
+Presionar con el cursor y deslizar a diferentes longitudes teniendo en cuenta el rango de menor a mayor (0-100)
+
+Resultados previstos
+El usuario podrá realizar la selección del botón y desplazar en el espacio que se identifica

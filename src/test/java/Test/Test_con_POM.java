@@ -5,6 +5,7 @@ import Helpers.Helpers;
 import Pages.demoqa.Page_Index;
 import Pages.bookstore.Page_Profile;
 import org.testng.annotations.Test;
+import Pages.bookstore.Page_index;
 
 public class Test_con_POM extends BaseClass {
 
@@ -15,8 +16,8 @@ public class Test_con_POM extends BaseClass {
         driver.manage().window().maximize();
         Helpers helpers = new Helpers(driver);
         helpers.getURL(helpers.getXMLParameter("url"));
-        Page_Index page_index = new Page_Index(driver);
-        page_index.click_card();
+        Page_index page_index = new Page_index(driver);
+        page_index.click_card_Elements();
 
         //Pagina Page_Profile
         Page_Profile page_profile = new Page_Profile(driver);

@@ -23,7 +23,7 @@ public class PageDroppable {
     public  By norevert = By.xpath("//div[@id='notRevertable']");
 
     public void click_section(){
-        helpers.clickBy(section);
+        helpers.clickElement(section);
     }
     public void click_wr(){
         WebElement wr = driver.findElement(willrevert);

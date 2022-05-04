@@ -1,7 +1,7 @@
 package Tests.Widgets;
 
 import Helpers.Helpers;
-import Pages.demoqa.Page_AutoComplete;
+import Pages.Page_AutoComplete;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;

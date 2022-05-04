@@ -2,7 +2,8 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="suite_widgets">
     
-    <test name="Widgets" allow-return-values="true">
+
+    <test name="Full Regresion Blazedemo" allow-return-values="false">
         <parameter name="browser" value="chrome"/>
         <parameter name="headless" value="false"/>
         <parameter name="url" value="https://demoqa.com/"/>

@@ -29,7 +29,7 @@ public class Page_login {
     }
 
     public void click_buttom_login(){
-        helpers.clickBy(button_login);
+        helpers.clickElement(button_login);
     }
     public void scrollByElement(){
         JavascriptExecutor js = (JavascriptExecutor) driver;

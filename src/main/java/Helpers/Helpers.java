@@ -16,6 +16,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.Reporter;
+import java.util.ArrayList;
 import javax.swing.*;
 import java.util.List;
 import java.util.Random;
@@ -41,18 +42,38 @@ public class Helpers {
     public void Print(String texto){
         System.out.println(texto);
     }
-    public void clickBy(By by){
-        WebElement elemento = driver.findElement(by);
-        // ir al elemento (scroll)
-        goToElement(elemento);
+    public void clickElement(By by){
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(by)).click();
         Print("Se realiza Click a Elemento:"+ by);
     }
+    public void clickElement(WebElement WebElement){
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(WebElement)).click();
+        Print("Se realiza Click a Elemento:"+ WebElement);
+    }
+
+    public void rightClick(By by) {
+        Actions clickDerecho = new Actions(driver);
+        clickDerecho.contextClick();
+    }
+
     public void double_clickBy(WebElement element){
         Actions actions =  new Actions(driver);
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(element));
         actions.doubleClick(element).perform();
         Print("Se realiza Click a Elemento:"+ element);
+    }
+    public void double_clickBy(By by){
+        Actions actions =  new Actions(driver);
+        WebElement element= new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(by));
+        actions.doubleClick(element).perform();
+        Print("Se realiza Click a Elemento:"+ element);
+    }
+
+    public WebElement returnWebElement(By by){
+        WebElement elemento = new WebDriverWait(driver, 10)
+                .until(ExpectedConditions.presenceOfElementLocated(by));
+        return elemento;
+
     }
 
     public void click_drag(WebElement element, int x, int y){
@@ -65,19 +86,46 @@ public class Helpers {
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(element));
         actions.dragAndDrop(element, target).build().perform();
     }
-    public void zoom(){
-        WebElement zoomPage = driver.findElement(By.tagName("html"));
-        zoomPage.sendKeys(Keys.chord(Keys.CONTROL, Keys.ADD));
+    public void zoomPage(double factor){
+        JavascriptExecutor executor = (JavascriptExecutor)driver;
+        executor.executeScript("document.body.style.zoom = "+factor+"");
     }
-    public void clickWebelement(WebElement Elemento){
-        Elemento.click();
-        Print("Se realiza Click a Elemento:"+ Elemento);
+
+    public void focoPage(){
+        String rutaAntigua = driver.getCurrentUrl();
+        ArrayList tabs = new ArrayList(driver.getWindowHandles());
+        System.out.println(tabs.size());
+        driver.switchTo().window(tabs.get(1).toString());
+        String rutaNueva = driver.getCurrentUrl();
+        if (rutaAntigua.equals(rutaNueva)){
+            System.out.println("ERROR...");
+        }else{
+            System.out.println("Navegacion OK...");
+        }
+        System.out.println(rutaNueva);
     }
     public void SendText(By by, String text){
+        // Espera dinamica
+        WebDriverWait wait = new WebDriverWait(driver,20);
+        wait.until(ExpectedConditions.presenceOfElementLocated(by));
+        // ----------------------------------------------------
         WebElement elemento = driver.findElement(by);
+        // ir al elemento (scroll)
+        goToElement(elemento);
+        // ----------------------------------------------------
         elemento.clear();
         elemento.sendKeys(text);
         Print("Se envia texto:"+ text + " al elemento: "+ by);
+    }
+    public void SendFile(By by, String text){
+        // Espera dinamica
+        WebDriverWait wait = new WebDriverWait(driver,20);
+        wait.until(ExpectedConditions.presenceOfElementLocated(by));
+        // ----------------------------------------------------
+        WebElement elemento = driver.findElement(by);
+        // ir al elemento (scroll)
+        elemento.sendKeys(text);
+        Print("Se envia archivo:"+ text + " al elemento: "+ by);
     }
     public String getText(By by) {
         String text = driver.findElement(by).getText();
@@ -137,10 +185,7 @@ public class Helpers {
 
     }
 
-    public void scrollDown() {
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("window.scrollTo(0,500)");
-    }
+
 
     public int GetRandomNumber(int bound){
         return new Random().nextInt(bound);
@@ -177,13 +222,13 @@ public class Helpers {
     public void ClickAction(By by, int HeightPage){
         JavascriptExecutor jse = (JavascriptExecutor)driver;
         jse.executeScript("scroll(0, "+HeightPage+")");
-        clickBy(by);
+        clickElement(by);
     }
 
     public void ValidateAssert(String text, By by){
         if(driver.findElement(by).getText().equals(text)){
             Assert.assertEquals(driver.findElement(by).getText(), text);
-            clickBy(by);
+            clickElement(by);
         }
     }
 
