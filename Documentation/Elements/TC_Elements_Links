@@ -1,0 +1,196 @@
+*Scenario 1*
+========================
+Redireccion de enlace "Home".
+
+Preconditions
+========================
+Contar con navegador con conexion a internet.
+
+Step to Test
+========================
+1. Dirigirse al inicio de la pagina ToolsQA en: https://demoqa.com/ 
+2. Dar clic en la card "Elements"
+3. Dar clic en "Links" dentro de la lista de "Elements" en https://demoqa.com/elements
+4. hacer clic en el enlace "Home"
+
+Expected Results
+========================
+Al redirigirse a la seccion de "Links", y dar en el enlace "Home"
+mostrará la pagina inicio de TOOlSQA.
+
+
+************************************************************************************************************
+*Scenario 2*
+========================
+Redireccion de enlace "Homeu03Wm".
+
+Preconditions
+========================
+Contar con navegador con conexion a internet.
+
+Step to Test
+========================
+1. Dirigirse al inicio de la pagina ToolsQA en: https://demoqa.com/ 
+2. Dar clic en la card "Elements"
+3. Dar clic en "Links" dentro de la lista de "Elements" en https://demoqa.com/elements
+4. hacer clic en el enlace "Homeu03Wm"
+
+Expected Results
+========================
+Al redirigirse a la seccion de "Links", y dar en el enlace "Homeu03Wm"
+mostrará la pagina inicio de TOOlSQA.
+
+
+************************************************************************************************************
+*Scenario 3*
+========================
+Llamadas api con enlace "Created".
+
+Preconditions
+========================
+Conexion a internet.
+
+Step to Test
+========================
+1. Dirigirse al inicio de la pagina ToolsQA en: https://demoqa.com/ 
+2. Dar clic en la card "Elements"
+3. Dar clic en "Links" dentro de la lista de "Elements" en https://demoqa.com/elements
+4. hacer clic en el enlace "Created"
+
+Expected Results
+========================
+Al redirigirse a la seccion de "Links", y dar en el enlace "Created"
+mostrará  el mensaje "Link has responded with staus 201 and status text Created".
+
+
+************************************************************************************************************
+*Scenario 4*
+========================
+Llamadas api con enlace "No Content".
+
+Preconditions
+========================
+Conexion a internet.
+
+Step to Test
+========================
+1. Dirigirse al inicio de la pagina ToolsQA en: https://demoqa.com/ 
+2. Dar clic en la card "Elements"
+3. Dar clic en "Links" dentro de la lista de "Elements" en https://demoqa.com/elements
+4. hacer clic en el enlace "No Content"
+
+Expected Results
+========================
+Al redirigirse a la seccion de "Links", y dar en el enlace "No Content"
+mostrará  el mensaje "Link has responded with staus 204 and status text No Content".
+
+
+************************************************************************************************************
+*Scenario 5*
+========================
+Llamadas api con enlace "Moved".
+
+Preconditions
+========================
+Conexion a internet.
+
+Step to Test
+========================
+1. Dirigirse al inicio de la pagina ToolsQA en: https://demoqa.com/ 
+2. Dar clic en la card "Elements"
+3. Dar clic en "Links" dentro de la lista de "Elements" en https://demoqa.com/elements
+4. hacer clic en el enlace "Moved"
+
+
+Expected Results
+========================
+Al redirigirse a la seccion de "Links", y dar en el enlace "Moved"
+mostrará  el mensaje "Link has responded with staus 301 and status text Moved Permanently".
+
+
+************************************************************************************************************
+*Scenario 6*
+========================
+Llamadas api con enlace "Bad Request".
+
+Preconditions
+========================
+Conexion a internet.
+
+Step to Test
+========================
+1. Dirigirse al inicio de la pagina ToolsQA en: https://demoqa.com/ 
+2. Dar clic en la card "Elements"
+3. Dar clic en "Links" dentro de la lista de "Elements" en https://demoqa.com/elements
+4. hacer clic en el enlace "Bad Request"
+
+Expected Results
+========================
+Al redirigirse a la seccion de "Links", y dar en el enlace "Bad Request"
+mostrará  el mensaje "Link has responded with staus 400 and status text Bad Request".
+
+
+************************************************************************************************************
+*Scenario 7*
+========================
+Llamadas api con enlace "Unauthorized".
+
+Preconditions
+========================
+Conexion a internet.
+
+Step to Test
+========================
+1. Dirigirse al inicio de la pagina ToolsQA en: https://demoqa.com/ 
+2. Dar clic en la card "Elements"
+3. Dar clic en "Links" dentro de la lista de "Elements" en https://demoqa.com/elements
+4. hacer clic en el enlace "Unauthorized"
+
+Expected Results
+========================
+Al redirigirse a la seccion de "Links", y dar en el enlace "Unauthorized"
+mostrará el mensaje "Link has responded with staus 401 and status text Unauthorized".
+
+
+************************************************************************************************************
+*Scenario 8*
+========================
+Llamadas api con enlace "Forbidden".
+
+Preconditions
+========================
+Conexion a internet.
+
+Step to Test
+========================
+1. Dirigirse al inicio de la pagina ToolsQA en: https://demoqa.com/ 
+2. Dar clic en la card "Elements"
+3. Dar clic en "Links" dentro de la lista de "Elements" en https://demoqa.com/elements
+4. hacer clic en el enlace "Forbidden"
+
+Expected Results
+========================
+Al redirigirse a la seccion de "Links", y dar en el enlace "Forbidden"
+mostrará el mensaje "Link has responded with staus 403 and status text Forbidden".
+
+
+************************************************************************************************************
+*Scenario 9*
+========================
+Llamadas api con enlace "Not Found".
+
+Preconditions
+========================
+Conexion a internet.
+
+Step to Test
+========================
+1. Dirigirse al inicio de la pagina ToolsQA en: https://demoqa.com/ 
+2. Dar clic en la card "Elements"
+3. Dar clic en "Links" dentro de la lista de "Elements" en https://demoqa.com/elements
+4. hacer clic en el enlace "Not Found"
+
+Expected Results
+========================
+Al redirigirse a la seccion de "Links", y dar en el enlace "Not Found"
+mostrará el mensaje "Link has responded with staus 404 and status text Not Found".

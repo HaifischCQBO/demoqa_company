@@ -7,10 +7,9 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
-public class Test_no_POM {
+public class testNoPOM {
 
     public WebDriver driver;
-
     @Test
     @Ignore
     public void PrimeraPrueba(){
@@ -22,5 +21,16 @@ public class Test_no_POM {
         driver.get("https://demoqa.com/");
 
 
+    public void PrimerPrueba() {
+
+
+        WebDriverManager.chromedriver().setup();
+        ChromeOptions options = new ChromeOptions();
+
+        options.addArguments("--disable-gpu");// argumento para no consumir demasiados recursos
+        driver = new ChromeDriver(options);
+
+        driver.get("https://demoqa.com/checkbox");
     }
+
 }

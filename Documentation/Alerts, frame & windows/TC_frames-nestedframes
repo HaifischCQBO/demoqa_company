@@ -1,0 +1,31 @@
+
+TEST CASE FRAMES:
+Escenario: verificar el texto de iframe1
+precondiciones:
+conexión a internet
+
+step to test:
+1. ir a https://demoqa.com
+2. click en la tarjeta de alerts, frame y windoms
+3. click en Frames
+4. Visualizar los dos marcos flotantes de esta pagina
+5. Inpeccionar el primer marco
+6. Visualiza el contenido de frame1
+7. Verifica el texto de iframe1
+
+expected response:
+"This is a sample page"
+
+
+TEST CASE NESTED FRAMES:
+Escenario: verificar la url de iframe
+precondiciones: conexion a internet
+
+step to test:
+1. ir a https://demoqa.com
+2. click en la tarjeta de alerts, frame y windoms
+3. click en Nested Frames
+4. Visualizar el marco anidado de esta pagina
+5. Inpeccionar el marco
+6. Verificar el contenido de iframe
+7. Verificar la url de iframe

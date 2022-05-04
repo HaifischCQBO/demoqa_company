@@ -1,0 +1,13 @@
+Escenario
+Cursor Lado superior izquierdo caja Dragabble.
+
+Pasos:
+1.Dirigirse a la pagina principal de ToolsQA  en https://demoqa.com/
+2.hacer click en tarjeta Interactions.
+3.hacer click en la lista de Interactions  en la parte de Dragabbles.
+4.hacer click en Cursor Style.
+5.Hacer click en la caja My cursor is at top left.
+6.Desplazar la caja Hacia el lado derecho.
+
+Resultado:
+1.El cursor al desplazar la caja siempre esta en el superior izquierdo.
