@@ -1,4 +1,5 @@
-package pages;
+package Pages;
+
 
 import Helpers.Helpers;
 import org.openqa.selenium.By;
@@ -26,7 +27,8 @@ public class Page_index {
     private By card_Elements = By.xpath("//div[@class=\"card mt-4 top-card\"][1]");
     private By card_Forms = By.xpath("//div[@class=\"card mt-4 top-card\"][2]");
     public By categoryCards = By.name("category-cards");
-
+    public By btnElement= By.xpath("//*[@id=\"app\"]/div/div/div[2]/div/div[1]/div/div[2]/svg/path");
+    public By categorycards_div =  By.xpath("//div[contains(@class,'category-cards')]/div")
 
     // FUNCIONES // FUNCIONES // FUNCIONES // FUNCIONES // FUNCIONES // FUNCIONES // FUNCIONES // FUNCIONES
 
@@ -48,7 +50,7 @@ public class Page_index {
 
 
     private List<WebElement> getCategoryCards(){
-        List<WebElement> categoryCards = driver.findElements(By.xpath("//div[contains(@class,'category-cards')]/div"));
+        List<WebElement> categoryCards = driver.findElements(categorycards_div);
         System.out.println(categoryCards);
         return categoryCards;
     }
@@ -71,7 +73,16 @@ public class Page_index {
     }
 
 
-    public By btnElement= By.xpath("//*[@id=\"app\"]/div/div/div[2]/div/div[1]/div/div[2]/svg/path");
+    public void click_elements_div(){
+        /* metodo para hacer click en Elements de la pagina principal.
+         * Se hace porque el scroll esta contenido dentro del metodo "clickGoToElement" de la clase "helpers"
+         * realizado por: Elián Andrés Díaz Vargas
+         */
+        helpers.clickGoToElement(card_Elements);
+        //driver.findElement(find_flights_button).click();
+    }
+
+   
 
     public void click_btnElement(){
         helpers.clickElement(btnElement);
