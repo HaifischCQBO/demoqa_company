@@ -44,7 +44,7 @@ public class TestAcordian extends BaseClass {
         }
         Assert.assertEquals(accordian.sizeCardsAccordian(),3, "El acordion no tiene 3 cartas");
         accordian.clickCardIndex(indexCard); //Click en la carta 2
-        helpers.Pause(1);
+        helpers.PauseMilisegundos(400);
         Assert.assertTrue(accordian.isAllCardsNotShowExceptIndex(indexCard),"No se está mostrando el contenido de la carta" + (indexCard  + 1));
     }
 
