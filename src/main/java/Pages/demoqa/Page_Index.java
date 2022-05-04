@@ -22,6 +22,11 @@ public class Page_Index implements Page  {
         helpers = new Helpers(driver);
     }
 
+    public Page_Index(WebDriver driver){
+        this.driver = driver;
+        helpers = new Helpers(driver);
+    }
+
     @Override
     public String getUrl() {
         return this.URL;

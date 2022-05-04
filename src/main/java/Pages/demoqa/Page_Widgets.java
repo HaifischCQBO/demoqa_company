@@ -18,6 +18,10 @@ public class Page_Widgets implements Page{
         driver = SingletonDriver.getWebDriver();
         helpers = new Helpers(driver);
     }
+    public Page_Widgets(WebDriver driver){
+        this.driver = driver;
+        helpers = new Helpers(driver);
+    }
 
 
     /**Web elements
