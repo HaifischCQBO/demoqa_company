@@ -12,15 +12,15 @@ public class testNoPOM {
     public WebDriver driver;
     @Test
     @Ignore
-    public void PrimeraPrueba(){
+    public void PrimeraPrueba() {
 
         WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--disable-gpu");
-        driver =new ChromeDriver(options);
+        driver = new ChromeDriver(options);
         driver.get("https://demoqa.com/");
-
-
+    }
+/*
     public void PrimerPrueba() {
 
 
@@ -32,5 +32,5 @@ public class testNoPOM {
 
         driver.get("https://demoqa.com/checkbox");
     }
-
+*/
 }

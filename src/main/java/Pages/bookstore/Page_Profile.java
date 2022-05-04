@@ -35,29 +35,27 @@ public class Page_Profile {
      */
 
     public void click_profile(){
-        helpers.clickBy(select_profile);
+        helpers.clickElement(select_profile);
         //driver.findElement(find_flights_button).click();
     }
     public void click_login(){
-        helpers.clickBy(select_login);
+        helpers.clickElement(select_login);
         //driver.findElement(find_flights_button).click();
     }
     public void dates_login(){
-        driver.findElement(select_input_username).sendKeys("vargas quiroga");
-        driver.findElement(select_input_password).sendKeys("Colombia1$");
+        helpers.SendText(select_input_username,"vargas quiroga");
+        helpers.SendText(select_input_password,"Colombia1$");
     }
     public void click_botton(){
-        helpers.clickBy(botton_login);
+        helpers.clickElement(botton_login);
 
     }
     public void click_delete(){
-        helpers.Pause(4);
-        helpers.clickBy(delete_libro);
+        helpers.clickElement(delete_libro);
 
     }
     public void click_ok() {
-        helpers.clickBy(botton_ok);
-        helpers.Pause(4);
+        helpers.clickElement(botton_ok);
         Alert alert = driver.switchTo().alert();
         alert.accept();
 

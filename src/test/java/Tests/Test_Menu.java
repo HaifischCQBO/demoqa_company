@@ -1,10 +1,10 @@
-package Test;
+package Tests;
 
 import Baseclass.BaseClass;
 import Helpers.Helpers;
 import Pages.Page_menu;
 import Pages.Page_select;
-import Pages.bookstore.Page_index;
+import Pages.Page_index;
 import org.testng.annotations.Test;
 
 public class Test_Menu extends BaseClass {

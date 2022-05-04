@@ -8,8 +8,8 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pages.Elements.Page_Elements_Links;
-import pages.Page_elements;
-import pages.Page_index;
+import Pages.Page_elements;
+import Pages.Page_index;
 
 
 public class Test_con_POM extends BaseClass {

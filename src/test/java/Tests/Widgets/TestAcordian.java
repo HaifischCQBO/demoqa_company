@@ -1,9 +1,10 @@
-package Tests.Widgets;
+/*package Tests.Widgets;
 
 import Baseclass.BaseClass;
 import Helpers.Helpers;
-import Pages.demoqa.Page_Accordian;
+import Pages.Page_Accordian;
 import Pages.Page_Widgets;
+import Pages.Page_index;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
@@ -50,8 +51,8 @@ public class TestAcordian extends BaseClass {
     @Test
     public void Test_ID_W_A05()
     {
-        Page_Widgets widgets = new Page_Widgets();
-        Page_Accordian accordian = new Page_Accordian();
+        Page_Widgets widgets = new Page_Widgets(driver);
+        Page_Accordian accordian = new Page_Accordian(driver);
         Helpers helpers = new Helpers();
 
         helpers.getURL(widgets.getUrl());
@@ -62,7 +63,7 @@ public class TestAcordian extends BaseClass {
     @Test
     public void Test_ID_W_A06()
     {
-        Page_Index index = new Page_Index();
+        Page_index index = new Page_index(driver);
         Page_Widgets widgets = new Page_Widgets();
         Helpers helpers = new Helpers();
 
@@ -74,3 +75,4 @@ public class TestAcordian extends BaseClass {
         Assert.assertEquals(driver.getCurrentUrl(),widgets.getUrl());
     }
 }
+*/
