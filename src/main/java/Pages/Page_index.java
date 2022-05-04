@@ -1,4 +1,4 @@
-package Pages.Demoqa;
+package Pages;
 
 import Helpers.Helpers;
 import org.openqa.selenium.By;
@@ -7,12 +7,12 @@ import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
-public class Page_Index {
+public class Page_index {
 
     public WebDriver driver;
     public Helpers helpers;
 
-    public Page_Index(WebDriver driver){
+    public Page_index(WebDriver driver){
         this.driver = driver;
         helpers = new Helpers(driver);
     }

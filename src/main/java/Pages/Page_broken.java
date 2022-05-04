@@ -1,4 +1,4 @@
-package Pages.Demoqa;
+package Pages;
 
 public class Page_broken {
 }

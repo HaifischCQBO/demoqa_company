@@ -2,7 +2,7 @@ package Tests;
 
 import Baseclass.BaseClass;
 import Helpers.Helpers;
-import Pages.Demoqa.Page_Index;
+import Pages.Page_index;
 import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
@@ -18,7 +18,7 @@ public class Test_con_POM extends BaseClass {
 
         Helpers helpers = new Helpers(driver);
         helpers.getURL("https://demoqa.com/");
-        Page_Index page_index = new Page_Index(driver);
+        Page_index page_index = new Page_index(driver);
 
 
 

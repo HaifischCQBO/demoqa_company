@@ -2,8 +2,8 @@ package Tests;
 
 import Baseclass.BaseClass;
 import Helpers.Helpers;
-import Pages.Demoqa.Page_Index;
-import Pages.Demoqa.Page_upload_and_download;
+import Pages.Page_index;
+import Pages.Page_upload_and_download;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -18,7 +18,7 @@ public class ElementTest extends BaseClass {
         helpers.getURL(url);
 
         // 2. Dar click en la sección "Elements".
-        Page_Index page_index = new Page_Index(driver);
+        Page_index page_index = new Page_index(driver);
         page_index.clickElements();
 
         // 3. Dar click en el apartado "Upload and Download"
@@ -42,7 +42,7 @@ public class ElementTest extends BaseClass {
         helpers.getURL(url);
 
         //2. Dar click en la sección "Elements".
-        Page_Index page_index = new Page_Index(driver);
+        Page_index page_index = new Page_index(driver);
         page_index.clickElements();
 
         //3.Dar click en el apartado "Upload and Download"

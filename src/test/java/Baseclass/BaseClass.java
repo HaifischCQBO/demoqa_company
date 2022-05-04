@@ -13,8 +13,10 @@ public class BaseClass {
     public WebDriver driver;
     Helpers helpers = new Helpers();
 
+
+    //Crear un nuevo driver, para prueba de test de boton Seleccionar archivo
     @BeforeMethod
-    public void setUp(){
+    public void Elements(){
         Helpers helpers = new Helpers();
         WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
