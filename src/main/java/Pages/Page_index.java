@@ -70,4 +70,14 @@ public class Page_index {
         return null;
     }
 
+
+    public By btnElement= By.xpath("//*[@id=\"app\"]/div/div/div[2]/div/div[1]/div/div[2]/svg/path");
+
+    public void click_btnElement(){
+        helpers.clickElement(btnElement);
+        helpers.Pause(2);
+        //driver.findElement(botonElements).click();
+
+    }
+
 }
