@@ -40,18 +40,15 @@ public class TCaseBookStore extends BaseClass {
         Page_perfil page_perfil = new Page_perfil();
         List<String> list;
         list = page_perfil.List_title();
-        helpers.Pause(10);
-        helpers.scrollDown();
+        helpers.scrollDown(10);
         page_perfil.click_back_button();
         //Seleccionamos el libro que queremos añadir ya verificado que no esta repetido
         Pages_books pages_books = new Pages_books();
-        helpers.Pause(10);
-        helpers.scrollDown();
+        helpers.scrollDown(10);
         pages_books.selectBook(list);
         //Hacemos doble click a añadir el libro a coleccion
         Page_bookdescription page_bookdescription = new Page_bookdescription();
-        helpers.Pause(10);
-        helpers.scrollDown();
+        helpers.scrollDown(10);
         page_bookdescription.double_click_add();
         Assert.assertTrue(page_bookdescription.alert_confirmation(), "an error occurred");
         Assert.assertTrue(page_bookdescription.alert_error(), "an error occurred");
@@ -70,18 +67,15 @@ public class TCaseBookStore extends BaseClass {
         Page_perfil page_perfil = new Page_perfil();
         List<String> list;
         list = page_perfil.List_title();
-        helpers.Pause(10);
-        helpers.scrollDown();
+        helpers.scrollDown(10);
         page_perfil.click_back_button();
         //Seleccionamos el libro que queremos añadir ya verificado que no esta repetido
         Pages_books pages_books = new Pages_books();
-        helpers.Pause(10);
-        helpers.scrollDown();
+        helpers.scrollDown(10);
         pages_books.selectBook(list);
         //Añadimos el libro
         Page_bookdescription page_bookdescription = new Page_bookdescription();
-        helpers.Pause(10);
-        helpers.scrollDown();
+        helpers.scrollDown(10);
         page_bookdescription.click_button_add();
         Assert.assertTrue(page_bookdescription.alert_confirmation(), "The book could not be added");
     }
@@ -92,10 +86,9 @@ public class TCaseBookStore extends BaseClass {
         Helpers helpers = new Helpers(driver);
         helpers.getURL("https://demoqa.com/books");
         Pages_books pages_books = new Pages_books();
-        helpers.scrollDown();
+        helpers.scrollDown(10);
         String title = pages_books.selectBookConfirmation();
         Page_bookdescription page_bookdescription = new Page_bookdescription();
-        helpers.Pause(5);
         Assert.assertTrue(page_bookdescription.confirmation(title),
                 "Something is not right, El titulo del libro seleccionado no conciden");
     }

@@ -1,11 +1,10 @@
-package Test;
+package Tests;
 
 import Baseclass.BaseClass;
 import Helpers.Helpers;
-import Pages.demoqa.Page_Index;
+import Pages.Page_index;
 import Pages.bookstore.Page_Profile;
 import org.testng.annotations.Test;
-import Pages.bookstore.Page_index;
 
 public class Test_con_POM extends BaseClass {
 

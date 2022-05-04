@@ -22,18 +22,18 @@ public class Page_upload_and_download {
 
     public void clickUploadAndDownload(){
         WebElement uploadAndDownloadElement = driver.findElement(uploadAndDownload);
-        helpers.clickWebElementByJs(uploadAndDownloadElement);
+        helpers.clickElement(uploadAndDownloadElement);
     }
     public WebElement clickDownload(){
         WebElement downloadElement = driver.findElement(download);
-        helpers.clickWebElementByJs(downloadElement);
+        helpers.clickElement(downloadElement);
         return downloadElement;
     }
 
     public void clickUpload(){
         WebElement seleccionarArchivo = driver.findElement(upload);
-        helpers.SendText(upload, "C:\\Users\\DELL\\Desktop\\Button Download.txt");
-        helpers.clickWebElementByJs(seleccionarArchivo);
+        helpers.SendText(upload, "Documentation/test_image.jpg");
+        helpers.clickElement(seleccionarArchivo);
     }
 
     public String filePathUploaded(){

@@ -3,7 +3,7 @@ package Tests;
 import Baseclass.BaseClass;
 import Helpers.Helpers;
 import Pages.Page_elements;
-import Pages.bookstore.Page_index;
+import Pages.Page_index;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
