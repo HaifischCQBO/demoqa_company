@@ -1,0 +1,23 @@
+Escenario #1
+
+El usuario debe poder seleccionar una fecha en la opción Select Date y también una fecha y hora a través de Date and Time
+
+Test Case Date Picker
+Nombre Marlon
+Apellido Soto
+
+Precondiciones:
+Debe haber abierto el navegador y estar conectado a internet
+Debe haber ingresado a la pagina https://demoqa.com/
+
+Pasos a reproducir
+
+1.seleccionar la opción "Widgets"
+2.dar click en la opción de "Date Picker"
+3.En la opción Select Date  cambiar la fecha
+4.En la opción Date and Time cambiar la fecha y hora
+
+
+
+Resultados previstos:
+El usuario podrá evidenciar los cambios realizados inmediatamente según los datos ingresados en Select Date y en Date.

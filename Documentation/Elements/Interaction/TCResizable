@@ -1,0 +1,84 @@
+Test Case 1: redimensión limite minimo (150*150) - TRAZABILIDAD: resizable_minBox1 (nombre de test)
+
+El usuario debe poder redimensionar el Box 1 un minimo de 150*150
+
+Step to reproduce
+1. Ingresar a la siguiente url: https://demoqa.com/
+2. Clic en la tarjeta de Interacction
+3. Clic en Rezisablle
+4. Clic sostenido en el Box
+5. Llevar el elemento a un tamaño de 150*150
+
+Se espera
+El sistema debe permitir realizar la modificación del tamaño del elemento con exito
+ =================================================================================
+Test Case2: redimensionar de box1 en 149*149 - TRAZABILIDAD: raizable_pordebajo (nombre de test)
+
+El usuario no debe poder redimensionar el Box1 en 149*149
+
+Step to reproduce
+1. Ingresar a la siguiente url: https://demoqa.com/
+2. Clic en la tarjeta de Interacction
+3. Clic en Rezisablle
+4. Clic sostenido en el Box
+5. Llevar el elemento a un tamaño de 149*149
+
+Se espera:
+El elemento debe quedar con el tamaño minimo permitido 150*150
+===================================================================================
+Test Case3: redimensionar de box1 en 200*300 -TRAZABILIDAD rasizable_rangoY (nombre de test)
+
+El usuario debe poder redimensionar el Box 1 a 200*300
+
+Step to reproduce
+1. Ingresar a la siguiente url: https://demoqa.com/
+2. Clic en la tarjeta de Interacction
+3. Clic en Rezisablle
+4. Clic sostenido en el Box
+5. Llevar el elemento a un tamaño de 200*300
+
+Se espera:
+El elemento debe quedar con el tamaño 200*300
+=======================================================================================
+Test Case4: redimensionar de box1 en 450*200 - TRAZABILIAD: rasizable_rangoX (nombre de test)
+
+El usuario debe poder redimensionar el Box 1 a 450*200
+
+Step to reproduce
+1. Ingresar a la siguiente url: https://demoqa.com/
+2. Clic en la tarjeta de Interacction
+3. Clic en Rezisablle
+4. Clic sostenido en el Box
+5. Llevar el elemento a un tamaño de 450*200
+
+Se espera:
+El elemento debe quedar con el tamaño 450*200
+=======================================================================================
+Test case5 redimensionar de box1 en 500*300 - TRAZABILIDAD: resizable_maximo(nombre de test)
+
+El usuario debe poder redimensionar el Box 1 a 500*300
+
+Step to reproduce
+1. Ingresar a la siguiente url: https://demoqa.com/
+2. Clic en la tarjeta de Interacction
+3. Clic en Rezisablle
+4. Clic sostenido en el Box
+5. Llevar el elemento a un tamaño de 500*300
+Se espera:
+El sistema debe permitir realizar la modificación a este tamaño
+=======================================================================================
+Test case6 redimensionar de box1 en 501*301 - TRAZABILIDAD: rasizable_fuera_rango (nombre de test)
+
+El usuario no debe poder redimensionar el Box 1 a 501*301
+
+Step to reproduce
+1. Ingresar a la siguiente url: https://demoqa.com/
+2. Clic en la tarjeta de Interacction
+3. Clic en Rezisablle
+4. Clic sostenido en el Box
+5. Llevar el elemento a un tamaño de 501*301
+
+Se espera:
+El sistema no debe permitir realizar la modificación a este tamaño
+=====================================================================================
+
