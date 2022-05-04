@@ -2,8 +2,8 @@ package Test;
 
 import Baseclass.BaseClass;
 import Helpers.Helpers;
-import Pages.Page_Profile;
-import Pages.bookstore.Page_index;
+import Pages.demoqa.Page_Index;
+import Pages.bookstore.Page_Profile;
 import org.testng.annotations.Test;
 import Pages.bookstore.Page_index;
 
