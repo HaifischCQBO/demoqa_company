@@ -8,7 +8,7 @@ public class TestNestedFrames extends BaseClass {
 
     @Test
     public void TestCaseTwo(){
-        Helpers myDriver = new Helpers();
+        Helpers myDriver = new Helpers(driver);
 
         myDriver.loadSite("https://demoqa.com/nestedframes");
 

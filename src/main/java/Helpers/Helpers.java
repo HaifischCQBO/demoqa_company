@@ -16,9 +16,8 @@ import java.util.Random;
 
 public class Helpers {
     private static WebDriver driver;
-
     public Helpers(){
-        this.driver = SingletonDriver.getWebDriver();
+
     }
     public Helpers(WebDriver driver){
         this.driver = driver;

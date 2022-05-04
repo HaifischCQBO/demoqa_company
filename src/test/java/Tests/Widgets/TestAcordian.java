@@ -14,8 +14,8 @@ public class TestAcordian extends BaseClass {
     @Test
     public void Test_ID_W_A01()
     {
-        Helpers helpers = new Helpers();
-        Page_Accordian accordian = new Page_Accordian();
+        Helpers helpers = new Helpers(driver);
+        Page_Accordian accordian = new Page_Accordian(driver);
         helpers.getURL(accordian.getUrl());
         Assert.assertTrue(accordian.isAllCardsNotShowExceptIndex(0),"No se está mostrando la primera carta u otra carta tambien está visble.");
         Assert.assertEquals(accordian.sizeCardsAccordian(),3, "El acordion no tiene 3 cartas");
@@ -32,8 +32,8 @@ public class TestAcordian extends BaseClass {
     @Test(dataProvider = "indexCard")
     public void Test_ID_W_A02_to_A04(Integer indexCard)
     {
-        Helpers helpers = new Helpers();
-        Page_Accordian accordian = new Page_Accordian();
+        Helpers helpers = new Helpers(driver);
+        Page_Accordian accordian = new Page_Accordian(driver);
         if(indexCard != 0) {
             helpers.getURL(accordian.getUrl());
             Assert.assertTrue(accordian.isCardIndexShow(0),"No se está mostrando inicialmente el contenido de la carta 2");
@@ -51,9 +51,9 @@ public class TestAcordian extends BaseClass {
     @Test
     public void Test_ID_W_A05()
     {
-        Page_Widgets widgets = new Page_Widgets();
-        Page_Accordian accordian = new Page_Accordian();
-        Helpers helpers = new Helpers();
+        Page_Widgets widgets = new Page_Widgets(driver);
+        Page_Accordian accordian = new Page_Accordian(driver);
+        Helpers helpers = new Helpers(driver);
 
         helpers.getURL(widgets.getUrl());
         helpers.clickBy(widgets.accordian);
@@ -63,9 +63,9 @@ public class TestAcordian extends BaseClass {
     @Test
     public void Test_ID_W_A06()
     {
-        Page_Index index = new Page_Index();
-        Page_Widgets widgets = new Page_Widgets();
-        Helpers helpers = new Helpers();
+        Page_Index index = new Page_Index(driver);
+        Page_Widgets widgets = new Page_Widgets(driver);
+        Helpers helpers = new Helpers(driver);
 
         helpers.getURL(index.getUrl());
         WebElement btn_widgets = index.findCategoryCard(3);

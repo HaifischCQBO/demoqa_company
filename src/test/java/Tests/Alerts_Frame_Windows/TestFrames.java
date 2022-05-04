@@ -11,7 +11,7 @@ public class TestFrames extends BaseClass {
     @Test
     public void TestCaseOne(){
 
-        Helpers myDriver = new Helpers();
+        Helpers myDriver = new Helpers(driver);
 
         myDriver.loadSite(Page.URL_INDEX);
 

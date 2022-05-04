@@ -15,15 +15,10 @@ public class Page_Widgets implements Page {
     public WebDriver driver;
     public Helpers helpers;
 
-    public Page_Widgets(){
-        driver = SingletonDriver.getWebDriver();
-        helpers = new Helpers(driver);
-    }
     public Page_Widgets(WebDriver driver){
         this.driver = driver;
         helpers = new Helpers(driver);
     }
-
 
     /**Web elements
      *

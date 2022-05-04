@@ -16,8 +16,8 @@ public class Page_Accordian implements Page {
     public Helpers helpers;
     public List<WebElement> cardsAccordian;
 
-    public Page_Accordian (){
-        this.driver = SingletonDriver.getWebDriver();
+    public Page_Accordian (WebDriver driver){
+        this.driver = driver;
         this.helpers = new Helpers(driver);
     }
 

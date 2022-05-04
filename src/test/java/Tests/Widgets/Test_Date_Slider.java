@@ -1,6 +1,5 @@
 package Tests.Widgets;
 
-
 import Baseclass.BaseClass;
 import Helpers.Helpers;
 import interfaces.Page;
@@ -19,7 +18,7 @@ public class Test_Date_Slider extends BaseClass {
         Helpers helpers = new Helpers(driver);
         Page_Date_Picker page_date_picker = new Page_Date_Picker(driver);
         helpers.getURL(Page.URL_INDEX);
-        Page_Widgets page_widgets = new Page_Widgets();
+        Page_Widgets page_widgets = new Page_Widgets(driver);
         page_widgets.click_widgets();
         Random r = new Random();
         int randonMonth;

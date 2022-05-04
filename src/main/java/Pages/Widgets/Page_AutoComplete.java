@@ -16,8 +16,8 @@ public class Page_AutoComplete implements Page {
     private final String URL = Page.URL_INDEX + "auto-complete";
     public WebDriver driver;
     public Helpers helpers;
-    public Page_AutoComplete() {
-        this.driver = SingletonDriver.getWebDriver();
+    public Page_AutoComplete(WebDriver driver) {
+        this.driver = driver;
         this.helpers = new Helpers(driver);
     }
 

@@ -14,15 +14,15 @@ public class SingletonDriver {
     private SingletonDriver(){}
 
     public static WebDriver getWebDriver(){
+        Helpers helpers = new Helpers();
         if(driver == null){
             WebDriverManager.chromedriver().setup();
             ChromeOptions options = new ChromeOptions();
             options.addArguments("--disable-gpu");
-            /*
+
             if(helpers.getXMLParameter("headless").equals("true")) {
                 options.addArguments("--headless");
-            }*/
-            //options.addArguments("--headless");
+            }
             driver = new ChromeDriver(options);
         }
 

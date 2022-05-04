@@ -11,7 +11,7 @@ public class TestMenu extends BaseClass {
     void InicioChrome(){
         Helpers helpers = new Helpers(driver);
         helpers.getURL("https://demoqa.com/");
-        Page_Index page_index = new Page_Index();
+        Page_Index page_index = new Page_Index(driver);
         page_index.ClickedCard();
     }
 

@@ -15,12 +15,6 @@ public class Page_Index implements Page {
     public WebDriver driver;
     public Helpers helpers;
 
-
-    public Page_Index(){
-        driver = SingletonDriver.getWebDriver();
-        helpers = new Helpers(driver);
-    }
-
     public Page_Index(WebDriver driver){
         this.driver = driver;
         helpers = new Helpers(driver);
