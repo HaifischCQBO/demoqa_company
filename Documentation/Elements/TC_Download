@@ -1,0 +1,15 @@
+// SCENARIO
+El usuario dara click derecho en el botón "Download"
+
+// PRECONDITIONS
+Conexion a internet.
+Disponibilidad de un navegador.
+
+// STEP TO TEST
+1. Ingresar al enlace "https://demoqa.com/"
+2. Dar click en la sección "Elements".
+3. Dar click en el apartado "Upload and Download"
+4. Dar click "Download"
+
+// EXPECTED RESULT
+El sistema descargara una imagen.

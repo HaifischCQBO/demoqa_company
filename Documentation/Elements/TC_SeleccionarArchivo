@@ -1,0 +1,17 @@
+// SCENARIO
+El usuario hara click en el button "Seleccionar archivo"
+
+// PRECONDITIONS
+Conexion a internet.
+Disponibilidad de un navegador.
+
+// STEP TO TEST
+1. Ingresar al enlace "https://demoqa.com/"
+2. Dar click en la sección "Elements".
+3. Dar click en el apartado "Upload and Download"
+4. Dar click "Seleccionar archivo"
+5. Se despliega la ventana de explorador de archivo.
+6. Selecciona el archivo que desees.
+
+// EXPECTED RESULTS
+- El sistema mostrara el nombre del archivo seleccionado y su ruta de ubicacion.

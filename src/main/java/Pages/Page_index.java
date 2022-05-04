@@ -28,6 +28,8 @@ public class Page_index {
     public By categoryCards = By.name("category-cards");
     public By btnElement= By.xpath("//*[@id=\"app\"]/div/div/div[2]/div/div[1]/div/div[2]/svg/path");
     public By categorycards_div =  By.xpath("//div[contains(@class,'category-cards')]/div")
+    public By category_Cards = By.xpath("//div[@class='category-cards']");
+    public By cards = By.cssSelector(".card");
 
     // FUNCIONES // FUNCIONES // FUNCIONES // FUNCIONES // FUNCIONES // FUNCIONES // FUNCIONES // FUNCIONES
 
@@ -87,5 +89,10 @@ public class Page_index {
         //driver.findElement(botonElements).click();
 
     }
-
+    public void clickElements() {
+        WebElement categoryCard = driver.findElement(category_Cards);
+        List<WebElement> cardsElements = categoryCard.findElements(cards);
+        WebElement elements = cardsElements.get(0);
+        helpers.clickElement(elements);
+    }
 }
