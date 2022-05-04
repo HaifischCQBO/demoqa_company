@@ -1,4 +1,4 @@
-package Pages;
+package pages.Elements;
 
 import Helpers.Helpers;
 import org.openqa.selenium.By;

@@ -3,6 +3,7 @@ package Tests;
 import Baseclass.BaseClass;
 import Helpers.Helpers;
 import Pages.Page_elements;
+import Pages.bookstore.Page_index;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -14,8 +15,8 @@ public class TestConPOM extends BaseClass {
          helpers.getURL("https://demoqa.com");
          helpers.getURL("https://demoqa.com/checkbox");
 
-         Page_Index page_index = new Page_Index(driver);
-         page_index.click_btnElements();
+         Page_index page_index = new Page_index(driver);
+         page_index.click_btnElement();
 
     }
 

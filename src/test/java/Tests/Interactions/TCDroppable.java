@@ -1,4 +1,4 @@
-package Tests;
+package Tests.Interactions;
 
 import Helpers.Helpers;
 import Pages.interactions.PageDroppable;

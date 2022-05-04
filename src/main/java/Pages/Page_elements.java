@@ -1,4 +1,4 @@
-package Pages;
+package pages;
 
 import Helpers.Helpers;
 import org.openqa.selenium.By;
@@ -17,8 +17,15 @@ public class Page_elements {
     }
 
                                     //*[@id="tree-node"]/ol/li/span/button
+    /*El siguiente fragmento de codigo es usado en la seccion de elements para ubicar links*/
+    /* Inicio de codigo para ubicar la seccion de links*/
+        public By select_element = By.xpath("//*[@id=\"item-5\"]");
 
-
+    public void click_element(){
+        helpers.clickElement(select_element);
+        //driver.findElement(find_flights_button).click();
+    }
+    /* Finalizacion de codigo para ubicar la seccion de links*/
     public By checkHome= By.className("rct-checkbox");
 
     public void click_CheckHome(){
