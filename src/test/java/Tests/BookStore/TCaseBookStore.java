@@ -1,4 +1,4 @@
-package Tests;
+package Tests.BookStore;
 
 import Baseclass.BaseClass;
 import Helpers.Helpers;
@@ -38,7 +38,7 @@ public class TCaseBookStore extends BaseClass {
         //
         //guardamos los libros que ya estan en nuestro perfil y nos vamos a la tienda
         Page_perfil page_perfil = new Page_perfil();
-        List<String> list = new ArrayList<>();
+        List<String> list;
         list = page_perfil.List_title();
         helpers.Pause(10);
         helpers.scrollDown();
@@ -68,7 +68,7 @@ public class TCaseBookStore extends BaseClass {
         page_login.click_buttom_login();
         //guardamos los libros que ya estan en nuestro perfil y nos vamos a la tienda
         Page_perfil page_perfil = new Page_perfil();
-        List<String> list = new ArrayList<>();
+        List<String> list;
         list = page_perfil.List_title();
         helpers.Pause(10);
         helpers.scrollDown();

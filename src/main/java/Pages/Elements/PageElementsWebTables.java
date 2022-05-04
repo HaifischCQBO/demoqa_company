@@ -1,4 +1,8 @@
-package Pages.Demoqa.elements;
+/*********************************************************************************************************
+    Realizado por:
+        Elián Andrés Díaz Vargas
+ *******************************************************************************************************/
+package Pages.Elements;
 
 import Helpers.Helpers;
 import com.github.javafaker.Faker;
@@ -73,11 +77,11 @@ public class PageElementsWebTables {
     //  test case 1
 
     public void click_web_tables_li(){
-        helpers.clickElement(web_tables_li);
+        helpers.clickGoToElement(web_tables_li);
         //driver.findElement(find_flights_button).click();
     }
     public void click_web_tables_add_button(){
-        helpers.clickElement(web_tables_add_button);
+        helpers.clickGoToElement(web_tables_add_button);
         //driver.findElement(find_flights_button).click();
     }
 
@@ -90,17 +94,17 @@ public class PageElementsWebTables {
         //helpers.SendText(web_tables_salary_input, String.valueOf(helpers.GetRandomNumber(1000000)));
         //helpers.SendText(web_tables_department_input, faker.address().state());
 
-        helpers.SendTextToElement(web_tables_first_name_input, "Elián");
-        helpers.SendTextToElement(web_tables_last_name_input, "Díaz");
-        helpers.SendTextToElement(web_tables_email_input, "eadv@dominio.com" );
-        helpers.SendTextToElement(web_tables_age_input, "21");
-        helpers.SendTextToElement(web_tables_salary_input, "99999");
-        helpers.SendTextToElement(web_tables_department_input, "Santander");
+        helpers.SendText(web_tables_first_name_input, "Elián");
+        helpers.SendText(web_tables_last_name_input, "Díaz");
+        helpers.SendText(web_tables_email_input, "eadv@dominio.com" );
+        helpers.SendText(web_tables_age_input, "21");
+        helpers.SendText(web_tables_salary_input, "99999");
+        helpers.SendText(web_tables_department_input, "Santander");
 
 
     }
     public void click_web_tables_registration_form_button(){
-        helpers.clickByToElement(web_tables_submit_button);
+        helpers.clickGoToElement(web_tables_submit_button);
         //driver.findElement(find_flights_button).click();
     }
 
@@ -112,7 +116,7 @@ public class PageElementsWebTables {
 
     //  test case 2
     public void fill_web_tables_search_box(String dataSearch){
-        helpers.SendTextToElement(web_tables_search_box, dataSearch);
+        helpers.SendText(web_tables_search_box, dataSearch);
     }
     public String confirm_div_text_elements_search() {
         return helpers.getText(div_text_elements_cierra);
@@ -123,24 +127,24 @@ public class PageElementsWebTables {
     //  test case 3
 
     public void click_web_tables_edit_span(){
-        helpers.clickByToElement(web_tables_edit_span);
+        helpers.clickGoToElement(web_tables_edit_span);
         //driver.findElement(find_flights_button).click();
     }
 
     public void fill_registration_form_edit() {
 
-        helpers.SendTextToElement(web_tables_first_name_input, "Andrés");
-        helpers.SendTextToElement(web_tables_last_name_input, "Díaz");
-        helpers.SendTextToElement(web_tables_email_input, "eadv@dominio.com" );
-        helpers.SendTextToElement(web_tables_age_input, "21");
-        helpers.SendTextToElement(web_tables_salary_input, "99999");
-        helpers.SendTextToElement(web_tables_department_input, "Santander");
+        helpers.SendText(web_tables_first_name_input, "Andrés");
+        helpers.SendText(web_tables_last_name_input, "Díaz");
+        helpers.SendText(web_tables_email_input, "eadv@dominio.com" );
+        helpers.SendText(web_tables_age_input, "21");
+        helpers.SendText(web_tables_salary_input, "99999");
+        helpers.SendText(web_tables_department_input, "Santander");
 
 
     }
 
     public void click_web_tables_edit_form_button(){
-        helpers.clickByToElement(web_tables_submit_button);
+        helpers.clickGoToElement(web_tables_submit_button);
         //driver.findElement(find_flights_button).click();
     }
 
@@ -153,7 +157,7 @@ public class PageElementsWebTables {
     //  test case 4
 
     public void click_web_tables_delete_span(){
-        helpers.clickByToElement(web_tables_delete_span);
+        helpers.clickGoToElement(web_tables_delete_span);
         //driver.findElement(find_flights_button).click();
     }
 

@@ -1,10 +1,16 @@
-package Tests;
+/*********************************************************************************************************
+    Realizado por:
+        Elián Andrés Díaz Vargas
+ *******************************************************************************************************/
+package Tests.Elements;
 
 import Baseclass.BaseClass;
 import Helpers.Helpers;
-import Pages.Demoqa.elements.PageElementsWebTables;
+import Pages.Elements.PageElementsWebTables;
+import Pages.Page_index;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
 
 public class TestPageElementsWebTables extends BaseClass {
 
@@ -12,7 +18,7 @@ public class TestPageElementsWebTables extends BaseClass {
     public void Test_case_1() {
         Helpers helpers = new Helpers(driver);
         helpers.getURL(helpers.getXMLParameter("url"));
-        PageIndex pageIndex = new PageIndex(driver);
+        Page_index pageIndex = new Page_index(driver);
         pageIndex.click_elements_div();
 
         PageElementsWebTables pageElementsWebTables = new PageElementsWebTables(driver);
@@ -31,7 +37,7 @@ public class TestPageElementsWebTables extends BaseClass {
     public void Test_case_2() {
         Helpers helpers = new Helpers(driver);
         helpers.getURL(helpers.getXMLParameter("url"));
-        PageIndex pageIndex = new PageIndex(driver);
+        Page_index pageIndex = new Page_index(driver);
         pageIndex.click_elements_div();
 
         PageElementsWebTables pageElementsWebTables = new PageElementsWebTables(driver);
@@ -54,7 +60,7 @@ public class TestPageElementsWebTables extends BaseClass {
     public void Test_case_3() {
         Helpers helpers = new Helpers(driver);
         helpers.getURL(helpers.getXMLParameter("url"));
-        PageIndex pageIndex = new PageIndex(driver);
+        Page_index pageIndex = new Page_index(driver);
         pageIndex.click_elements_div();
 
         PageElementsWebTables pageElementsWebTables = new PageElementsWebTables(driver);
@@ -75,7 +81,7 @@ public class TestPageElementsWebTables extends BaseClass {
     public void Test_case_4() {
         Helpers helpers = new Helpers(driver);
         helpers.getURL(helpers.getXMLParameter("url"));
-        PageIndex pageIndex = new PageIndex(driver);
+        Page_index pageIndex = new Page_index(driver);
         pageIndex.click_elements_div();
 
         PageElementsWebTables pageElementsWebTables = new PageElementsWebTables(driver);
