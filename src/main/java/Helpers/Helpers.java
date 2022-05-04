@@ -86,6 +86,7 @@ public class Helpers {
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(element));
         actions.dragAndDrop(element, target).build().perform();
     }
+    //Este método permite manipular el zoom de la página(@Autor: Jhon Sebastian Ramos Muñoz)
     public void zoomPage(double factor){
         JavascriptExecutor executor = (JavascriptExecutor)driver;
         executor.executeScript("document.body.style.zoom = "+factor+"");
@@ -122,6 +123,7 @@ public class Helpers {
         elemento.sendKeys(text);
         Print("Se envia texto:"+ text + " al elemento: "+ by);
     }
+    //Este método se usa para enviar el path de un archivo
     public void SendFile(By by, String text){
         // Espera dinamica
         WebDriverWait wait = new WebDriverWait(driver,20);
@@ -200,6 +202,7 @@ public class Helpers {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollTo("+Up+", "+Down+")");
     }
+    //Este método captura lo contenido en el atributo "value" del elemento(@Autor: Jhon Sebastian Ramos Muñoz)
     public String getValue(By by) {
         String value = driver.findElement(by).getAttribute("value");
         Print("Se Obtiene value: " + value + " del elemento: " + by);
@@ -214,6 +217,7 @@ public class Helpers {
         JavascriptExecutor js = (JavascriptExecutor) this.driver;
         js.executeScript("arguments[0].scrollIntoView(true);", element);
     }
+    //Este método permite realizar un scroll descendente dentro de la página(@Autor: Jhon Sebastian Ramos Muñoz)
     public void scrollDown(int distance){
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollTo(0, "+distance+")");

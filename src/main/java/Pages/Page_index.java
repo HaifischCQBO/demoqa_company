@@ -1,6 +1,5 @@
 package Pages;
 
-
 import Helpers.Helpers;
 import org.openqa.selenium.By;
 import Helpers.SingletonDriver;
@@ -81,8 +80,6 @@ public class Page_index {
         helpers.clickGoToElement(card_Elements);
         //driver.findElement(find_flights_button).click();
     }
-
-   
 
     public void click_btnElement(){
         helpers.clickElement(btnElement);
