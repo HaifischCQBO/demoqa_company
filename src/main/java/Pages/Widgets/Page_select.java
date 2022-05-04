@@ -1,4 +1,4 @@
-package Pages.demoqa.Widgets;
+package Pages.Widgets;
 
 import Helpers.Helpers;
 import org.apache.hc.core5.util.Asserts;

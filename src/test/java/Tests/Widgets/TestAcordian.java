@@ -2,9 +2,9 @@ package Tests.Widgets;
 
 import Baseclass.BaseClass;
 import Helpers.Helpers;
-import Pages.demoqa.Widgets.Page_Accordian;
-import Pages.demoqa.Page_Index;
-import Pages.demoqa.Page_Widgets;
+import Pages.Widgets.Page_Accordian;
+import Pages.Page_Index;
+import Pages.Page_Widgets;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;

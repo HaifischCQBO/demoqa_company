@@ -2,8 +2,8 @@ package Tests.Widgets;
 
 import Baseclass.BaseClass;
 import Helpers.Helpers;
-import Pages.demoqa.Page_Index;
-import Pages.demoqa.Widgets.Page_select;
+import Pages.Page_Index;
+import Pages.Widgets.Page_select;
 import org.testng.annotations.Test;
 
 public class TestSelect extends BaseClass {

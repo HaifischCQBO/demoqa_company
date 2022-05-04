@@ -1,15 +1,13 @@
-package Pages.demoqa.Widgets;
+package Pages.Widgets;
 
 import Helpers.Helpers;
 import Helpers.SingletonDriver;
-import Pages.demoqa.Page;
+import interfaces.Page;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import javax.lang.model.element.Element;
-import java.util.ArrayList;
 import java.util.List;
 
 public class Page_Accordian implements Page {

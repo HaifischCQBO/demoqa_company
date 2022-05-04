@@ -3,10 +3,9 @@ package Tests.Widgets;
 
 import Baseclass.BaseClass;
 import Helpers.Helpers;
-import Pages.demoqa.Page;
-import Pages.demoqa.Widgets.Page_Date_Picker;
-import Pages.demoqa.Widgets.Page_Slider;
-import Pages.demoqa.Page_Widgets;
+import interfaces.Page;
+import Pages.Widgets.Page_Date_Picker;
+import Pages.Page_Widgets;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

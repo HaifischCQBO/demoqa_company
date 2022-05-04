@@ -1,8 +1,8 @@
-package Pages.demoqa.Widgets;
+package Pages.Widgets;
 
 import Helpers.Helpers;
 import Helpers.SingletonDriver;
-import Pages.demoqa.Page;
+import interfaces.Page;
 import org.apache.commons.lang3.StringUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;

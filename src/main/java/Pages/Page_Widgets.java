@@ -1,16 +1,17 @@
-package Pages.demoqa;
+package Pages;
 
 import Helpers.Helpers;
 import Helpers.SingletonDriver;
+import interfaces.Page;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
-public class Page_Widgets implements Page{
+public class Page_Widgets implements Page {
 
-    private final String URL = Page.URL_INDEX + "widgets";
+    private final String URL = URL_INDEX + "widgets";
     public WebDriver driver;
     public Helpers helpers;
 

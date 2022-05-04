@@ -2,7 +2,7 @@ package Tests.Alerts_Frame_Windows;
 
 import Baseclass.BaseClass;
 import Helpers.Helpers;
-import Pages.demoqa.Page;
+import interfaces.Page;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

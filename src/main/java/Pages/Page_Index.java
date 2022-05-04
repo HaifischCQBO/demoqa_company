@@ -1,17 +1,16 @@
-package Pages.demoqa;
+package Pages;
 
 import Helpers.Helpers;
 import Helpers.SingletonDriver;
+import interfaces.Page;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import javax.lang.model.element.Element;
-import java.util.ArrayList;
 import java.util.List;
 
-public class Page_Index implements Page  {
-    private final String URL = Page.URL_INDEX;
+public class Page_Index implements Page {
+    private final String URL = URL_INDEX;
     private List<WebElement> listCategoryCards;
     public WebDriver driver;
     public Helpers helpers;

@@ -2,8 +2,8 @@ package Tests.Widgets;
 
 import Baseclass.BaseClass;
 import Helpers.Helpers;
-import Pages.demoqa.Page_Index;
-import Pages.demoqa.Widgets.Page_menu;
+import Pages.Page_Index;
+import Pages.Widgets.Page_menu;
 import org.testng.annotations.Test;
 
 public class TestMenu extends BaseClass {

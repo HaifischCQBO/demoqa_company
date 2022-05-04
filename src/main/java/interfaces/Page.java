@@ -1,4 +1,4 @@
-package Pages.demoqa;
+package interfaces;
 
 public interface Page {
     public final String URL_INDEX = "https://demoqa.com/";
