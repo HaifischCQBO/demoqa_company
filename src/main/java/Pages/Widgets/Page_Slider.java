@@ -22,9 +22,10 @@ public class Page_Slider {
 
 
     public By slider_select = By.xpath("/html/body/div[2]/div/div/div[2]/div[1]/div/div/div[4]/div/ul/li[4]");
-    public By range = By.xpath("//*[@id=\"sliderContainer\"]");
+    public By range = By.xpath("//*[@id='sliderContainer']");
+    public By rangeCircle = By.xpath("//div[@class='range-slider__tooltip range-slider__tooltip--auto range-slider__tooltip--bottom']");
 
-
+    public By rangeInput = By.xpath("//*[@id='sliderValue']");
 
 
 
@@ -41,10 +42,13 @@ public class Page_Slider {
         helpers.clickElement(range);
         Actions actions = new Actions(driver);
 
-        WebElement element01 = helpers.returnWebElement(By.xpath("//input[@value='30']"));
-        WebElement element02 = helpers.returnWebElement(By.xpath("//input[@value='50']"));
+        WebElement element01 = driver.findElement(rangeCircle);
 
-        actions.dragAndDrop(element02, element01);
+        actions.dragAndDropBy(element01, 10, 0);
+    }
+
+    public String valor(){
+        return helpers.getValue(rangeInput);
     }
 
 }
