@@ -12,7 +12,9 @@ import org.openqa.selenium.WebElement;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class Page_AutoComplete implements Page {
+
     private final String URL = Page.URL_INDEX + "auto-complete";
     public WebDriver driver;
     public Helpers helpers;
@@ -55,7 +57,7 @@ public class Page_AutoComplete implements Page {
 
     public void clickElement_ListAutoComplete(int index, By list){
         WebElement element = driver.findElement(list).findElements(By.xpath("div")).get(index);
-        helpers.clickWebelement(element);
+        helpers.clickElement(element);
     }
 
     public List<WebElement> label_elements_Input(By label_input){
@@ -137,11 +139,4 @@ public class Page_AutoComplete implements Page {
     public int getSizeElements_Input(By elementsInput){
         return  elements_Input(elementsInput).size();
     }
-
-
-
-    @Override
-    public String getUrl() {
-        return this.URL;
     }
-}

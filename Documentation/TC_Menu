@@ -1,0 +1,56 @@
+Menú de casos de prueba
+
+Guión
+verificar el funcionamiento del "elemento principal 1"
+
+pasos para reproducir
+1. Ingresar a la página "https://demoqa.com/"
+2. dar click en la tarjeta "widgets"
+3. dar clic en el elemento "widgets" encontrado en el menú de navegación izquierdo
+4. dar click en la opcion "Menu"
+5. dar clic en "Elemento principal 1"
+
+Resultados previstos
+ningun resultado
+
+================================================== ==
+**************************************************** **
+================================================== ==
+
+Caso de prueba
+
+Guión
+verificar el funcionamiento del "elemento principal 2"
+
+pasos para reproducir
+1. Ingresar a la página "https://demoqa.com/"
+2. dar click en la tarjeta "widgets"
+3. dar clic en el elemento "widgets" encontrado en el menú de navegación izquierdo
+4. dar click en la opcion "Menu"
+5. dar clic en "Elemento principal 2"
+6. dar click en cualquier opcion desplegada
+
+
+Resultados previstos
+el usuario debera hacer click en el item menu 2 y
+seleccione la opcion correspondiente al usuario
+
+
+================================================== ==
+**************************************************** **
+================================================== ==
+
+Caso de prueba
+
+Guión
+verificar el funcionamiento del "elemento principal 3"
+
+pasos para reproducir
+1. Ingresar a la página "https://demoqa.com/"
+2. dar click en la tarjeta "widgets"
+3. dar clic en el elemento "widgets" encontrado en el menú de navegación izquierdo
+4. dar click en la opcion "Menu"
+5. dar clic en "Elemento principal 1"
+
+Resultados previstos
+el usuario debera hacer click en el item menu 3
