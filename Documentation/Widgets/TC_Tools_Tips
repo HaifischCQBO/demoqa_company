@@ -1,0 +1,34 @@
+@Author: Cristian Cortes
+@date: 26/04/2022
+
+Test case
+
+Scenario:
+
+el usuario podrá visualizar el momento de hacer hover sobre el input o botón.
+
+Pre-condiciones:
+
+    1. El usuario debe tener una conexión a internet
+    2. El usuario abre el navegador exitosamente
+
+
+Pasos a prueba:
+
+    1.	abrir un navegador y dirijirse a esta url: https://demoqa.com/
+    2.	dar click  sobre la tarjeta  “Widgets ”
+    3.	hacer scroll sobre el menú principal
+    4.	hacer click sobre el botón  “Tools - tips”
+    5.	Se redireccionara en la misma ventana a https://demoqa.com/tool-tips
+    6.	Hacer hover sobre el botón para ver un alert con el mensaje
+    7.	Hacer hover sobre el input para ver el alert con el mensaje
+
+
+Pos-condiciones:
+
+    El usuario debe validar que se encuentra en https://demoqa.com/tool-tips
+    para poder seguir con los pasos a prueba
+
+Resultado Esperado:
+
+    1. El usuario podrá hacer hover sobre el botón o el input y visualizará un alert con el mensaje.

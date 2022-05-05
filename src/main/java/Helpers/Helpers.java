@@ -1,7 +1,6 @@
 package Helpers;
 
 import com.github.javafaker.Faker;
-import org.jetbrains.annotations.NotNull;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.By;
@@ -25,14 +24,12 @@ public class Helpers {
     private static WebDriver driver;
 
     public Helpers(){
-        this.driver = SingletonDriver.getWebDriver();
+
     }
     //usamos el patron de diseño singleton o instancia unica para poder usar los driver
     public Helpers(WebDriver driver){
         this.driver = driver;
     }
-
-
 
     public String getXMLParameter(String key){
         return Reporter.getCurrentTestResult().getTestContext().getCurrentXmlTest().getParameter(key);
@@ -160,6 +157,7 @@ public class Helpers {
             e.printStackTrace();
         }
     }
+
     public String returnFullAdress(){
         Faker f = new Faker();
         String street =f.address().streetAddress();
@@ -187,17 +185,13 @@ public class Helpers {
     public String SelectByIndex(By by){
         Random r = new Random();
         Select select = new Select(driver.findElement(by));
-        System.out.println(select);
         int option_number = select.getOptions().size();
         int index_option = r.nextInt(option_number-1);
         //size: 1,2,3,4,5
         //index: 0,1,2,3,4
         select. selectByIndex(index_option);
         return  select.getFirstSelectedOption().getText();
-
     }
-
-
 
     public int GetRandomNumber(int bound){
         return new Random().nextInt(bound);
