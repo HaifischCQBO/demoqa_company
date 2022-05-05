@@ -1,0 +1,22 @@
+autor: julio mario sierra ortega
+grupo gamma
+
+test case 2
+
+scenario
+usuaro desea eliminar la cuenta
+
+datos de prueba
+usuario
+contraseña
+
+
+precondiciones
+usuario debe estar registrado en la pagina https://demoqa.com/login
+
+
+Paso a prueba
+1.ingresar a la pagina https://demoqa.com/login
+2.ingresar el nombre usuario y contraseña
+3.click en el boton login
+4.click en el boton de borrar cuenta

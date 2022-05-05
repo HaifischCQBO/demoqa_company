@@ -1,0 +1,40 @@
+autor: julio mario sierra ortega
+grupo gamma
+
+test case 3
+
+escenario
+usuario selecciona el item de selectable del scroll interacciones
+
+datos de prueba
+
+
+precondiciones
+estar dentro de la pagina https://demoqa.com/
+
+paso a prueba
+1.ingresar a la pagina https://demoqa.com/login
+2.click en el scroll de interacciones
+3.click en el item selectable
+4.click en el item lista
+5.seleccionar todas las opciones
+
+
+
+test case 4
+
+escenario
+usuario selecciona el item de selectable del scroll interacciones
+
+datos de prueba
+
+
+precondiciones
+estar dentro de la pagina https://demoqa.com/
+
+paso a prueba
+1.ingresar a la pagina https://demoqa.com/login
+2.click en el scroll de interacciones
+3.click en el item selectable
+4.click en el item Red
+5.seleccionar todas las opciones
