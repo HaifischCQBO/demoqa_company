@@ -2,20 +2,15 @@ package Tests.Widgets;
 
 import Baseclass.BaseClass;
 import Helpers.Helpers;
-import Pages.demoqa.Page_Accordian;
+import Pages.demoqa.Widgets.Page_Accordian;
 import Pages.demoqa.Page_Index;
 import Pages.demoqa.Page_Widgets;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class TestAcordian extends BaseClass {
-
-
-
-
     @Test
     public void Test_ID_W_A01()
     {

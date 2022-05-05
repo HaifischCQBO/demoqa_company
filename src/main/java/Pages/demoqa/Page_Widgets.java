@@ -8,9 +8,9 @@ import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
-public class Page_Widgets implements Page{
+public class Page_Widgets implements Pages.demoqa.Page {
 
-    private final String URL = Page.URL_INDEX + "widgets";
+    private final String URL = Pages.demoqa.Page.URL_INDEX + "widgets";
     public WebDriver driver;
     public Helpers helpers;
 
