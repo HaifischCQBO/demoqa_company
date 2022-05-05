@@ -1,25 +1,31 @@
 package Baseclass;
 
-import Helpers.Helpers;
-import Helpers.SingletonDriver;
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 
+import Helpers.Helpers;
+import Helpers.SingletonDriver;
+
 public class BaseClass {
     public WebDriver driver;
-    Helpers helpers = new Helpers();
+    Helpers helpers  = new Helpers();
 
-    @BeforeMethod
+@BeforeMethod
     public void setUp(){
         driver = SingletonDriver.getWebDriver();
         SingletonDriver.setCloseWhenFinished(false);
     }
 
+<<<<<<< HEAD
+@AfterMethod
+    public void Finished(){
+        if (SingletonDriver.getCloseWhenFinished())
+        driver.quit();
+    }
+    
+=======
     @AfterMethod
     public void Finished(){/*
         if(SingletonDriver.getCloseWhenFinished())
@@ -34,4 +40,5 @@ public class BaseClass {
         }
     }
 
+>>>>>>> 2fd7f94d33c5bcbd2575a868e33b4a5db6229030
 }
