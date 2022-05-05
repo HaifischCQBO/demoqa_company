@@ -1,0 +1,29 @@
+autor: julio mario sierra ortega
+grupo gamma
+
+Test case1
+
+scenario
+Buscar libro por autor,titulo,editor
+
+datos de prueba
+nombre del autor.
+nombre del libro.
+nombre del editor.
+
+precondiciones
+ingresar a la direccion url=  https://demoqa.com/
+
+paso a prueba
+1.  ingresar a la pagina https://demoqa.com/
+2.click en el scroll de solicitud de libreria
+3.click al item de libreria
+4.en la barra de busqueda escribir para buscar un libro puede ser por autor,editor o titulo.
+
+
+
+
+
+
+
+
