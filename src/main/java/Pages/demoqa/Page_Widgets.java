@@ -20,7 +20,9 @@ public class Page_Widgets implements Pages.demoqa.Page {
     }
 
     public By accordian = By.xpath("//div[2]/div/div/div[2]/div[1]/div/div/div[4]/div/ul/li[1]");
-
+    public void clickWidgets() {
+        helpers.clickBy(card_body_button);
+    }
 
 
     private List<WebElement> getCategoryCards(){

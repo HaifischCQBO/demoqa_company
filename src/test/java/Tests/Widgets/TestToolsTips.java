@@ -6,19 +6,19 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.Test;
 
-public class TestToolsTips extends Baseclass{
+public class TestToolsTips extends BaseClass{
 
-    public webdriver driver;
 
     @aTest
-    public void pruebaTools_Tips(){
+    public void Tools_Tips(){
+        Page_Tools_tips tools_tips = new Page_Tools_tips();
+        Helpers helpers = new Helpers(tools_tips.driver);
+        helpers.getURL(helpers.getXMLParameter("url"));
 
+        Page_Tools_tips tools_tips = new Page_Tools_tips(driver);
+        page_Tools_tips = Webdriver.findElement(By.xpath ("//*[@id=\"toolTipButton\"]/font/font");
 
-        Helpers helpers = new Helpers();
-        Page_Accordian accordian = new Page_Accordian();
-        helpers.getURL(ToolsTips.getUrl());
-        page_index.hover_me_to_see();
-
+       
     }
 
 
