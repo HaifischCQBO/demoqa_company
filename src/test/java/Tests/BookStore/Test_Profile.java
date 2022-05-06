@@ -1,4 +1,4 @@
-package Tests;
+package Tests.BookStore;
 
 import Baseclass.BaseClass;
 import Helpers.Helpers;
@@ -6,9 +6,9 @@ import Pages.Page_index;
 import Pages.bookstore.Page_Profile;
 import org.testng.annotations.Test;
 
-public class Test_con_POM extends BaseClass {
+public class Test_Profile extends BaseClass {
 
-    @Test(priority = 1)
+    @Test
     public void link_newtab_test_home() {
 
         //Pagina Page_Index
