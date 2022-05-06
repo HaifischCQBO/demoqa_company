@@ -22,6 +22,7 @@ public class Page_index {
     // WEB ELEMENT // WEB ELEMENT //WEB ELEMENT //WEB ELEMENT //WEB ELEMENT //WEB ELEMENT
 
     public By cardBookStore = By.xpath("//div[@class='card mt-4 top-card'][6]");
+    public By select_card_interactions = By.xpath("//div[@class=\"card mt-4 top-card\"][5]");
     public By botonElements = By.xpath("//div[@id=\"app\"]/div/div/div[2]/div/div[1]");
     private By card_Elements = By.xpath("//div[@class=\"card mt-4 top-card\"][1]");
     private By card_Forms = By.xpath("//div[@class=\"card mt-4 top-card\"][2]");
@@ -33,6 +34,9 @@ public class Page_index {
 
     // FUNCIONES // FUNCIONES // FUNCIONES // FUNCIONES // FUNCIONES // FUNCIONES // FUNCIONES // FUNCIONES
 
+    public void click_card_interactions(){
+        helpers.clickElement(select_card_interactions);
+    }
     public void clickBookStore(){
         helpers.clickElement(cardBookStore);
     }
