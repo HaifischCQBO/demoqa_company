@@ -1,0 +1,57 @@
+@author: Jean Carlos Carrillo Machado
+@date: 26/04/2022
+Test Case
+
+Scenario
+Verificar el funcionamiento de Alerts #1
+Steps to reproduce
+1.El usuario debe ingresar a la pagina: https://demoqa.com/alerts
+2.El usuario visualiza el contenido de Alerts y sus 4 opciones
+3.El usuario debe Activar la primera alerta dando click en el botón “Click me” en la primer posición
+
+Expected Results
+El usuario debe visualizar en la parte superior la alerta al momento de accionar el botón
+
+
+
+Test Case
+
+Scenario
+Verificar el funcionamiento de Alerts #2
+Steps to reproduce
+1.El usuario debe ingresar a la pagina: https://demoqa.com/alerts
+2.El usuario visualiza el contenido de Alerts y sus 4 opciones
+3.El usuario debe Activar la segunda alerta dando click en el botón “Click me” en la segunda posición
+
+Expected Results
+El usuario debe visualizar en la parte superior la alerta al momento de accionar el botón después de 5 segundos de activado
+
+
+
+Test Case
+
+Scenario
+Verificar el funcionamiento de Alerts #3
+Steps to reproduce
+1.El usuario debe ingresar a la pagina: https://demoqa.com/alerts
+2.El usuario visualiza el contenido de Alerts y sus 4 opciones
+3.El usuario debe Activar la segunda alerta dando click en el botón “Click me” en la tercera posición y seleccionar una de las dos opciones que esta muestra
+
+Expected Results
+El usuario debe visualizar en la parte superior la alerta al momento de accionar el botón, y según la acción que tome en la alerta, debe informar si acepto o cancelo en la alerta
+
+
+Test Case
+
+Scenario
+Verificar el funcionamiento de Alerts #4
+Steps to reproduce
+1.El usuario debe ingresar a la pagina: https://demoqa.com/alerts
+2.El usuario visualiza el contenido de Alerts y sus 4 opciones
+3.El usuario debe Activar la segunda alerta dando click en el botón “Click me” en la cuarta posición
+4.El usuario debe ingresar un nombre y dar aceptar
+
+Expected Results
+El usuario debe visualizar en la parte superior la alerta al momento de accionar el botón, el nombre que el usuario ingrese debe aparecer en la información del click
+
+

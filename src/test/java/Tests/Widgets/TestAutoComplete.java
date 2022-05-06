@@ -1,7 +1,8 @@
 package Tests.Widgets;
 
+import Baseclass.BaseClass;
 import Helpers.Helpers;
-import Pages.Page_AutoComplete;
+import Pages.Widgets.Page_AutoComplete;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
@@ -10,13 +11,12 @@ import org.testng.annotations.Test;
 
 import java.util.ArrayList;
 
-public class TestAutoComplete {
+public class TestAutoComplete extends BaseClass {
 
     @Test
     public void Test_ID_w_AC01(){
-        Page_AutoComplete autoComplete = new Page_AutoComplete();
-        Helpers helpers = new Helpers();
-        WebDriver driver = autoComplete.driver;
+        Page_AutoComplete autoComplete = new Page_AutoComplete(driver);
+        Helpers helpers = new Helpers(driver);
         helpers.getURL(autoComplete.getUrl()); //Voy a l url
         //Miro que los dos input existan.
         Assert.assertNotNull(driver.findElement(autoComplete.multipleColor));
@@ -25,9 +25,8 @@ public class TestAutoComplete {
 //id elementos react-select-2-option-0 el 0 incrementa...
    @Test
     public void Test_ID_w_AC02(){
-        Page_AutoComplete autoComplete = new Page_AutoComplete();
-        Helpers helpers = new Helpers();
-        WebDriver driver = autoComplete.driver;
+        Page_AutoComplete autoComplete = new Page_AutoComplete(driver);
+        Helpers helpers = new Helpers(driver);
         helpers.getURL(autoComplete.getUrl()); //Voy a l url
         //Miro que los dos input existan.
         helpers.clickBy(autoComplete.multipleColor);
@@ -60,9 +59,8 @@ public class TestAutoComplete {
     @Test(dataProvider = "id_Tc")
     public void Test_ID_w_AC03(Integer id_tc) throws InterruptedException {
 
-        Page_AutoComplete autoComplete = new Page_AutoComplete();
-        Helpers helpers = new Helpers();
-        WebDriver driver = autoComplete.driver;
+        Page_AutoComplete autoComplete = new Page_AutoComplete(driver);
+        Helpers helpers = new Helpers(driver);
         String[][] steps = {{"w", "yellow"}, {"w", "white"}, {"b", "blue"}, {"b", "black"}};
 
         helpers.getURL(autoComplete.getUrl());//Voy a l url en la primera ejecucion
@@ -106,9 +104,8 @@ public class TestAutoComplete {
 
     @Test
     public void Test_ID_w_AC06(){
-        Page_AutoComplete autoComplete = new Page_AutoComplete();
-        Helpers helpers = new Helpers();
-        WebDriver driver = autoComplete.driver;
+        Page_AutoComplete autoComplete = new Page_AutoComplete(driver);
+        Helpers helpers = new Helpers(driver);
         helpers.getURL(autoComplete.getUrl()); //Voy a l url
         //Miro que los dos input existan.
         helpers.clickBy(autoComplete.singleColor);
@@ -119,10 +116,9 @@ public class TestAutoComplete {
 
     @Test
     public void Test_ID_w_AC07(){
-        Page_AutoComplete autoComplete = new Page_AutoComplete();
-        Helpers helpers = new Helpers();
+        Page_AutoComplete autoComplete = new Page_AutoComplete(driver);
+        Helpers helpers = new Helpers(driver);
         int indexElement;
-        WebDriver driver = autoComplete.driver;
         helpers.getURL(autoComplete.getUrl()); //Voy a l url
         //Miro que los dos input existan.
         String[][] steps = {{"w", "yellow"}, {"w", "white"}};

@@ -1,0 +1,15 @@
+Autor: Carlos Andres Ramirez
+Test Case 7 Droppable
+Simple
+
+Scenario
+El usuario debe  poder mover el botón Drag Me por la plataforma
+
+Steps to reproduce
+1. Ir a la https://demoqa.com/droppable
+2. Dar clic en pestaña simple
+3. Tener el botón Drag Me con clic sostenido y arrastrarlo hasta la container Drop here
+
+Expected Results
+Se espera que al arrastrar el botón Drag Me y soltarlo en el container Drop here
+También debe cambiar el nombre del recuadro a Dropped y el color

@@ -1,0 +1,34 @@
+Autor: Carlos Andres Ramirez
+Test Case 8 Droppable
+Accept
+
+Scenario
+El usuario debe poder seleccionar el botón Acceptable y arrastrarlo a Drop Here
+
+Precondition
+El usuario debe seleccionar el botón y arrastrarlo hasta el container Drop Here
+
+Steps to reproduce
+1. Ir a la https://demoqa.com/droppable
+2. Dar clic en pestaña  Accept
+3. Dar clic sostenido en el botón Acceptable y descargarlo en el container Drop Here
+
+Expected Results
+Se espera que al llevar el botón Acceptable al container, este cambie el nombre y su color
+======================================================================
+Test Case 9
+Not Accept
+
+Scenario
+El Usuario debe poder seleccionar el botón Not Acceptable y pueda dejarlo sobre Drop Here
+
+Precondition
+El usuario debe seleccionar el botón y arrastrarlo hasta el container Drop Here
+
+Steps to reproduce
+1. Ir a la https://demoqa.com/droppable
+2. Dar clic en pestaña  Accept
+3. Dar clic sostenido en el botón Not Acceptable y descargarlos en el container Drop Here
+
+Expected Results
+Se espera que al llevar el boton Not Acceptable al container, este no cambie de color ni cambie el nombre

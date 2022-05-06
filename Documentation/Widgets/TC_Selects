@@ -1,0 +1,27 @@
+@author: Miguel Herrera
+@date: 26/04/2022
+Menú de selección de caso de prueba
+
+escenario
+    el usuario seleccionara las opciones correspondientes a cada Seleccione
+
+condiciones previas
+    1. Ingrese a la pagina "https://demoqa.com/"
+    2. dar click en la tarjeta "widgets"
+    3. dar clic en el elemento "widgets" encontrado en el menú de navegación izquierdo
+    4. dar clic en "Seleccionar menú"
+
+paso a prueba
+    5. dar clic en "Seleccionar valor"
+    6. elegir en las opciones "un grupo y una opcion"
+    7. dar clic en "Seleccionar uno"
+    8. elegir en las opciones un titulo
+    9. dar clic en "menú de selección de estilo antiguo"
+    10. Elegir en las opciones un color
+    11. dar click en "Multiselect desplegable"
+    12. Elegir múltiples opciones
+    13. dar clic en "Selección múltiple estándar"
+    14. elegir una opcion
+
+Resultados previstos
+    el usuario debe haber llenado los selectos correspondientes
