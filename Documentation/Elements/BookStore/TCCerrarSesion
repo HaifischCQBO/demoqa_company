@@ -1,0 +1,21 @@
+Autor: Carlos Andres Ramirez
+Test Case 6
+Cerrar Sesión
+
+Scenario
+el usuario debe poder cerrar sesión
+
+nombre: carlos andres
+apellido: ramirez henao
+nombre de usuario: cRamirez
+contraseña: 1989Juli03@
+
+Precondition
+El usuario ya debe estar registrado y haber iniciado sesión en la plataforma
+
+Steps to reproduce
+1. Ir a https://demoqa.com/profile
+2. Dar clic en el boton cerrar sesion
+
+Expected Results
+Se espera que la Plataforma muestre un alert cuando el usuarios cierre sesión exitosamente
