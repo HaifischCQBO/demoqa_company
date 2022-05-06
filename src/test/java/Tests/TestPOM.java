@@ -2,7 +2,7 @@ package Tests;
 
 import Baseclass.BaseClass;
 import Helpers.Helpers;
-import Pages.*;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

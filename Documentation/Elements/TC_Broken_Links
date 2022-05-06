@@ -1,3 +1,6 @@
+AUTOR
+Brayan stiven mahecha galindo
+
 Test Case
 click en el link valido
 
@@ -16,6 +19,54 @@ Conexion a internet
 2. Ubicar la seccion "Elements" y dar click
 3. Ubicar la seccion "Broken Links-Image" y dar click
 4. Posicionarse sobre el link "Click Here for Valid Link" y dar clik
+
+//RESULT
+ El sistema nos envia a la siguiente direccion https://demoqa.com
+
+
+
+Test Case 2
+click en el link invalido
+
+//SCENARIO
+Ingresar a un link invalido
+
+//TEST DATA
+Un enlace se reconoce por tener el color de texto azul y una barra que lo resalta al posicionarse encima
+
+//PRECONDITIONS
+Abrir un navegador
+Conexion a internet
+
+//STEP TO TEST
+1. Ingresar a la siguiente direccion https://demoqa.com
+2. Ubicar la seccion "Elements" y dar click
+3. Ubicar la seccion "Broken Links-Image" y dar click
+4. Posicionarse sobre el link "Click Here for broken Link" y dar clik
+
+//RESULT
+ El sistema nos envia a un error 500
+
+
+
+Test Case 3
+click en la imagen valida
+
+//SCENARIO
+Ingresar a un link valido
+
+//TEST DATA
+Un enlace se reconoce por tener el color de texto azul y una barra que lo resalta al posicionarse encima
+
+//PRECONDITIONS
+Abrir un navegador
+Conexion a internet
+
+//STEP TO TEST
+1. Ingresar a la siguiente direccion https://demoqa.com
+2. Ubicar la seccion "Elements" y dar click
+3. Ubicar la seccion "Broken Links-Image" y dar click
+4. Posicionarse sobre la imagen "ToolsQA" y dar clik
 
 //RESULT
  El sistema nos envia a la siguiente direccion https://demoqa.com

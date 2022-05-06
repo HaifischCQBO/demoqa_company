@@ -47,3 +47,8 @@ public class Page_text_box {
 
     }
 }
+
+
+    public void click_botton_submit (){
+    helpers.clickElement(Button_Submit_field);
+    }

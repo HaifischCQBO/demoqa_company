@@ -19,22 +19,24 @@ public class Page_broken {
 
 
 
-        private By Valid_link = By.xpath("//*[@id=\"app\"]/div/div/div[2]/div[2]/div[2]/a[1]" );
-        private By Brok_link = By.xpath("//*[@id=\"app\"]/div/div/div[2]/div[2]/div[2]/a[2]" );
-        private By Image_link = By.xpath("//*[@id=\"app\"]/div/div/div[2]/div[2]/div[2]/img[1]");
+        private By Valid_link = By.xpath("//img[@src='/images/Toolsqa.jpg']" );
+        private By Brok_link = By.xpath("//a[@href=\'http://demoqa.com\'] " );
+        private By Image_link = By.xpath("//a[@href=\'http://the-internet.herokuapp.com/status codes/500\']");
 
 
  // Funciones // // Funciones // // Funciones // // Funciones // // Funciones // // Funciones // // Funciones //
 
 
         public void click_valid_button(){
-            helpers.double_clickBy(Valid_link);
+            helpers.clickElement(Valid_link);
         }
 
         public void click_Broken_button (){
-            helpers.double_clickBy(Brok_link);
+
+            helpers.clickElement(Brok_link);
         }
 
         public void click_image (){
-            helpers.double_clickBy(Image_link);
+
+            helpers.clickElement(Image_link);
         }

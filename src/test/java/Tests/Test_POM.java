@@ -19,7 +19,7 @@ public class Test_POM  extends BaseClass{
 
      // En la pagina del index seleccionamos la opcion elements
         Page_Index page_Index = new Page_Index(driver);
-        page_Index.click_elements();
+        page_Index.clickElements();
 
      // En la pagina elements damos click en la opcion Broken links
          Page_Elements page_Elements = new Page_Elements(driver);
@@ -31,7 +31,7 @@ public class Test_POM  extends BaseClass{
 
     // Como nos direcciona a la pagina index, nuevamente seleccionamos la opcion elements
         Page_Index page_Index = new Page_Index(driver);
-        page_Index.click_elements();
+       // page_Index.click_elements();
 
     // En la pagina elements seleccionamos la opcion Broken links
         Page_Elements page_Elements = new Page_Elements(driver);
@@ -44,7 +44,7 @@ public class Test_POM  extends BaseClass{
 
         // Nuevamente en la pagina del index seleccionamos la opcion elements
         Page_Index page_Index = new Page_Index(driver);
-        page_Index.click_elements();
+      //  page_Index.click_elements();
 
 
         // En la pagina elements damos click en la opcion Broken links
@@ -65,7 +65,7 @@ public class Test_POM  extends BaseClass{
 
      // En la pagina del index seleccionamos la opcion elements
          Page_Index page_Index = new Page_Index(driver);
-         page_Index.click_elements();
+         page_Index.clickElements();
 
      // En la pagina elements seleccionamos la opcion text_box
          Page_Elements page_Elements = new Page_Elements(driver);
@@ -73,7 +73,7 @@ public class Test_POM  extends BaseClass{
 
      //En esta seccion diligenciamos formulario y damos click en el boton submit
         Page_text_box page_text_box = new Page_text_box(driver);
-        Page_text_box.Text_Box_form();
+        Page_text_box.click_botton_submit();
 
 
  }   
