@@ -17,7 +17,14 @@ public class TestInteracciones extends BaseClase {
        PageInteraccion pageInteraccion = new PageInteraccion(driver);
        pageInteraccion.clickinteraccione();
        pageInteraccion.espera();
+       pageInteraccion.bajar();
        pageInteraccion.click_selectable();
+       pageInteraccion.espera();
+       pageInteraccion.bajar();
+       pageInteraccion.seleccionar();
+       pageInteraccion.clickgrid();
+
+
 
 
 
