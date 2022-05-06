@@ -1,0 +1,25 @@
+Autor: Carlos Andres Ramirez
+Test Case 1
+registrarse
+
+Scenario
+el usuario debe registrarse
+
+nombre: carlos andres
+apellido: ramirez henao
+nombre de usuario: cRamirez
+contraseña: 1989Juli03@
+
+precondition
+el usuario no debe estar registrado
+
+Steps to reproduce
+1. ir a la pagina https://demoqa.com/register
+2. Ingresar datos en el formulario de registro
+3. seleccionar el boton reCaptcha
+4. dar clic en el boton registrarse
+
+Expected Results
+se espera que la plataforma muestre un alert cuando el usuario se registro exitosamente
+se espera que la plataforma muestre un mensaje en la parte inferior de la pantalla en rojo
+en caso de que el nombre de usuario ya exista
